@@ -1,8 +1,6 @@
 # ORCA — Marine EcOsystem Reasoning with Collaborative Agents
 ### ISRO Problem Statement 26176 (Smart India Hackathon)
 
-> **HARD CONSTRAINT GUARANTEE**: This project requires **ZERO API keys**, paid services, cloud accounts, or signups. Everything runs locally out of the box with `npm install && npm run dev`. The Web Speech API runs natively in modern browsers (Chrome/Edge recommended). All marine, weather, boundary, and translation dictionaries are built into local mock modules in `/data/`.
-
 ---
 
 ## 🐋 Executive Overview
