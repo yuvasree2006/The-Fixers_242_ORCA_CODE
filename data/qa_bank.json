@@ -1,0 +1,2051 @@
+{
+  "intents": {
+    "SAFETY_CHECK": {
+      "keywords": {
+        "en": [
+          "safe",
+          "venture",
+          "sea",
+          "go fishing",
+          "tomorrow",
+          "today",
+          "morning",
+          "fishing today",
+          "safe to venture",
+          "venture into the sea"
+        ],
+        "hi": [
+          "सुरक्षित",
+          "समुद्र",
+          "जाना",
+          "मछली पकड़ने",
+          "कल",
+          "आज",
+          "सुबह",
+          "सुरक्षा",
+          "क्या कल सुबह"
+        ],
+        "ta": [
+          "பாதுகாப்பான",
+          "கடல்",
+          "மீன்பிடி",
+          "நாளை",
+          "இன்று",
+          "காலை",
+          "போகலாமா",
+          "கடலுக்கு"
+        ],
+        "te": [
+          "సురక్షిత",
+          "సముద్రం",
+          "చేపలు పట్టడం",
+          "రేపు",
+          "ఈరోజు",
+          "ఉదయం",
+          "వెళ్లడం",
+          "సముద్రంలోకి"
+        ],
+        "ml": [
+          "സുരക്ഷിതം",
+          "കടൽ",
+          "മീൻപിടിത്തം",
+          "നാളെ",
+          "ഇന്ന്",
+          "രാവിലെ",
+          "പോകുന്നത്",
+          "കടലിൽ"
+        ],
+        "bn": [
+          "নিরাপদ",
+          "সমুদ্র",
+          "মাছ ধরা",
+          "আগামীকাল",
+          "আজ",
+          "সকালে",
+          "যাওয়া",
+          "সমুদ্রে"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Is it safe to venture into the sea tomorrow morning?",
+          "Is it safe to go fishing today?"
+        ],
+        "hi": [
+          "क्या कल सुबह समुद्र में जाना सुरक्षित है?",
+          "क्या आज मछली पकड़ने जाना सुरक्षित है?"
+        ],
+        "ta": [
+          "நாளை காலை கடலுக்குச் செல்வது பாதுகாப்பானதா?",
+          "இன்று மீன்பிடிக்க செல்வது பாதுகாப்பானதா?"
+        ],
+        "te": [
+          "రేపు ఉదయం సముద్రంలోకి వెళ్లడం సురక్షితమేనా?",
+          "ఈరోజు చేపలు పట్టడానికి వెళ్లడం సురక్షితమేనా?"
+        ],
+        "ml": [
+          "നാളെ രാവിലെ കടലിൽ പോകുന്നത് സുരക്ഷിതമാണോ?",
+          "ഇന്ന് മീൻപിടിക്കാൻ പോകുന്നത് സുരക്ഷിതമാണോ?"
+        ],
+        "bn": [
+          "আগামীকাল সকালে সমুদ্রে যাওয়া কি নিরাপদ?",
+          "আজ মাছ ধরতে যাওয়া কি নিরাপদ?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🌊 Wave height {wave}m ({waveLabel}) + wind {wind}km/h ({windDir}) + {cycloneStatus} + {lightningStatus} → Safety Score {score}/100 → {verdict}\n\n📍 Nearest PFZ: {pfzName} ({pfzDist} km away) | SST: {sst}°C | Chlorophyll: {chl} mg/m³",
+        "hi": "🌊 लहर की ऊंचाई {wave}मी ({waveLabel}) + हवा {wind}किमी/घं ({windDir}) + {cycloneStatus} + {lightningStatus} → सुरक्षा स्कोर {score}/100 → {verdict}\n\n📍 निकटतम PFZ: {pfzName} ({pfzDist} किमी दूर) | SST: {sst}°C | क्लोरोफिल: {chl} mg/m³",
+        "ta": "🌊 அலை உயரம் {wave}மீ ({waveLabel}) + காற்று {wind}கிமீ/மணி ({windDir}) + {cycloneStatus} + {lightningStatus} → பாதுகாப்பு மதிப்பெண் {score}/100 → {verdict}\n\n📍 அருகில் PFZ: {pfzName} ({pfzDist} கிமீ) | SST: {sst}°C | குளோரோபில்: {chl} mg/m³",
+        "te": "🌊 అల ఎత్తు {wave}మీ ({waveLabel}) + గాలి {wind}కిమీ/గం ({windDir}) + {cycloneStatus} + {lightningStatus} → భద్రతా స్కోరు {score}/100 → {verdict}\n\n📍 సమీప PFZ: {pfzName} ({pfzDist} కిమీ) | SST: {sst}°C | క్లోరోఫిల్: {chl} mg/m³",
+        "ml": "🌊 തിരമാല ഉയരം {wave}മീ ({waveLabel}) + കാറ്റ് {wind}കിമീ/മ ({windDir}) + {cycloneStatus} + {lightningStatus} → സുരക്ഷാ സ്കോർ {score}/100 → {verdict}\n\n📍 അടുത്ത PFZ: {pfzName} ({pfzDist} കിമീ) | SST: {sst}°C | ക്ലോറോഫിൽ: {chl} mg/m³",
+        "bn": "🌊 ঢেউয়ের উচ্চতা {wave}মি ({waveLabel}) + বাতাস {wind}কিমি/ঘ ({windDir}) + {cycloneStatus} + {lightningStatus} → নিরাপত্তা স্কোর {score}/100 → {verdict}\n\n📍 নিকটতম PFZ: {pfzName} ({pfzDist} কিমি) | SST: {sst}°C | ক্লোরোফিল: {chl} mg/m³"
+      }
+    },
+    "PFZ_LOCATION": {
+      "keywords": {
+        "en": [
+          "nearest fishing",
+          "fishing zone",
+          "potential fishing",
+          "pfz",
+          "nearest zone",
+          "where is the nearest",
+          "fish zone",
+          "potential fishing zone today",
+          "nearest fishing zone"
+        ],
+        "hi": [
+          "मछली पकड़ने का क्षेत्र",
+          "निकटतम",
+          "संभावित मत्स्य क्षेत्र",
+          "pfz",
+          "कहाँ है",
+          "मत्स्य क्षेत्र",
+          "मछली क्षेत्र"
+        ],
+        "ta": [
+          "மீன்பிடி மண்டலம்",
+          "அருகில் உள்ள",
+          "pfz",
+          "எங்கே உள்ளது",
+          "மண்டலம்",
+          "எங்கே"
+        ],
+        "te": [
+          "మత్స్య ప్రాంతం",
+          "సమీపంలో",
+          "pfz",
+          "ఎక్కడ ఉంది",
+          "దగ్గర్లో",
+          "అత్యంత సమీపంలో"
+        ],
+        "ml": [
+          "മത്സ്യ മേഖല",
+          "ഏറ്റവും അടുത്ത",
+          "pfz",
+          "എവിടെ",
+          "സ്ഥലത്ത്",
+          "അടുത്ത pfz"
+        ],
+        "bn": [
+          "মাছ ধরার এলাকা",
+          "কাছের",
+          "সম্ভাব্য মৎস্য এলাকা",
+          "pfz",
+          "কোথায়",
+          "সবচেয়ে কাছের"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Where is the nearest fishing zone?",
+          "Where is the nearest Potential Fishing Zone today?"
+        ],
+        "hi": [
+          "निकटतम मछली पकड़ने का क्षेत्र कहाँ है?",
+          "आज निकटतम संभावित मत्स्य क्षेत्र (PFZ) कहाँ है?"
+        ],
+        "ta": [
+          "அருகில் உள்ள மீன்பிடி மண்டலம் எங்கே?",
+          "இன்று அருகில் உள்ள PFZ எங்கே உள்ளது?"
+        ],
+        "te": [
+          "అత్యంత సమీపంలో ఉన్న మత్స్య ప్రాంతం ఎక్కడ ఉంది?",
+          "ఈరోజు అత్యంత దగ్గర్లో ఉన్న PFZ ఎక్కడ ఉంది?"
+        ],
+        "ml": [
+          "ഏറ്റവും അടുത്ത മത്സ്യ മേഖല എവിടെ?",
+          "ഇന്ന് അടുത്ത PFZ ഏത് സ്ഥലത്ത് ആണ്?"
+        ],
+        "bn": [
+          "সবচেয়ে কাছের মাছ ধরার এলাকা কোথায়?",
+          "আজ কাছের সম্ভাব্য মৎস্য এলাকা (PFZ) কোথায়?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🐟 Nearest PFZ: {pfzName} ({pfzDist} km from your location)\n\n📊 Satellite Data: SST {sst}°C | Chlorophyll-a {chl} mg/m³ | Depth {depth}m\n🎯 Favourability Score: {fav}% | Target Species: {species}\n🛡️ Safety Score: {score}/100 — {verdict}",
+        "hi": "🐟 निकटतम PFZ: {pfzName} (आपके स्थान से {pfzDist} किमी)\n\n📊 सैटेलाइट डेटा: SST {sst}°C | क्लोरोफिल-a {chl} mg/m³ | गहराई {depth}मी\n🎯 अनुकूलता: {fav}% | लक्षित प्रजातियां: {species}\n🛡️ सुरक्षा स्कोर: {score}/100 — {verdict}",
+        "ta": "🐟 அருகிலுள்ள PFZ: {pfzName} (உங்கள் இடத்திலிருந்து {pfzDist} கிமீ)\n\n📊 செயற்கைக்கோள் தரவு: SST {sst}°C | குளோரோபில்-a {chl} mg/m³ | ஆழம் {depth}மீ\n🎯 சாதக விகிதம்: {fav}% | மீன் வகைகள்: {species}\n🛡️ பாதுகாப்பு மதிப்பெண்: {score}/100 — {verdict}",
+        "te": "🐟 సమీప PFZ: {pfzName} (మీ స్థానం నుండి {pfzDist} కిమీ)\n\n📊 శాటిలైట్ డేటా: SST {sst}°C | క్లోరోఫిల్-a {chl} mg/m³ | లోతు {depth}మీ\n🎯 అనుకూలత: {fav}% | లక్ష్య జాతులు: {species}\n🛡️ భద్రత స్కోరు: {score}/100 — {verdict}",
+        "ml": "🐟 ഏറ്റവും അടുത്ത PFZ: {pfzName} (നിങ്ങളുടെ സ്ഥലത്ത് നിന്ന് {pfzDist} കിമീ)\n\n📊 ഉപഗ്രഹ ഡേറ്റ: SST {sst}°C | ക്ലോറോഫിൽ-a {chl} mg/m³ | ആഴം {depth}m\n🎯 അനുകൂലത: {fav}% | ലക്ഷ്യ മത്സ്യം: {species}\n🛡️ സുരക്ഷ സ്കോർ: {score}/100 — {verdict}",
+        "bn": "🐟 নিকটতম PFZ: {pfzName} (আপনার অবস্থান থেকে {pfzDist} কিমি)\n\n📊 স্যাটেলাইট ডেটা: SST {sst}°C | ক্লোরোফিল-a {chl} mg/m³ | গভীরতা {depth}মি\n🎯 অনুকূলতা: {fav}% | লক্ষ্য মাছ: {species}\n🛡️ নিরাপত্তা স্কোর: {score}/100 — {verdict}"
+      }
+    },
+    "WEATHER_CONDITIONS": {
+      "keywords": {
+        "en": [
+          "wave and wind",
+          "wave",
+          "wind",
+          "weather",
+          "conditions",
+          "current wave",
+          "weather near",
+          "swell",
+          "wave and wind conditions",
+          "weather near my location"
+        ],
+        "hi": [
+          "लहर और हवा",
+          "लहर",
+          "हवा",
+          "मौसम",
+          "स्थिति",
+          "स्थान के पास",
+          "वर्तमान लहर"
+        ],
+        "ta": [
+          "அலை மற்றும் காற்று",
+          "அலை",
+          "காற்று",
+          "வானிலை",
+          "நிலைமை",
+          "அருகில் வானிலை",
+          "தற்போதைய அலை"
+        ],
+        "te": [
+          "అలలు మరియు గాలి",
+          "అలలు",
+          "గాలి",
+          "వాతావరణం",
+          "పరిస్థితి",
+          "స్థానం సమీపంలో",
+          "ప్రస్తుత అలలు"
+        ],
+        "ml": [
+          "തിരമാല, കാറ്റ്",
+          "തിരമാല",
+          "കാറ്റ്",
+          "കാലാവസ്ഥ",
+          "അവസ്ഥ",
+          "നിലവിലെ തിരമാല"
+        ],
+        "bn": [
+          "ঢেউ এবং বাতাস",
+          "ঢেউ",
+          "বাতাস",
+          "আবহাওয়া",
+          "অবস্থা",
+          "অবস্থানের কাছাকাছি",
+          "বর্তমান ঢেউ"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "What are the current wave and wind conditions?",
+          "What is the weather near my location?"
+        ],
+        "hi": [
+          "वर्तमान लहर और हवा की स्थिति क्या है?",
+          "मेरे स्थान के पास मौसम कैसा है?"
+        ],
+        "ta": [
+          "தற்போதைய அலை மற்றும் காற்று நிலைமை என்ன?",
+          "என் இடத்திற்கு அருகில் வானிலை எப்படி இருக்கிறது?"
+        ],
+        "te": [
+          "ప్రస్తుత అలలు మరియు గాలి పరిస్థితి ఏమిటి?",
+          "నా స్థానం సమీపంలో వాతావరణం ఎలా ఉంది?"
+        ],
+        "ml": [
+          "നിലവിലെ തിരമാല, കാറ്റ് അവസ്ഥ എന്ത്?",
+          "എന്റെ സ്ഥലത്തിനടുത്ത് കാലാവസ്ഥ എങ്ങനെ?"
+        ],
+        "bn": [
+          "বর্তমান ঢেউ এবং বাতাসের অবস্থা কেমন?",
+          "আমার অবস্থানের কাছাকাছি আবহাওয়া কেমন?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🌤️ Marine Weather Report:\n• Wave Height: {wave}m ({waveLabel})\n• Wind: {wind} km/h from {windDir}\n• Swell Period: {swell}s\n• Sea Temperature: {sst}°C\n• Rainfall Probability: {rain}%\n• Visibility: {vis} km\n• Sea State: {seaState}",
+        "hi": "🌤️ समुद्री मौसम रिपोर्ट:\n• लहर ऊंचाई: {wave}मी ({waveLabel})\n• हवा: {wind} किमी/घं ({windDir})\n• स्वेल अवधि: {swell}सेकंड\n• समुद्र का तापमान: {sst}°C\n• वर्षा संभावना: {rain}%\n• दृश्यता: {vis} किमी\n• समुद्री स्थिति: {seaState}",
+        "ta": "🌤️ கடல் வானிலை அறிக்கை:\n• அலை உயரம்: {wave}மீ ({waveLabel})\n• காற்று: {wind} கிமீ/மணி ({windDir})\n• அலை காலம்: {swell} வினாடி\n• கடல் வெப்பநிலை: {sst}°C\n• மழை வாய்ப்பு: {rain}%\n• தெரிவு: {vis} கிமீ\n• கடல் நிலை: {seaState}",
+        "te": "🌤️ సముద్ర వాతావరణ నివేదిక:\n• అల ఎత్తు: {wave}మీ ({waveLabel})\n• గాలి: {wind} కిమీ/గం ({windDir})\n• స్వెల్ వ్యవధి: {swell} సెకన్లు\n• సముద్ర ఉష్ణోగ్రత: {sst}°C\n• వర్షపాత అవకాశం: {rain}%\n• దృశ్యమానత: {vis} కిమీ\n• సముద్ర స్థితి: {seaState}",
+        "ml": "🌤️ കടൽ കാലാവസ്ഥ റിപ്പോർട്ട്:\n• തിരമാല ഉയരം: {wave}മ ({waveLabel})\n• കാറ്റ്: {wind} കിമീ/മ ({windDir})\n• സ്വെൽ കാലം: {swell} സെക്കൻഡ്\n• കടൽ ഊഷ്മാവ്: {sst}°C\n• മഴ സാദ്ധ്യത: {rain}%\n• ദൃശ്യത: {vis} കിമീ\n• കടൽ അവസ്ഥ: {seaState}",
+        "bn": "🌤️ সামুদ্রিক আবহাওয়া প্রতিবেদন:\n• ঢেউ উচ্চতা: {wave}মি ({waveLabel})\n• বাতাস: {wind} কিমি/ঘ ({windDir})\n• সওয়েল সময়: {swell} সেকেন্ড\n• সমুদ্রের তাপমাত্রা: {sst}°C\n• বৃষ্টিপাতের সম্ভাবনা: {rain}%\n• দৃশ্যমানতা: {vis} কিমি\n• সমুদ্রের অবস্থা: {seaState}"
+      }
+    },
+    "CYCLONE_ALERT": {
+      "keywords": {
+        "en": [
+          "cyclone",
+          "cyclone alert",
+          "cyclone alerts",
+          "storm",
+          "hurricane",
+          "depression",
+          "cyclone alerts near me"
+        ],
+        "hi": [
+          "चक्रवात",
+          "चक्रवात की चेतावनी",
+          "आंधी",
+          "तूफान",
+          "चक्रवात चेतावनी"
+        ],
+        "ta": [
+          "புயல்",
+          "புயல் எச்சரிக்கை",
+          "சூறாவளி",
+          "எச்சரிக்கை"
+        ],
+        "te": [
+          "తుఫాను",
+          "తుఫాను హెచ్చరిక",
+          "సైక్లోన్",
+          "హెచ్చరిక"
+        ],
+        "ml": [
+          "ചുഴലിക്കാറ്റ്",
+          "ചുഴലിക്കാറ്റ് മുന്നറിയിപ്പ്",
+          "കൊടുങ്കാറ്റ്"
+        ],
+        "bn": [
+          "ঘূর্ণিঝড়",
+          "ঘূর্ণিঝড়ের সতর্কবার্তা",
+          "ঝড়",
+          "সতর্কবার্তা"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Are there any cyclone alerts near me?"
+        ],
+        "hi": [
+          "क्या मेरे आसपास कोई चक्रवात की चेतावनी है?"
+        ],
+        "ta": [
+          "என்னருகில் புயல் எச்சரிக்கை ஏதாவது உள்ளதா?"
+        ],
+        "te": [
+          "నా సమీపంలో ఏదైనా తుఫాను హెచ్చరిక ఉందా?"
+        ],
+        "ml": [
+          "എനിക്ക് സമീപം ഏതെങ്കിലും ചുഴലിക്കാറ്റ് മുന്നറിയിപ്പ് ഉണ്ടോ?"
+        ],
+        "bn": [
+          "আমার কাছে কি কোনো ঘূর্ণিঝড়ের সতর্কবার্তা আছে?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🌀 Cyclone & Storm Alert Status:\n• IMD Cyclone Warning: {cycloneLevel}\n• Status: {cycloneDetail}\n• Wind Speed: {wind} km/h | Wave Height: {wave}m\n• Rainfall Probability: {rain}%\n⚠️ Advisory: {cycloneAdvisory}",
+        "hi": "🌀 चक्रवात और तूफान चेतावनी स्थिति:\n• IMD चक्रवात चेतावनी: {cycloneLevel}\n• स्थिति: {cycloneDetail}\n• हवा की गति: {wind} किमी/घं | लहर: {wave}मी\n• वर्षा संभावना: {rain}%\n⚠️ परामर्श: {cycloneAdvisory}",
+        "ta": "🌀 புயல் மற்றும் சூறாவளி எச்சரிக்கை நிலை:\n• IMD புயல் எச்சரிக்கை: {cycloneLevel}\n• நிலை: {cycloneDetail}\n• காற்று வேகம்: {wind} கிமீ/மணி | அலை: {wave}மீ\n• மழை வாய்ப்பு: {rain}%\n⚠️ ஆலோசனை: {cycloneAdvisory}",
+        "te": "🌀 తుఫాను హెచ్చరిక స్థితి:\n• IMD సైక్లోన్ హెచ్చరిక: {cycloneLevel}\n• స్థితి: {cycloneDetail}\n• గాలి వేగం: {wind} కిమీ/గం | అల: {wave}మీ\n• వర్షం అవకాశం: {rain}%\n⚠️ సలహా: {cycloneAdvisory}",
+        "ml": "🌀 ചുഴലിക്കാറ്റ് മുന്നറിയിപ്പ് നില:\n• IMD ചുഴലിക്കാറ്റ് മുന്നറിയിപ്പ്: {cycloneLevel}\n• നില: {cycloneDetail}\n• കാറ്റ് വേഗം: {wind} കിമീ/മ | തിരമാല: {wave}മ\n• മഴ സാദ്ധ്യത: {rain}%\n⚠️ ഉപദേശം: {cycloneAdvisory}",
+        "bn": "🌀 ঘূর্ণিঝড় সতর্কতার অবস্থা:\n• IMD ঘূর্ণিঝড় সতর্কবার্তা: {cycloneLevel}\n• অবস্থা: {cycloneDetail}\n• বাতাসের গতি: {wind} কিমি/ঘ | ঢেউ: {wave}মি\n• বৃষ্টিপাতের সম্ভাবনা: {rain}%\n⚠️ পরামর্শ: {cycloneAdvisory}"
+      }
+    },
+    "LIGHTNING_ALERT": {
+      "keywords": {
+        "en": [
+          "lightning",
+          "lightning alert",
+          "lightning alerts",
+          "thunder",
+          "strike",
+          "lightning alerts in my area"
+        ],
+        "hi": [
+          "बिजली",
+          "बिजली की चेतावनी",
+          "तड़ित",
+          "गरज",
+          "बिजली चेतावनी"
+        ],
+        "ta": [
+          "மின்னல்",
+          "மின்னல் எச்சரிக்கை",
+          "இடி",
+          "இடிமின்னல்"
+        ],
+        "te": [
+          "మెరుపు",
+          "మెరుపులు",
+          "మెరుపు హెచ్చరికలు",
+          "పిడుగు",
+          "పిడుగులు"
+        ],
+        "ml": [
+          "മിന്നൽ",
+          "മിന്നൽ മുന്നറിയിപ്പ്",
+          "ഇടിമിന്നൽ"
+        ],
+        "bn": [
+          "বজ্রপাত",
+          "বজ্রপাতের সতর্কতা",
+          "বজ্রবিদ্যুৎ",
+          "বিদ্যুৎ"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Are there any lightning alerts in my area?"
+        ],
+        "hi": [
+          "क्या मेरे क्षेत्र में बिजली की चेतावनी है?"
+        ],
+        "ta": [
+          "என் பகுதியில் மின்னல் எச்சரிக்கை உள்ளதா?"
+        ],
+        "te": [
+          "నా ప్రాంతంలో మెరుపు హెచ్చరికలు ఉన్నాయా?"
+        ],
+        "ml": [
+          "എന്റെ പ്രദേശത്ത് മിന്നൽ മുന്നറിയിപ്പ് ഉണ്ടോ?"
+        ],
+        "bn": [
+          "আমার এলাকায় কি বজ্রপাতের সতর্কতা আছে?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "⚡ Lightning & Electrical Storm Alert:\n• Lightning Risk: {lightningRisk}\n• Status: {lightningDetail}\n• Rainfall Probability: {rain}% | Wind: {wind} km/h\n• Current Sea State: {seaState}\n⚠️ Safety Advisory: {lightningAdvisory}",
+        "hi": "⚡ बिजली और तड़ित चेतावनी:\n• बिजली का खतरा: {lightningRisk}\n• स्थिति: {lightningDetail}\n• वर्षा संभावना: {rain}% | हवा: {wind} किमी/घं\n• वर्तमान समुद्री स्थिति: {seaState}\n⚠️ सुरक्षा परामर्श: {lightningAdvisory}",
+        "ta": "⚡ மின்னல் எச்சரிக்கை:\n• மின்னல் ஆபத்து: {lightningRisk}\n• நிலை: {lightningDetail}\n• மழை வாய்ப்பு: {rain}% | காற்று: {wind} கிமீ/மணி\n• கடல் நிலை: {seaState}\n⚠️ பாதுகாப்பு ஆலோசனை: {lightningAdvisory}",
+        "te": "⚡ మెరుపు హెచ్చరిక:\n• మెరుపు ప్రమాదం: {lightningRisk}\n• స్థితి: {lightningDetail}\n• వర్షం అవకాశం: {rain}% | గాలి: {wind} కిమీ/గం\n• సముద్ర స్థితి: {seaState}\n⚠️ భద్రతా సలహా: {lightningAdvisory}",
+        "ml": "⚡ മിന്നൽ മുന്നറിയിപ്പ്:\n• മിന്നൽ അപകടം: {lightningRisk}\n• നില: {lightningDetail}\n• മഴ സാദ്ധ്യത: {rain}% | കാറ്റ്: {wind} കിമീ/മ\n• കടൽ അവസ്ഥ: {seaState}\n⚠️ സുരക്ഷ ഉപദേശം: {lightningAdvisory}",
+        "bn": "⚡ বজ্রপাত সতর্কতা:\n• বজ্রপাতের ঝুঁকি: {lightningRisk}\n• অবস্থা: {lightningDetail}\n• বৃষ্টিপাতের সম্ভাবনা: {rain}% | বাতাস: {wind} কিমি/ঘ\n• সমুদ্রের অবস্থা: {seaState}\n⚠️ নিরাপত্তা পরামর্শ: {lightningAdvisory}"
+      }
+    },
+    "TIDE_INFO": {
+      "keywords": {
+        "en": [
+          "tide",
+          "tide condition",
+          "high tide",
+          "low tide",
+          "tidal",
+          "tide condition today",
+          "what is the tide"
+        ],
+        "hi": [
+          "ज्वार",
+          "ज्वार-भाटा",
+          "ज्वार स्थिति",
+          "भाटा",
+          "ज्वार स्थिति आज"
+        ],
+        "ta": [
+          "ஓதம்",
+          "ஓதம் நிலை",
+          "அலை ஓதம்",
+          "ஓதம் நிலை என்ன"
+        ],
+        "te": [
+          "అలల స్థితి",
+          "అలల పరిస్థితి",
+          "ఎత్తు అలలు",
+          "అలల స్థితి ఏమిటి"
+        ],
+        "ml": [
+          "ഓളം",
+          "ഓളത്തിന്റെ അവസ്ഥ",
+          "ഓള അവസ്ഥ",
+          "ഓളത്തിന്റെ അവസ്ഥ എന്ത്"
+        ],
+        "bn": [
+          "জোয়ার",
+          "জোয়ার-ভাটা",
+          "জোয়ারের অবস্থা",
+          "ভাটার অবস্থা",
+          "জোয়ার-ভাটার অবস্থা কি"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "What is the tide condition today?"
+        ],
+        "hi": [
+          "आज ज्वार-भाटा की स्थिति क्या है?"
+        ],
+        "ta": [
+          "இன்று ஓதம் நிலை என்ன?"
+        ],
+        "te": [
+          "ఈరోజు అలల స్థితి ఏమిటి?"
+        ],
+        "ml": [
+          "ഇന്ന് ഓളത്തിന്റെ അവസ്ഥ എന്ത്?"
+        ],
+        "bn": [
+          "আজকের জোয়ার-ভাটার অবস্থা কি?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🌊 Tidal Conditions for Today:\n• Current Tide: {tidePhase}\n• High Tide: {highTide1}m at {highTideTime1}, {highTide2}m at {highTideTime2}\n• Low Tide: {lowTide1}m at {lowTideTime1}, {lowTide2}m at {lowTideTime2}\n• Tidal Range: {tidalRange}m\n• Wave Height: {wave}m | Wind: {wind} km/h\n📋 Fishing Advice: {tidalAdvice}",
+        "hi": "🌊 आज के ज्वार-भाटा की स्थिति:\n• वर्तमान ज्वार: {tidePhase}\n• उच्च ज्वार: {highTide1}मी ({highTideTime1}), {highTide2}मी ({highTideTime2})\n• निम्न ज्वार: {lowTide1}मी ({lowTideTime1}), {lowTide2}मी ({lowTideTime2})\n• ज्वार रेंज: {tidalRange}मी\n• लहर: {wave}मी | हवा: {wind} किमी/घं\n📋 मछली पकड़ने की सलाह: {tidalAdvice}",
+        "ta": "🌊 இன்றைய ஓதம் நிலைகள்:\n• தற்போதைய ஓதம்: {tidePhase}\n• உயர் ஓதம்: {highTide1}மீ ({highTideTime1}), {highTide2}மீ ({highTideTime2})\n• தாழ் ஓதம்: {lowTide1}மீ ({lowTideTime1}), {lowTide2}மீ ({lowTideTime2})\n• ஓத வரம்பு: {tidalRange}மீ\n• அலை: {wave}மீ | காற்று: {wind} கிமீ/மணி\n📋 மீன்பிடி ஆலோசனை: {tidalAdvice}",
+        "te": "🌊 ఈరోజు అలల పరిస్థితి:\n• ప్రస్తుత అలలు: {tidePhase}\n• ఎత్తు అలలు: {highTide1}మ ({highTideTime1}), {highTide2}మ ({highTideTime2})\n• తక్కువ అలలు: {lowTide1}మ ({lowTideTime1}), {lowTide2}మ ({lowTideTime2})\n• అలల శ్రేణి: {tidalRange}మ\n• అల: {wave}మ | గాలి: {wind} కిమీ/గం\n📋 చేపలు పట్టే సలహా: {tidalAdvice}",
+        "ml": "🌊 ഇന്നത്തെ ഓള അവസ്ഥ:\n• ഇപ്പോഴത്തെ ഓളം: {tidePhase}\n• ഉച്ചതിരകൾ: {highTide1}മ ({highTideTime1}), {highTide2}മ ({highTideTime2})\n• കിഴ്ഭരണം: {lowTide1}മ ({lowTideTime1}), {lowTide2}മ ({lowTideTime2})\n• ഓള ശ്രേണി: {tidalRange}മ\n• തിരമാല: {wave}മ | കാറ്റ്: {wind} കിമീ/മ\n📋 മീൻ‌പിടിത്ത ഉപദേശം: {tidalAdvice}",
+        "bn": "🌊 আজকের জোয়ার-ভাটার অবস্থা:\n• বর্তমান জোয়ার: {tidePhase}\n• উচ্চ জোয়ার: {highTide1}মি ({highTideTime1}), {highTide2}মি ({highTideTime2})\n• নিম্ন জোয়ার: {lowTide1}মি ({lowTideTime1}), {lowTide2}মি ({lowTideTime2})\n• জোয়ার পরিসর: {tidalRange}মি\n• ঢেউ: {wave}মি | বাতাস: {wind} কিমি/ঘ\n📋 মাছ ধরার পরামর্শ: {tidalAdvice}"
+      }
+    },
+    "ROUTE_REQUEST": {
+      "keywords": {
+        "en": [
+          "route",
+          "safe route",
+          "suggest a safe route",
+          "navigation path",
+          "way to",
+          "safe route to the nearest fishing zone",
+          "suggest a safe route"
+        ],
+        "hi": [
+          "सुरक्षित मार्ग",
+          "मार्ग सुझाएं",
+          "रास्ता",
+          "नेविगेट",
+          "सुरक्षित रास्ता"
+        ],
+        "ta": [
+          "பாதுகாப்பான வழி",
+          "வழியை பரிந்துரைக்கவும்",
+          "பாதை",
+          "பாதுகாப்பான வழியை"
+        ],
+        "te": [
+          "సురక్షిత మార్గాన్ని",
+          "మార్గాన్ని సూచించండి",
+          "దారి",
+          "నావిగేట్",
+          "సురక్షిత మార్గం"
+        ],
+        "ml": [
+          "സുരക്ഷിത പാത",
+          "പാത നിർദ്ദേശിക്കുക",
+          "വഴി",
+          "സുരക്ഷിത പാത നിർദ്ദേശിക്കുക"
+        ],
+        "bn": [
+          "নিরাপদ পথ",
+          "পথ দেখান",
+          "রাস্তা",
+          "নিরাপদ পথ দেখান"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Suggest a safe route to the nearest fishing zone"
+        ],
+        "hi": [
+          "निकटतम मछली पकड़ने के क्षेत्र के लिए सुरक्षित मार्ग सुझाएं"
+        ],
+        "ta": [
+          "அருகில் உள்ள மீன்பிடி மண்டலத்திற்கு பாதுகாப்பான வழியை பரிந்துரைக்கவும்"
+        ],
+        "te": [
+          "సమీప మత్స్య ప్రాంతానికి సురక్షిత మార్గాన్ని సూచించండి"
+        ],
+        "ml": [
+          "ഏറ്റവും അടുത്ത PFZ-ലേക്ക് സുരക്ഷിത പാത നിർദ്ദേശിക്കുക"
+        ],
+        "bn": [
+          "নিকটতম মাছ ধরার অঞ্চলে নিরাপদ পথ দেখান"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🗺️ Safe Navigation Route Computed:\n• Destination: {pfzName} ({pfzDist} km away)\n• Total Waypoints: {waypoints}\n• Route keeps {avoidedZones}\n• Estimated Safety Score: {score}/100\n\n📍 Waypoint Summary:\n{waypointList}\n\n⚓ Advisory: {routeAdvisory}",
+        "hi": "🗺️ सुरक्षित नेविगेशन मार्ग तैयार:\n• गंतव्य: {pfzName} ({pfzDist} किमी दूर)\n• कुल वेपॉइंट: {waypoints}\n• मार्ग {avoidedZones} से सुरक्षित\n• अनुमानित सुरक्षा स्कोर: {score}/100\n\n📍 वेपॉइंट सारांश:\n{waypointList}\n\n⚓ परामर्श: {routeAdvisory}",
+        "ta": "🗺️ பாதுகாப்பான வழி கணக்கிடப்பட்டது:\n• இலக்கு: {pfzName} ({pfzDist} கிமீ தொலைவு)\n• மொத்த வேப்பாயிண்ட்: {waypoints}\n• வழி {avoidedZones} தவிர்க்கிறது\n• பாதுகாப்பு மதிப்பெண்: {score}/100\n\n📍 வேப்பாயிண்ட் சுருக்கம்:\n{waypointList}\n\n⚓ ஆலோசனை: {routeAdvisory}",
+        "te": "🗺️ సురక్షిత నావిగేషన్ మార్గం:\n• గమ్యస్థానం: {pfzName} ({pfzDist} కిమీ దూరం)\n• మొత్తం వేపాయింట్లు: {waypoints}\n• మార్గం {avoidedZones} నివారిస్తుంది\n• భద్రత స్కోరు: {score}/100\n\n📍 వేపాయింట్ సారాంశం:\n{waypointList}\n\n⚓ సలహా: {routeAdvisory}",
+        "ml": "🗺️ സുരക്ഷിത നാവിഗേഷൻ പാത:\n• ലക്ഷ്യം: {pfzName} ({pfzDist} കിമീ ദൂരം)\n• ആകെ വേ‌പോയിന്റുകൾ: {waypoints}\n• പാത {avoidedZones} ഒഴിവാക്കുന്നു\n• സുരക്ഷ സ്കോർ: {score}/100\n\n📍 വേ‌പോയിന്റ് സംഗ്രഹം:\n{waypointList}\n\n⚓ ഉപദേശം: {routeAdvisory}",
+        "bn": "🗺️ নিরাপদ পথ তৈরি করা হয়েছে:\n• গন্তব্য: {pfzName} ({pfzDist} কিমি দূরে)\n• মোট ওয়েপয়েন্ট: {waypoints}\n• পথটি {avoidedZones} এড়িয়ে যায়\n• নিরাপত্তা স্কোর: {score}/100\n\n📍 ওয়েপয়েন্ট সারাংশ:\n{waypointList}\n\n⚓ পরামর্শ: {routeAdvisory}"
+      }
+    },
+    "HAZARD_ZONES": {
+      "keywords": {
+        "en": [
+          "avoid",
+          "restricted",
+          "boundary",
+          "which zones",
+          "danger zone",
+          "mpa",
+          "imbl",
+          "restricted or boundary zone",
+          "zones should i avoid"
+        ],
+        "hi": [
+          "बचना",
+          "प्रतिबंधित",
+          "सीमा क्षेत्र",
+          "किन क्षेत्रों से",
+          "सीमा",
+          "खतरा"
+        ],
+        "ta": [
+          "தவிர்க்க",
+          "தடைசெய்யப்பட்ட",
+          "எல்லை மண்டலம்",
+          "எந்த பகுதிகளை",
+          "எல்லை",
+          "ஆபத்து"
+        ],
+        "te": [
+          "నివారించాలి",
+          "నిషిద్ధ",
+          "సరిహద్దు ప్రాంతం",
+          "ఏ ప్రాంతాలను",
+          "సరిహద్దు",
+          "ప్రమాద"
+        ],
+        "ml": [
+          "ഒഴിവാക്കണം",
+          "നിരോധിത",
+          "അതിർത്തി മേഖല",
+          "ഏതൊക്കെ പ്രദേശങ്ങൾ",
+          "അതിർത്തി",
+          "അപകട"
+        ],
+        "bn": [
+          "এড়িয়ে চলা",
+          "সীমাবদ্ধ",
+          "সীমানা এলাকা",
+          "কোন এলাকাগুলি",
+          "সীমানা",
+          "বিপদ"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Which zones should I avoid today?",
+          "Is there any restricted or boundary zone nearby?"
+        ],
+        "hi": [
+          "आज मुझे किन क्षेत्रों से बचना चाहिए?",
+          "क्या आसपास कोई प्रतिबंधित या सीमा क्षेत्र है?"
+        ],
+        "ta": [
+          "இன்று நான் எந்த பகுதிகளை தவிர்க்க வேண்டும்?",
+          "அருகில் ஏதாவது தடைசெய்யப்பட்ட அல்லது எல்லை மண்டலம் உள்ளதா?"
+        ],
+        "te": [
+          "ఈరోజు ఏ ప్రాంతాలను నివారించాలి?",
+          "సమీపంలో ఏదైనా నిషిద్ధ లేదా సరిహద్దు ప్రాంతం ఉందా?"
+        ],
+        "ml": [
+          "ഇന്ന് ഏതൊക്കെ പ്രദേശങ്ങൾ ഒഴിവാക്കണം?",
+          "അടുത്ത് നിരോധിത അല്ലെങ്കിൽ അതിർത്തി മേഖല ഉണ്ടോ?"
+        ],
+        "bn": [
+          "আজ আমার কোন এলাকাগুলি এড়িয়ে চলা উচিত?",
+          "কাছে কোনো সীমাবদ্ধ বা সীমানা এলাকা আছে?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🚫 Restricted & Hazard Zones Alert:\n• IMBL Status: {imblStatus}\n• Nearest MPA: {mpaName}\n• MPA Restriction: {mpaRestriction}\n\n⚠️ Active Hazard Zones:\n{hazardList}\n\n🗺️ Safe operating zones: {safeZoneCount} PFZs within {safeRange} km\n📋 Navigation Advisory: {hazardAdvisory}",
+        "hi": "🚫 प्रतिबंधित और खतरा क्षेत्र चेतावनी:\n• IMBL स्थिति: {imblStatus}\n• निकटतम MPA: {mpaName}\n• MPA प्रतिबंध: {mpaRestriction}\n\n⚠️ सक्रिय खतरा क्षेत्र:\n{hazardList}\n\n🗺️ सुरक्षित संचालन क्षेत्र: {safeZoneCount} PFZs ({safeRange} किमी के भीतर)\n📋 नेविगेशन परामर्श: {hazardAdvisory}",
+        "ta": "🚫 தடைசெய்யப்பட்ட மற்றும் ஆபத்து மண்டல எச்சரிக்கை:\n• IMBL நிலை: {imblStatus}\n• அருகிலுள்ள MPA: {mpaName}\n• MPA தடை: {mpaRestriction}\n\n⚠️ செயல்பாட்டில் ஆபத்து மண்டலங்கள்:\n{hazardList}\n\n🗺️ பாதுகாப்பான PFZ: {safeZoneCount} இடங்கள் ({safeRange} கிமீ உள்ளே)\n📋 ஆலோசனை: {hazardAdvisory}",
+        "te": "🚫 నిషిద్ధ మరియు ప్రమాద ప్రాంత హెచ్చరిక:\n• IMBL స్థితి: {imblStatus}\n• సమీప MPA: {mpaName}\n• MPA నిషేధం: {mpaRestriction}\n\n⚠️ క్రియాశీల ప్రమాద ప్రాంతాలు:\n{hazardList}\n\n🗺️ సురక్షిత PFZ: {safeZoneCount} ప్రాంతాలు ({safeRange} కిమీ పరిధిలో)\n📋 నావిగేషన్ సలహా: {hazardAdvisory}",
+        "ml": "🚫 നിരോധിത, അപകട മേഖല മുന്നറിയിപ്പ്:\n• IMBL സ്ഥിതി: {imblStatus}\n• ഏറ്റവും അടുത്ത MPA: {mpaName}\n• MPA നിരോധനം: {mpaRestriction}\n\n⚠️ സജീവ അപകട മേഖലകൾ:\n{hazardList}\n\n🗺️ സുരക്ഷിത PFZ: {safeZoneCount} ഇടങ്ങൾ ({safeRange} കിമീ ഉള്ളിൽ)\n📋 ഉപദേശം: {hazardAdvisory}",
+        "bn": "🚫 সীমাবদ্ধ ও বিপদ এলাকার সতর্কতা:\n• IMBL অবস্থা: {imblStatus}\n• নিকটতম MPA: {mpaName}\n• MPA সীমাবদ্ধতা: {mpaRestriction}\n\n⚠️ সক্রিয় বিপদ এলাকা:\n{hazardList}\n\n🗺️ নিরাপদ PFZ: {safeZoneCount} স্থান ({safeRange} কিমির মধ্যে)\n📋 নেভিগেশন পরামর্শ: {hazardAdvisory}"
+      }
+    },
+    "FISHERMAN_VENTURE_SAFETY": {
+      "role": "Fisherman",
+      "keywords": {
+        "en": [
+          "safe for me",
+          "small boat",
+          "take my small boat",
+          "community to organize",
+          "fishing trip this weekend",
+          "venture safety",
+          "small craft safe",
+          "go fishing tomorrow morning"
+        ],
+        "hi": [
+          "मेरे लिए",
+          "छोटी नाव",
+          "सप्ताहांत",
+          "समुदाय के लिए",
+          "मछली पकड़ने जाना सुरक्षित"
+        ],
+        "ta": [
+          "நான் மீன்பிடிக்க",
+          "சிறிய படகு",
+          "வார இறுதியில்",
+          "சமூகம்",
+          "பயணத்தை ஏற்பாடு"
+        ],
+        "te": [
+          "నేను చేపల వేటకు",
+          "చిన్న పడవ",
+          "వారాంతంలో",
+          "సంఘం",
+          "చేపల వేట యాత్ర"
+        ],
+        "ml": [
+          "എനിക്ക് മീൻപിടിക്കാൻ",
+          "ചെറിയ വള്ളം",
+          "വാരാന്ത്യത്തിൽ",
+          "സമൂഹത്തിന്",
+          "മീൻപിടിത്ത യാത്ര"
+        ],
+        "bn": [
+          "আমার মাছ ধরতে",
+          "ছোট নৌকা",
+          "সপ্তাহান্তে",
+          "সম্প্রদায়ের জন্য",
+          "মাছ ধরার ভ্রমণ"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Is it safe for me to go fishing tomorrow morning?",
+          "Is it safe to take my small boat out today?",
+          "Is it safe for our community to organize a fishing trip this weekend?"
+        ],
+        "hi": [
+          "क्या कल सुबह मेरे लिए मछली पकड़ने जाना सुरक्षित है?",
+          "क्या आज मेरी छोटी नाव लेकर बाहर जाना सुरक्षित है?",
+          "क्या इस सप्ताहांत हमारे समुदाय के लिए मछली पकड़ने की यात्रा आयोजित करना सुरक्षित है?"
+        ],
+        "ta": [
+          "நாளை காலை நான் மீன்பிடிக்க செல்வது பாதுகாப்பானதா?",
+          "இன்று என் சிறிய படகை எடுத்துக்கொண்டு செல்வது பாதுகாப்பானதா?",
+          "இந்த வார இறுதியில் எங்கள் சமூகம் மீன்பிடி பயணத்தை ஏற்பாடு செய்வது பாதுகாப்பானதா?"
+        ],
+        "te": [
+          "రేపు ఉదయం నేను చేపల వేటకు వెళ్లడం సురక్షితమేనా?",
+          "ఈరోజు నా చిన్న పడవను బయటకు తీసుకెళ్లడం సురక్షితమేనా?",
+          "ఈ వారాంతంలో మా సంఘం చేపల వేట యాత్రను నిర్వహించడం సురక్షితమేనా?"
+        ],
+        "ml": [
+          "നാളെ രാവിലെ എനിക്ക് മീൻപിടിക്കാൻ പോകുന്നത് സുരക്ഷിതമാണോ?",
+          "ഇന്ന് എന്റെ ചെറിയ വള്ളവുമായി കടലിൽ പോകുന്നത് സുരക്ഷിതമാണോ?",
+          "ഈ വാരാന്ത്യത്തിൽ ഞങ്ങളുടെ സമൂഹത്തിന് മീൻപിടിത്ത യാത്ര സംഘടിപ്പിക്കുന്നത് സുരക്ഷിതമാണോ?"
+        ],
+        "bn": [
+          "কাল সকালে আমার মাছ ধরতে যাওয়া কি নিরাপদ?",
+          "আজ কি আমার ছোট নৌকা নিয়ে বের হওয়া নিরাপদ?",
+          "এই সপ্তাহান্তে আমাদের সম্প্রদায়ের জন্য মাছ ধরার ভ্রমণ আয়োজন করা কি নিরাপদ?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🎣 Small-Craft Venture Safety Assessment:\n• Sea State: {wave}m waves ({waveLabel}), wind {wind} km/h ({windDir})\n• Weather Alerts: {cycloneStatus} | {lightningStatus}\n• Safety Score: {score}/100 → {verdict}\n\n📍 Nearest Zone: {pfzName} ({pfzDist} km away)\n🧭 Small Boat Guidance: {boatSafetyAdvice}",
+        "hi": "🎣 छोटी नाव उद्यम सुरक्षा मूल्यांकन:\n• समुद्र स्थिति: {wave}मी लहरें ({waveLabel}), हवा {wind} किमी/घं ({windDir})\n• मौसम चेतावनी: {cycloneStatus} | {lightningStatus}\n• सुरक्षा स्कोर: {score}/100 → {verdict}\n\n📍 निकटतम क्षेत्र: {pfzName} ({pfzDist} किमी दूर)\n🧭 छोटी नाव परामर्श: {boatSafetyAdvice}",
+        "ta": "🎣 சிறிய படகு பாதுகாப்பு மதிப்பீடு:\n• கடல் நிலை: {wave}மீ அலைகள் ({waveLabel}), காற்று {wind} கிமீ/மணி ({windDir})\n• வானிலை எச்சரிக்கைகள்: {cycloneStatus} | {lightningStatus}\n• பாதுகாப்பு மதிப்பெண்: {score}/100 → {verdict}\n\n📍 அருகில் மண்டலம்: {pfzName} ({pfzDist} கிமீ)\n🧭 சிறிய படகு ஆலோசனை: {boatSafetyAdvice}",
+        "te": "🎣 చిన్న పడవల భద్రతా అంచనా:\n• సముద్ర స్థితి: {wave}మీ అలలు ({waveLabel}), గాలి {wind} కిమీ/గం ({windDir})\n• వాతావరణ హెచ్చరికలు: {cycloneStatus} | {lightningStatus}\n• భద్రతా స్కోరు: {score}/100 → {verdict}\n\n📍 సమీప ప్రాంతం: {pfzName} ({pfzDist} కిమీ)\n🧭 చిన్న పడవ సలహా: {boatSafetyAdvice}",
+        "ml": "🎣 ചെറിയ വള്ളങ്ങളുടെ സുരക്ഷാ വിലയിരുത്തൽ:\n• കടൽ അവസ്ഥ: {wave}മീ തിരമാല ({waveLabel}), കാറ്റ് {wind} കിമീ/മ ({windDir})\n• കാലാവസ്ഥ മുന്നറിയിപ്പുകൾ: {cycloneStatus} | {lightningStatus}\n• സുരക്ഷാ സ്കോർ: {score}/100 → {verdict}\n\n📍 അടുത്ത മേഖല: {pfzName} ({pfzDist} കിമീ)\n🧭 ചെറിയ വള്ളങ്ങൾക്കുള്ള ഉപദേശം: {boatSafetyAdvice}",
+        "bn": "🎣 ছোট নৌকার নিরাপত্তা মূল্যায়ন:\n• সমুদ্রের অবস্থা: {wave}মি ঢেউ ({waveLabel}), বাতাস {wind} কিমি/ঘ ({windDir})\n• আবহাওয়া সতর্কতা: {cycloneStatus} | {lightningStatus}\n• নিরাপত্তা স্কোর: {score}/100 → {verdict}\n\n📍 নিকটতম এলাকা: {pfzName} ({pfzDist} কিমি দূরে)\n🧭 ছোট নৌকার পরামর্শ: {boatSafetyAdvice}"
+      }
+    },
+    "FISHERMAN_NEAREST_ZONE": {
+      "role": "Fisherman",
+      "keywords": {
+        "en": [
+          "where is the nearest fishing zone from my current location",
+          "nearest fishing zone from my current location",
+          "fishing zone from my current location",
+          "from my current location",
+          "best for small boats",
+          "nearby fishing zones are best",
+          "small boats from our society",
+          "nearest fishing zone from my"
+        ],
+        "hi": [
+          "मेरे वर्तमान स्थान से निकटतम मछली पकड़ने का क्षेत्र कहाँ है",
+          "वर्तमान स्थान से निकटतम मछली पकड़ने",
+          "वर्तमान स्थान से",
+          "समिति की छोटी",
+          "छोटी नावों के लिए कौन",
+          "निकटतम मछली पकड़ने का क्षेत्र कहाँ"
+        ],
+        "ta": [
+          "எனது தற்போதைய இடத்திலிருந்து அருகிலுள்ள மீன்பிடி மண்டலம் எங்கே உள்ளது",
+          "தற்போதைய இடத்திலிருந்து அருகிலுள்ள மீன்பிடி",
+          "தற்போதைய இடத்திலிருந்து",
+          "சிறிய படகுகளுக்கு எந்த",
+          "சங்கத்தின் சிறிய",
+          "அருகிலுள்ள மீன்பிடி மண்டலம் எங்கே"
+        ],
+        "te": [
+          "నా ప్రస్తుత ప్రదేశం నుండి సమీప మత్స్య ప్రాంతం ఎక్కడ ఉంది",
+          "ప్రస్తుత ప్రదేశం నుండి సమీప మత్స్య ప్రాంతం",
+          "ప్రస్తుత ప్రదేశం నుండి",
+          "చిన్న పడవలకు ఏ",
+          "సంఘం చిన్న",
+          "సమీప మత్స్య ప్రాంతం ఎక్కడ"
+        ],
+        "ml": [
+          "എന്റെ നിലവിലെ സ്ഥാനത്ത് നിന്ന് ഏറ്റവും അടുത്തുള്ള മത്സ്യബന്ധന മേഖല എവിടെയാണ്",
+          "നിലവിലെ സ്ഥാനത്ത് നിന്ന് ഏറ്റവും അടുത്തുള്ള",
+          "നിലവിലെ സ്ഥാനത്ത് നിന്ന്",
+          "ചെറിയ വള്ളങ്ങൾക്ക് ഏറ്റവും",
+          "സൊസൈറ്റിയുടെ ചെറിയ",
+          "മത്സ്യബന്ധന മേഖല എവിടെയാണ്"
+        ],
+        "bn": [
+          "আমার বর্তমান অবস্থান থেকে নিকটতম মাছ ধরার এলাকা কোথায়",
+          "বর্তমান অবস্থান থেকে নিকটতম মাছ ধরার",
+          "বর্তমান অবস্থান থেকে",
+          "ছোট নৌকাগুলির জন্য কোন",
+          "সমিতির ছোট",
+          "মাছ ধরার এলাকা কোথায়"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Where is the nearest fishing zone from my current location?",
+          "Which nearby fishing zones are best for small boats from our society?"
+        ],
+        "hi": [
+          "मेरे वर्तमान स्थान से निकटतम मछली पकड़ने का क्षेत्र कहाँ है?",
+          "हमारी समिति की छोटी नावों के लिए कौन से नजदीकी मछली पकड़ने के क्षेत्र सर्वोत्तम हैं?"
+        ],
+        "ta": [
+          "எனது தற்போதைய இடத்திலிருந்து அருகிலுள்ள மீன்பிடி மண்டலம் எங்கே உள்ளது?",
+          "எங்கள் சங்கத்தின் சிறிய படகுகளுக்கு எந்த அருகிலுள்ள மீன்பிடி மண்டலங்கள் சிறந்தவை?"
+        ],
+        "te": [
+          "నా ప్రస్తుత ప్రదేశం నుండి సమీప మత్స్య ప్రాంతం ఎక్కడ ఉంది?",
+          "మా సంఘం చిన్న పడవలకు ఏ సమీప మత్స్య ప్రాంతాలు ఉత్తమమైనవి?"
+        ],
+        "ml": [
+          "എന്റെ നിലവിലെ സ്ഥാനത്ത് നിന്ന് ഏറ്റവും അടുത്തുള്ള മത്സ്യബന്ധന മേഖല എവിടെയാണ്?",
+          "ഞങ്ങളുടെ സൊസൈറ്റിയുടെ ചെറിയ വള്ളങ്ങൾക്ക് ഏറ്റവും അനുയോജ്യമായ അടുത്തുള്ള മത്സ്യ മേഖലകൾ ഏവ?"
+        ],
+        "bn": [
+          "আমার বর্তমান অবস্থান থেকে নিকটতম মাছ ধরার এলাকা কোথায়?",
+          "আমাদের সমিতির ছোট নৌকাগুলির জন্য কোন কাছাকাছি মাছ ধরার এলাকাগুলি সবচেয়ে ভালো?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "📍 Nearest Fishing Zone for Coastal Fishermen:\n• Location: {pfzName} ({pfzDist} km offshore)\n• Target Species: {species}\n• Favourability Score: {fav}/100 (SST: {sst}°C, Chlorophyll: {chl} mg/m³)\n• Water Depth: {depth}m\n🧭 Navigation Note: Safe approach via coastal corridor, well clear of restricted areas.",
+        "hi": "📍 तटीय मछुआरों के लिए निकटतम मत्स्य क्षेत्र:\n• स्थान: {pfzName} ({pfzDist} किमी तट से दूर)\n• लक्षित प्रजातियां: {species}\n• अनुकूलता स्कोर: {fav}/100 (SST: {sst}°C, क्लोरोफिल: {chl} mg/m³)\n• पानी की गहराई: {depth}मी\n🧭 नेविगेशन नोट: तटीय गलियारे से सुरक्षित मार्ग, प्रतिबंधित क्षेत्रों से दूर।",
+        "ta": "📍 கடலோர மீனவர்களுக்கான அருகிலுள்ள மீன்பிடி மண்டலம்:\n• இடம்: {pfzName} ({pfzDist} கிமீ தொலைவில்)\n• இலக்கு மீன்கள்: {species}\n• சாதக மதிப்பெண்: {fav}/100 (SST: {sst}°C, குளோரோபில்: {chl} mg/m³)\n• ஆழம்: {depth}மீ\n🧭 வழிகாட்டுதல்: பாதுகாப்பான பாதை, தடைசெய்யப்பட்ட பகுதிக்கு வெளியே.",
+        "te": "📍 తీరప్రాంత మత్స్యకారుల కోసం సమీప చేపల వేట ప్రాంతం:\n• ప్రదేశం: {pfzName} ({pfzDist} కిమీ తీరానికి దూరం)\n• లక్ష్య జాతులు: {species}\n• అనుకూలత స్కోరు: {fav}/100 (SST: {sst}°C, క్లోరోఫిల్: {chl} mg/m³)\n• లోతు: {depth}మీ\n🧭 నావిగేషన్ గమనిక: సురక్షితమైన మార్గం, నిషిద్ధ ప్రాంతాలకు దూరంగా.",
+        "ml": "📍 തീരദേശ മത്സ്യത്തൊഴിലാളികൾക്കായി ഏറ്റവും അടുത്തുള്ള മത്സ്യ മേഖല:\n• സ്ഥലം: {pfzName} ({pfzDist} കിമീ തീരത്തുനിന്ന്)\n• പ്രധാന ഇനങ്ങൾ: {species}\n• അനുകൂലത സ്കോർ: {fav}/100 (SST: {sst}°C, ക്ലോറോഫിൽ: {chl} mg/m³)\n• ആഴം: {depth}മീ\n🧭 നാവിഗേഷൻ കുറിപ്പ്: സുരക്ഷിതമായ തീരദേശ പാത, നിരോധിത മേഖലകൾ ഒഴിവാക്കുക.",
+        "bn": "📍 উপকূলীয় জেলেদের জন্য নিকটতম মাছ ধরার এলাকা:\n• অবস্থান: {pfzName} ({pfzDist} কিমি দূরে)\n• লক্ষ্য প্রজাতি: {species}\n• অনুকূলতা স্কোর: {fav}/100 (SST: {sst}°C, ক্লোরোফিল: {chl} mg/m³)\n• জলের গভীরতা: {depth}মি\n🧭 নেভিগেশন পরামর্শ: নিরাপদ উপকূলীয় পথ, নিষিদ্ধ এলাকা থেকে সুরক্ষিত।"
+      }
+    },
+    "LOCAL_WAVE_CONDITIONS": {
+      "role": "Fisherman",
+      "keywords": {
+        "en": [
+          "near my village coast",
+          "strong wind today near my",
+          "wave height near my village",
+          "my fishing spot",
+          "wave height near my village coast right now"
+        ],
+        "hi": [
+          "गाँव के तट",
+          "तेज़ हवा होगी",
+          "मछली पकड़ने के स्थान के पास",
+          "लहरों की ऊँचाई कितनी",
+          "मेरे गाँव के तट"
+        ],
+        "ta": [
+          "கிராமத்துக் கடற்கரை",
+          "பலத்த காற்று வீசுமா",
+          "மீன்பிடிப் பகுதிக்கு அருகில்",
+          "அலை உயரம் எவ்வளவு",
+          "என் கிராமத்துக்"
+        ],
+        "te": [
+          "గ్రామ తీరంలో",
+          "బలమైన గాలి ఉంటుందా",
+          "చేపల వేట ప్రదేశం సమీపంలో",
+          "అలల ఎత్తు ఎంత",
+          "మా గ్రామ తీరంలో"
+        ],
+        "ml": [
+          "ഗ്രാമതീരത്തിന് സമീപം",
+          "ശക്തമായ കാറ്റ് ഉണ്ടാകുമോ",
+          "മത്സ്യബന്ധന സ്ഥലത്തിന് സമീപം",
+          "തിരമാലകളുടെ ഉയരം എത്രയാണ്",
+          "എന്റെ ഗ്രാമതീരത്തിന്"
+        ],
+        "bn": [
+          "গ্রামের উপকূলের কাছে",
+          "প্রবল বাতাস বইবে",
+          "মাছ ধরার জায়গার কাছে",
+          "ঢেউয়ের উচ্চতা কত",
+          "আমার গ্রামের উপকূলের"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "What is the wave height near my village coast right now?",
+          "Will there be strong wind today near my fishing spot?"
+        ],
+        "hi": [
+          "अभी मेरे गाँव के तट के पास लहरों की ऊँचाई कितनी है?",
+          "क्या आज मेरे मछली पकड़ने के स्थान के पास तेज़ हवा होगी?"
+        ],
+        "ta": [
+          "இப்போது என் கிராமத்துக் கடற்கரைக்கு அருகில் அலை உயரம் எவ்வளவு?",
+          "இன்று எனது மீன்பிடிப் பகுதிக்கு அருகில் பலத்த காற்று வீசுமா?"
+        ],
+        "te": [
+          "ప్రస్తుతం మా గ్రామ తీరంలో అలల ఎత్తు ఎంత?",
+          "ఈరోజు నా చేపల వేట ప్రదేశం సమీపంలో బలమైన గాలి ఉంటుందా?"
+        ],
+        "ml": [
+          "ഇപ്പോൾ എന്റെ ഗ്രാമതീരത്തിന് സമീപം തിരമാലകളുടെ ഉയരം എത്രയാണ്?",
+          "ഇന്ന് എന്റെ മത്സ്യബന്ധന സ്ഥലത്തിന് സമീപം ശക്തമായ കാറ്റ് ഉണ്ടാകുമോ?"
+        ],
+        "bn": [
+          "এই মুহূর্তে আমার গ্রামের উপকূলের কাছে ঢেউয়ের উচ্চতা কত?",
+          "আজ কি আমার মাছ ধরার জায়গার কাছে প্রবল বাতাস বইবে?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🌊 Local Coastal Wave & Wind Report:\n• Wave Height: {wave} meters ({waveLabel})\n• Sea Condition: {seaState}\n• Wind Velocity: {wind} km/h blowing from {windDir}\n• Swell Period: {swell} seconds | Rainfall Chance: {rain}%\n📋 Local Advice: Conditions are {waveLabel}. Suitable for standard craft with proper safety precautions.",
+        "hi": "🌊 स्थानीय तटीय लहर और हवा रिपोर्ट:\n• लहर की ऊँचाई: {wave} मीटर ({waveLabel})\n• समुद्र की स्थिति: {seaState}\n• हवा की गति: {wind} किमी/घं ({windDir} से)\n• स्वेल अवधि: {swell} सेकंड | वर्षा की संभावना: {rain}%\n📋 स्थानीय परामर्श: स्थितियाँ {waveLabel} हैं। मानक नौकाओं के लिए उपयुक्त।",
+        "ta": "🌊 உள்ளூர் கடற்கரை அலை மற்றும் காற்று அறிக்கை:\n• அலை உயரம்: {wave} மீட்டர் ({waveLabel})\n• கடல் நிலை: {seaState}\n• காற்றின் வேகம்: {wind} கிமீ/மணி ({windDir} இலிருந்து)\n• அலை அலைவு: {swell} வினாடிகள் | மழை வாய்ப்பு: {rain}%\n📋 ஆலோசனை: கடல் நிலை {waveLabel}. தகுந்த பாதுகாப்புடன் செல்லலாம்.",
+        "te": "🌊 స్థానిక తీరప్రాంత అలలు & గాలి నివేదిక:\n• అల ఎత్తు: {wave} మీటర్లు ({waveLabel})\n• సముద్ర స్థితి: {seaState}\n• గాలి వేగం: {wind} కిమీ/గం ({windDir} నుండి)\n• ఉప్పెన సమయం: {swell} సెకన్లు | వర్షం అవకాశం: {rain}%\n📋 స్థానిక సలహా: పరిస్థితులు {waveLabel}. సాధారణ పడవలకు అనుకూలం.",
+        "ml": "🌊 പ്രാദേശിക തീരദേശ തിരമാല & കാറ്റ് വിവരങ്ങൾ:\n• തിരമാല ഉയരം: {wave} മീറ്റർ ({waveLabel})\n• കടൽ അവസ്ഥ: {seaState}\n• കാറ്റിന്റെ വേഗത: {wind} കിമീ/മ ({windDir} ദിശയിൽ)\n• സ്വെൽ സമയം: {swell} സെക്കൻഡ് | മഴ സാധ്യത: {rain}%\n📋 പ്രാദേശിക നിർദ്ദേശം: അവസ്ഥ {waveLabel}. സാധാരണ വള്ളങ്ങൾക്ക് സുരക്ഷിതം.",
+        "bn": "🌊 স্থানীয় উপকূলীয় ঢেউ ও বাতাসের রিপোর্ট:\n• ঢেউয়ের উচ্চতা: {wave} মিটার ({waveLabel})\n• সমুদ্রের অবস্থা: {seaState}\n• বাতাসের গতিবেগ: {wind} কিমি/ঘ ({windDir} দিক থেকে)\n• সোয়েল সময়কাল: {swell} সেকেন্ড | বৃষ্টির সম্ভাবনা: {rain}%\n📋 স্থানীয় পরামর্শ: অবস্থা {waveLabel}। যথাযথ সতর্কতা অবলম্বন করুন।"
+      }
+    },
+    "WEEKLY_CYCLONE_OUTLOOK": {
+      "role": "Fisherman",
+      "keywords": {
+        "en": [
+          "cyclone warning for my area this week",
+          "weather alerts affecting our fishing community",
+          "cyclone forming that could affect",
+          "operations this week",
+          "affecting our fishing community today"
+        ],
+        "hi": [
+          "इस सप्ताह मेरे क्षेत्र",
+          "समुदाय को प्रभावित करने वाली",
+          "चक्रवात बन रहा है",
+          "संचालन को प्रभावित"
+        ],
+        "ta": [
+          "இந்த வாரம் எனது பகுதிக்கு",
+          "மீன்பிடி சமூகத்தை பாதிக்கும்",
+          "புயல் உருவாகிறதா",
+          "செயல்பாடுகளை பாதிக்கக்கூடிய"
+        ],
+        "te": [
+          "ఈ వారం నా ప్రాంతానికి",
+          "మత్స్యకార సంఘాన్ని ప్రభావితం",
+          "తుఫాను ఏదైనా ఏర్పడుతోందా",
+          "కార్యకలాపాలను ప్రభావితం"
+        ],
+        "ml": [
+          "ഈ ആഴ്ച എന്റെ പ്രദേശത്ത്",
+          "മത്സ്യബന്ധന സമൂഹത്തെ ബാധിക്കുന്ന",
+          "ചുഴലിക്കാറ്റ് രൂപപ്പെടുന്നുണ്ടോ",
+          "പ്രവർത്തനങ്ങളെ ബാധിക്കുന്ന"
+        ],
+        "bn": [
+          "এই সপ্তাহে আমার এলাকার",
+          "মৎস্যজীবী সম্প্রদায়কে প্রভাবিত",
+          "ঘূর্ণিঝড় কি সৃষ্টি হচ্ছে",
+          "কাজকর্মকে প্রভাবিত"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Is there a cyclone warning for my area this week?",
+          "Are there any weather alerts affecting our fishing community today?",
+          "Is there a cyclone forming that could affect operations this week?"
+        ],
+        "hi": [
+          "क्या इस सप्ताह मेरे क्षेत्र के लिए कोई चक्रवात चेतावनी है?",
+          "क्या आज हमारे मछली पकड़ने वाले समुदाय को प्रभावित करने वाली कोई मौसम चेतावनी है?",
+          "क्या कोई चक्रवात बन रहा है जो इस सप्ताह संचालन को प्रभावित कर सकता है?"
+        ],
+        "ta": [
+          "இந்த வாரம் எனது பகுதிக்கு புயல் எச்சரிக்கை உள்ளதா?",
+          "இன்று எங்கள் மீன்பிடி சமூகத்தை பாதிக்கும் ஏதேனும் வானிலை எச்சரிக்கைகள் உள்ளதா?",
+          "இந்த வாரம் செயல்பாடுகளை பாதிக்கக்கூடிய புயல் உருவாகிறதா?"
+        ],
+        "te": [
+          "ఈ వారం నా ప్రాంతానికి ఏదైనా తుఫాను హెచ్చరిక ఉందా?",
+          "ఈరోజు మా మత్స్యకార సంఘాన్ని ప్రభావితం చేసే వాతావరణ హెచ్చరికలు ఏవైనా ఉన్నాయా?",
+          "ఈ వారం కార్యకలాపాలను ప్రభావితం చేసే తుఫాను ఏదైనా ఏర్పడుతోందా?"
+        ],
+        "ml": [
+          "ഈ ആഴ്ച എന്റെ പ്രദേശത്ത് ചുഴലിക്കാറ്റ് മുന്നറിയിപ്പ് ഉണ്ടോ?",
+          "ഇന്ന് ഞങ്ങളുടെ മത്സ്യബന്ധന സമൂഹത്തെ ബാധിക്കുന്ന കാലാവസ്ഥാ മുന്നറിയിപ്പുകൾ ഉണ്ടോ?",
+          "ഈ ആഴ്ച പ്രവർത്തനങ്ങളെ ബാധിക്കുന്ന തരത്തിൽ ചുഴലിക്കാറ്റ് രൂപപ്പെടുന്നുണ്ടോ?"
+        ],
+        "bn": [
+          "এই সপ্তাহে আমার এলাকার জন্য কি কোনো ঘূর্ণিঝড়ের সতর্কতা আছে?",
+          "আজ কি আমাদের মৎস্যজীবী সম্প্রদায়কে প্রভাবিত করার মতো কোনো আবহাওয়া সতর্কতা আছে?",
+          "এই সপ্তাহে কাজকর্মকে প্রভাবিত করতে পারে এমন কোনো ঘূর্ণিঝড় কি সৃষ্টি হচ্ছে?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🌀 Weekly Cyclone & Severe Weather Outlook:\n• Active Cyclone Status: {cycloneLevel}\n• IMD Tracking: {cycloneDetail}\n• 5-Day Synoptic Trend: {trendSummary}\n• Advisory: {cycloneAdvisory}",
+        "hi": "🌀 साप्ताहिक चक्रवात और गंभीर मौसम दृष्टिकोण:\n• सक्रिय चक्रवात स्थिति: {cycloneLevel}\n• IMD ट्रैकिंग: {cycloneDetail}\n• 5-दिवसीय सिनोप्टिक रुझान: {trendSummary}\n• परामर्श: {cycloneAdvisory}",
+        "ta": "🌀 வாராந்திர புயல் மற்றும் தீவிர வானிலை பார்வை:\n• புயல் நிலை: {cycloneLevel}\n• IMD கண்காணிப்பு: {cycloneDetail}\n• 5 நாள் போக்கு: {trendSummary}\n• ஆலோசனை: {cycloneAdvisory}",
+        "te": "🌀 వారపు తుఫాను & తీవ్ర వాతావరణ దృక్పథం:\n• తుఫాను స్థితి: {cycloneLevel}\n• IMD ట్రాకింగ్: {cycloneDetail}\n• 5 రోజుల సారాంశం: {trendSummary}\n• సలహా: {cycloneAdvisory}",
+        "ml": "🌀 പ്രതിവാര ചുഴലിക്കാറ്റ് & കാലാവസ്ഥാ അവലോകനം:\n• ചുഴലിക്കാറ്റ് നില: {cycloneLevel}\n• IMD ട്രാക്കിംഗ്: {cycloneDetail}\n• 5 ദിവസത്തെ പ്രവണത: {trendSummary}\n• നിർദ്ദേശം: {cycloneAdvisory}",
+        "bn": "🌀 সাপ্তাহিক ঘূর্ণিঝড় ও বৈরী আবহাওয়ার দৃষ্টিভঙ্গি:\n• সক্রিয় ঘূর্ণিঝড় স্থিতি: {cycloneLevel}\n• IMD ট্র্যাকিং: {cycloneDetail}\n• ৫ দিনের সামগ্রিক প্রবণতা: {trendSummary}\n• পরামর্শ: {cycloneAdvisory}"
+      }
+    },
+    "TIDE_SCHEDULE": {
+      "role": "Fisherman",
+      "keywords": {
+        "en": [
+          "time is high tide today",
+          "tide pattern for our coastal village",
+          "tide schedule for vessel movement",
+          "vessel movement today",
+          "high tide today"
+        ],
+        "hi": [
+          "उच्च ज्वार किस समय",
+          "तटीय गाँव के लिए ज्वार",
+          "जहाजों की आवाजाही के लिए ज्वार",
+          "ज्वार का समय क्या है"
+        ],
+        "ta": [
+          "உயர் ஓதம் எந்த நேரத்தில்",
+          "கிராமத்திற்கான ஓத முறை",
+          "கப்பல் போக்குவரத்திற்கான ஓத",
+          "ஓத அட்டவணை என்ன"
+        ],
+        "te": [
+          "అధిక పోటు ఏ సమయంలో",
+          "తీర గ్రామ అలల తీరు",
+          "నౌకల కదలికల కోసం అలల",
+          "అలల షెడ్యూల్ ఏమిటి"
+        ],
+        "ml": [
+          "വേലിയേറ്റം ഏത് സമയത്താണ്",
+          "ഗ്രാമത്തിലെ വേലിയേറ്റ രീതി",
+          "കപ്പലുകളുടെ നീക്കത്തിനായുള്ള വേലിയേറ്റ",
+          "വേലിയേറ്റ ഷെഡ്യൂൾ എന്താണ്"
+        ],
+        "bn": [
+          "জোয়ারের সময় কখন",
+          "উপকূলীয় গ্রামের জন্য জোয়ার",
+          "জাহাজ চলাচলের জন্য জোয়ারের",
+          "জোয়ারের সময়সূচী কী"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "What time is high tide today?",
+          "What is the tide pattern for our coastal village this week?",
+          "What is the tide schedule for vessel movement today?"
+        ],
+        "hi": [
+          "आज उच्च ज्वार किस समय है?",
+          "इस सप्ताह हमारे तटीय गाँव के लिए ज्वार का पैटर्न क्या है?",
+          "आज जहाजों की आवाजाही के लिए ज्वार का समय क्या है?"
+        ],
+        "ta": [
+          "இன்று உயர் ஓதம் எந்த நேரத்தில் வரும்?",
+          "இந்த வாரம் எங்கள் கடலோர கிராமத்திற்கான ஓத முறை என்ன?",
+          "இன்று கப்பல் போக்குவரத்திற்கான ஓத அட்டவணை என்ன?"
+        ],
+        "te": [
+          "ఈరోజు అధిక పోటు ఏ సమయంలో వస్తుంది?",
+          "ఈ వారం మా తీర గ్రామ అలల తీరు ఎలా ఉంది?",
+          "ఈరోజు నౌకల కదలికల కోసం అలల షెడ్యూల్ ఏమిటి?"
+        ],
+        "ml": [
+          "ഇന്ന് വേലിയേറ്റം ഏത് സമയത്താണ്?",
+          "ഈ ആഴ്ച ഞങ്ങളുടെ തീരദേശ ഗ്രാമത്തിലെ വേലിയേറ്റ രീതി എങ്ങനെയാണ്?",
+          "ഇന്ന് കപ്പലുകളുടെ നീക്കത്തിനായുള്ള വേലിയേറ്റ ഷെഡ്യൂൾ എന്താണ്?"
+        ],
+        "bn": [
+          "আজ জোয়ারের সময় কখন?",
+          "এই সপ্তাহে আমাদের উপকূলীয় গ্রামের জন্য জোয়ার-ভাটার ধরন কেমন?",
+          "আজ জাহাজ চলাচলের জন্য জোয়ারের সময়সূচী কী?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🌊 Marine Tide Schedule & Water Levels:\n• Current Phase: {tidePhase}\n• High Tide 1: {highTideTime1} ({highTide1}m) | High Tide 2: {highTideTime2} ({highTide2}m)\n• Low Tide 1: {lowTideTime1} ({lowTide1}m) | Low Tide 2: {lowTideTime2} ({lowTide2}m)\n• Tidal Range: {tidalRange}m\n⚓ Marine Guidance: {tidalAdvice}",
+        "hi": "🌊 समुद्री ज्वार अनुसूची और जल स्तर:\n• वर्तमान चरण: {tidePhase}\n• उच्च ज्वार 1: {highTideTime1} ({highTide1}मी) | उच्च ज्वार 2: {highTideTime2} ({highTide2}मी)\n• कम ज्वार 1: {lowTideTime1} ({lowTide1}मी) | कम ज्वार 2: {lowTideTime2} ({lowTide2}मी)\n• ज्वार सीमा: {tidalRange}मी\n⚓ समुद्री मार्गदर्शन: {tidalAdvice}",
+        "ta": "🌊 கடல் ஓத அட்டவணை மற்றும் நீர் மட்டம்:\n• தற்போதைய நிலை: {tidePhase}\n• உயர் ஓதம் 1: {highTideTime1} ({highTide1}மீ) | உயர் ஓதம் 2: {highTideTime2} ({highTide2}மீ)\n• தாழ் ஓதம் 1: {lowTideTime1} ({lowTide1}மீ) | தாழ் ஓதம் 2: {lowTideTime2} ({lowTide2}மீ)\n• ஓத வீச்சு: {tidalRange}மீ\n⚓ கடல் ஆலோசனை: {tidalAdvice}",
+        "te": "🌊 సముద్ర అలల షెడ్యూల్ & నీటి మట్టాలు:\n• ప్రస్తుత దశ: {tidePhase}\n• హై టైడ్ 1: {highTideTime1} ({highTide1}మీ) | హై టైడ్ 2: {highTideTime2} ({highTide2}మీ)\n• లో టైడ్ 1: {lowTideTime1} ({lowTide1}మీ) | లో టైడ్ 2: {lowTideTime2} ({lowTide2}మీ)\n• అలల శ్రేణి: {tidalRange}మీ\n⚓ సలహా: {tidalAdvice}",
+        "ml": "🌊 സമുദ്ര വേലിയേറ്റ ഷെഡ്യൂളും ജലനിരപ്പും:\n• നിലവിലെ ഘട്ടം: {tidePhase}\n• വേലിയേറ്റം 1: {highTideTime1} ({highTide1}മീ) | വേലിയേറ്റം 2: {highTideTime2} ({highTide2}മീ)\n• വേലിയിറക്കം 1: {lowTideTime1} ({lowTide1}മീ) | വേലിയിറക്കം 2: {lowTideTime2} ({lowTide2}മീ)\n• വ്യത്യാസം: {tidalRange}മീ\n⚓ മാർഗ്ഗനിർദ്ദേശം: {tidalAdvice}",
+        "bn": "🌊 সামুদ্রিক জোয়ার-ভাটার সময়সূচী ও পানির স্তর:\n• বর্তমান পর্ব: {tidePhase}\n• জোয়ার ১: {highTideTime1} ({highTide1}মি) | জোয়ার ২: {highTideTime2} ({highTide2}মি)\n• ভাটা ১: {lowTideTime1} ({lowTide1}মি) | ভাটা ২: {lowTideTime2} ({lowTide2}মি)\n• জোয়ারের পরিসীমা: {tidalRange}মি\n⚓ সামুদ্রিক নির্দেশিকা: {tidalAdvice}"
+      }
+    },
+    "LIKELY_CATCH_SPECIES": {
+      "role": "Fisherman",
+      "keywords": {
+        "en": [
+          "fish species are likely near the coast",
+          "likely near the coast this week",
+          "expected catch potential in the deep-sea",
+          "deep-sea zone today",
+          "catch potential in the deep-sea"
+        ],
+        "hi": [
+          "तट के पास कौन सी मछली प्रजातियों",
+          "गहरे समुद्र क्षेत्र में अपेक्षित",
+          "मछली पकड़ने की संभावना क्या",
+          "प्रजातियों की संभावना है"
+        ],
+        "ta": [
+          "கடற்கரைக்கு அருகில் என்ன மீன் இனங்கள்",
+          "ஆழ்கடல் பகுதியில் எதிர்பார்க்கப்படும்",
+          "மீன்பிடி வாய்ப்பு என்ன",
+          "மீன் இனங்கள் கிடைக்க"
+        ],
+        "te": [
+          "తీరానికి సమీపంలో ఏ చేప జాతులు",
+          "లోతైన సముద్ర ప్రాంతంలో ఆశించిన",
+          "చేపల వేట సామర్థ్యం ఎంత",
+          "చేప జాతులు లభించే"
+        ],
+        "ml": [
+          "തീരത്തിന് സമീപം ഏത് മത്സ്യ ഇനങ്ങളാണ്",
+          "ആഴക്കടൽ മേഖലയിൽ പ്രതീക്ഷിക്കുന്ന",
+          "മത്സ്യലഭ്യത എത്രയാണ്",
+          "മത്സ്യ ഇനങ്ങൾ ലഭിക്കാൻ"
+        ],
+        "bn": [
+          "উপকূলের কাছে কোন মাছের প্রজাতি",
+          "গভীর সমুদ্র এলাকায় প্রত্যাশিত",
+          "মাছ ধরার সম্ভাবনা কী",
+          "মাছের প্রজাতি পাওয়ার"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Which fish species are likely near the coast this week?",
+          "What is the expected catch potential in the deep-sea zone today?"
+        ],
+        "hi": [
+          "इस सप्ताह तट के पास कौन सी मछली प्रजातियों की संभावना है?",
+          "आज गहरे समुद्र क्षेत्र में अपेक्षित मछली पकड़ने की संभावना क्या है?"
+        ],
+        "ta": [
+          "இந்த வாரம் கடற்கரைக்கு அருகில் என்ன மீன் இனங்கள் கிடைக்க வாய்ப்புள்ளது?",
+          "இன்று ஆழ்கடல் பகுதியில் எதிர்பார்க்கப்படும் மீன்பிடி வாய்ப்பு என்ன?"
+        ],
+        "te": [
+          "ఈ వారం తీరానికి సమీపంలో ఏ చేప జాతులు లభించే అవకాశం ఉంది?",
+          "ఈరోజు లోతైన సముద్ర ప్రాంతంలో ఆశించిన చేపల వేట సామర్థ్యం ఎంత?"
+        ],
+        "ml": [
+          "ഈ ആഴ്ച തീരത്തിന് സമീപം ഏത് മത്സ്യ ഇനങ്ങളാണ് ലഭിക്കാൻ സാധ്യതയുള്ളത്?",
+          "ഇന്ന് ആഴക്കടൽ മേഖലയിൽ പ്രതീക്ഷിക്കുന്ന മത്സ്യലഭ്യത എത്രയാണ്?"
+        ],
+        "bn": [
+          "এই সপ্তাহে উপকূলের কাছে কোন মাছের প্রজাতি পাওয়ার সম্ভাবনা রয়েছে?",
+          "আজ গভীর সমুদ্র এলাকায় প্রত্যাশিত মাছ ধরার সম্ভাবনা কী?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🐟 Species Catch Likelihood & Oceanographic Potential:\n• Primary Zone: {pfzName} (Favourability: {fav}/100)\n• Chlorophyll-a: {chl} mg/m³ | SST: {sst}°C\n• Species Assessment: {speciesLikelihood}\n• Target Species Reported: {species}\n💡 Recommendation: Highest density detected along thermal front boundaries.",
+        "hi": "🐟 प्रजाति पकड़े जाने की संभावना और महासागरीय क्षमता:\n• प्राथमिक क्षेत्र: {pfzName} (अनुकूलता: {fav}/100)\n• क्लोरोफिल-ए: {chl} mg/m³ | SST: {sst}°C\n• प्रजाति मूल्यांकन: {speciesLikelihood}\n• रिपोर्ट की गई लक्षित प्रजातियां: {species}\n💡 सिफारिश: थर्मल फ्रंट सीमाओं के साथ उच्चतम घनत्व।",
+        "ta": "🐟 மீன் இனங்கள் கிடைக்கும் வாய்ப்பு:\n• முதன்மை மண்டலம்: {pfzName} (சாதகம்: {fav}/100)\n• குளோரோபில்-ஏ: {chl} mg/m³ | SST: {sst}°C\n• இனங்கள் மதிப்பீடு: {speciesLikelihood}\n• இலக்கு மீன்கள்: {species}\n💡 பரிந்துரை: வெப்ப எல்லைப் பகுதிகளில் அதிக மீன்கள் உள்ளன.",
+        "te": "🐟 చేప జాతుల లభ్యత & సముద్ర సామర్థ్యం:\n• ప్రాథమిక ప్రాంతం: {pfzName} (అనుకూలత: {fav}/100)\n• క్లోరోఫిల్-ఎ: {chl} mg/m³ | SST: {sst}°C\n• జాతుల అంచనా: {speciesLikelihood}\n• లక్ష్య జాతులు: {species}\n💡 సిఫార్సు: థర్మల్ సరిహద్దుల వద్ద అత్యధిక సాంద్రత.",
+        "ml": "🐟 മത്സ്യ ഇനങ്ങളുടെ ലഭ്യതയും സാധ്യതകളും:\n• പ്രധാന മേഖല: {pfzName} (അനുകൂലത: {fav}/100)\n• ക്ലോറോഫിൽ-എ: {chl} mg/m³ | SST: {sst}°C\n• ഇനങ്ങളുടെ വിലയിരുത്തൽ: {speciesLikelihood}\n• ലക്ഷ്യമിടുന്ന ഇനങ്ങൾ: {species}\n💡 ശുപാർശ: തെർമൽ അതിർത്തികളിൽ ഉയർന്ന സാന്ദ്രത.",
+        "bn": "🐟 মাছের প্রজাতির সম্ভাবনা ও সামুদ্রিক সম্ভাবনা:\n• প্রাথমিক এলাকা: {pfzName} (অনুকূলতা: {fav}/১০০)\n• ক্লোরোফিল-এ: {chl} mg/m³ | SST: {sst}°C\n• প্রজাতির মূল্যায়ন: {speciesLikelihood}\n• লক্ষ্য প্রজাতি: {species}\n💡 সুপারিশ: থার্মাল ফ্রন্টের সীমানায় সর্বোচ্চ মাছের ঘনত্ব।"
+      }
+    },
+    "NEAREST_SAFE_HARBOR": {
+      "role": "Fisherman",
+      "keywords": {
+        "en": [
+          "nearest safe harbor from here",
+          "how far is the nearest safe harbor",
+          "ports are safe for docking",
+          "current weather conditions docking",
+          "safe for docking during"
+        ],
+        "hi": [
+          "निकटतम सुरक्षित बंदरगाह कितनी दूर",
+          "कौन से बंदरगाह डॉकिंग के लिए सुरक्षित",
+          "यहाँ से निकटतम सुरक्षित",
+          "डॉकिंग के लिए सुरक्षित हैं"
+        ],
+        "ta": [
+          "பாதுகாப்பான துறைமுகம் எவ்வளவு தூரத்தில்",
+          "எந்த துறைமுகங்கள் கப்பல் நிறுத்த",
+          "இங்கிருந்து அருகிலுள்ள பாதுகாப்பான",
+          "கப்பல் நிறுத்த பாதுகாப்பானவை"
+        ],
+        "te": [
+          "సమీప సురక్షిత ఓడరేవు ఎంత దూరంలో",
+          "డాకింగ్ కోసం ఏ ఓడరేవులు సురక్షితమైనవి",
+          "ఇక్కడి నుండి సమీప సురక్షిత",
+          "ఓడరేవులు సురక్షితమైనవి"
+        ],
+        "ml": [
+          "സുരക്ഷിത തുറമുഖം എത്ര അകലെയാണ്",
+          "സുരക്ഷിതമായി അടുക്കാൻ കഴിയുന്ന തുറമുഖങ്ങൾ",
+          "ഇവിടെ നിന്ന് ഏറ്റവും അടുത്തുള്ള",
+          "അടുക്കാൻ കഴിയുന്ന തുറമുഖങ്ങൾ"
+        ],
+        "bn": [
+          "নিকটতম নিরাপদ বন্দর কত দূরে",
+          "কোন বন্দরগুলি নোঙর করার জন্য নিরাপদ",
+          "এখান থেকে নিকটতম নিরাপদ",
+          "নোঙর করার জন্য নিরাপদ"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "How far is the nearest safe harbor from here?",
+          "Which ports are safe for docking during the current weather conditions?"
+        ],
+        "hi": [
+          "यहाँ से निकटतम सुरक्षित बंदरगाह कितनी दूर है?",
+          "वर्तमान मौसम की स्थिति के दौरान कौन से बंदरगाह डॉकिंग के लिए सुरक्षित हैं?"
+        ],
+        "ta": [
+          "இங்கிருந்து அருகிலுள்ள பாதுகாப்பான துறைமுகம் எவ்வளவு தூரத்தில் உள்ளது?",
+          "தற்போதைய வானிலை நிலைகளில் எந்த துறைமுகங்கள் கப்பல் நிறுத்த பாதுகாப்பானவை?"
+        ],
+        "te": [
+          "ఇక్కడి నుండి సమీప సురక్షిత ఓడరేవు ఎంత దూరంలో ఉంది?",
+          "ప్రస్తుత వాతావరణ పరిస్థితుల్లో డాకింగ్ కోసం ఏ ఓడరేవులు సురక్షితమైనవి?"
+        ],
+        "ml": [
+          "ഇവിടെ നിന്ന് ഏറ്റവും അടുത്തുള്ള സുരക്ഷിത തുറമുഖം എത്ര അകലെയാണ്?",
+          "നിലവിലെ കാലാവസ്ഥയിൽ സുരക്ഷിതമായി അടുക്കാൻ കഴിയുന്ന തുറമുഖങ്ങൾ ഏവ?"
+        ],
+        "bn": [
+          "এখান থেকে নিকটতম নিরাপদ বন্দর কত দূরে?",
+          "বর্তমান আবহাওয়ায় কোন বন্দরগুলি নোঙর করার জন্য নিরাপদ?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "⚓ Nearest Safe Harbor & Docking Advisory:\n• Nearest Facility: {harborName}\n• Distance: {harborDist} km from current coordinates\n• Docking Capacity: {harborCapacity}\n• Facility Status: {harborCoastGuard}\n• Weather Dock Safety: {harborDockSafe}",
+        "hi": "⚓ निकटतम सुरक्षित बंदरगाह और डॉकिंग परामर्श:\n• निकटतम सुविधा: {harborName}\n• दूरी: वर्तमान निर्देशांक से {harborDist} किमी\n• डॉकिंग क्षमता: {harborCapacity}\n• सुविधा स्थिति: {harborCoastGuard}\n• मौसम डॉक सुरक्षा: {harborDockSafe}",
+        "ta": "⚓ அருகிலுள்ள பாதுகாப்பான துறைமுகம் மற்றும் கப்பல் நிறுத்த ஆலோசனை:\n• அருகிலுள்ள துறைமுகம்: {harborName}\n• தூரம்: தற்போதைய இடத்திலிருந்து {harborDist} கிமீ\n• நிறுத்தும் திறன்: {harborCapacity}\n• பாதுகாப்பு: {harborCoastGuard}\n• வானிலை பாதுகாப்பு: {harborDockSafe}",
+        "te": "⚓ సమీప సురక్షిత ఓడరేవు & డాకింగ్ సలహా:\n• సమీప సౌకర్యం: {harborName}\n• దూరం: ప్రస్తుత స్థానం నుండి {harborDist} కిమీ\n• డాకింగ్ సామర్థ్యం: {harborCapacity}\n• భద్రత: {harborCoastGuard}\n• వాతావరణ భద్రత: {harborDockSafe}",
+        "ml": "⚓ അടുത്തുള്ള സുരക്ഷിത തുറമുഖവും ഡോക്കിംഗ് നിർദ്ദേശവും:\n• അടുത്തുള്ള തുറമുഖം: {harborName}\n• ദൂരം: നിലവിലെ സ്ഥാനത്ത് നിന്ന് {harborDist} കിമീ\n• ഡോക്കിംഗ് ശേഷി: {harborCapacity}\n• സുരക്ഷ: {harborCoastGuard}\n• കാലാവസ്ഥ സുരക്ഷ: {harborDockSafe}",
+        "bn": "⚓ নিকটতম নিরাপদ বন্দর ও ডকিং পরামর্শ:\n• নিকটতম বন্দর: {harborName}\n• দূরত্ব: বর্তমান অবস্থান থেকে {harborDist} কিমি\n• ডকিং ক্ষমতা: {harborCapacity}\n• নিরাপত্তা অবস্থা: {harborCoastGuard}\n• আবহাওয়া ডক নিরাপত্তা: {harborDockSafe}"
+      }
+    },
+    "EMERGENCY_GUIDANCE": {
+      "role": "Fisherman",
+      "keywords": {
+        "en": [
+          "weather turns bad while I'm at sea",
+          "turns bad while I'm at sea",
+          "what should i do if the weather turns bad",
+          "turns bad while i am at sea"
+        ],
+        "hi": [
+          "समुद्र में रहते हुए मौसम खराब",
+          "मौसम खराब हो जाए तो मुझे क्या करना",
+          "क्या करना चाहिए"
+        ],
+        "ta": [
+          "கடலில் இருக்கும்போது வானிலை மோசமானால்",
+          "வானிலை மோசமானால் நான் என்ன செய்ய",
+          "என்ன செய்ய வேண்டும்"
+        ],
+        "te": [
+          "సముద్రంలో ఉన్నప్పుడు వాతావరణం చెడిపోతే",
+          "వాతావరణం చెడిపోతే నేను ఏమి చేయాలి",
+          "ఏమి చేయాలి"
+        ],
+        "ml": [
+          "കടലിലായിരിക്കുമ്പോൾ കാലാവസ്ഥ മോശമായാൽ",
+          "കാലാവസ്ഥ മോശമായാൽ ഞാൻ എന്താണ് ചെയ്യേണ്ടത്",
+          "എന്താണ് ചെയ്യേണ്ടത്"
+        ],
+        "bn": [
+          "সমুদ্রে থাকা অবস্থায় আবহাওয়া খারাপ",
+          "আবহাওয়া খারাপ হয়ে গেলে আমার কী",
+          "কী করা উচিত"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "What should I do if the weather turns bad while I'm at sea?"
+        ],
+        "hi": [
+          "अगर समुद्र में रहते हुए मौसम खराब हो जाए तो मुझे क्या करना चाहिए?"
+        ],
+        "ta": [
+          "நான் கடலில் இருக்கும்போது வானிலை மோசமானால் நான் என்ன செய்ய வேண்டும்?"
+        ],
+        "te": [
+          "నేను సముద్రంలో ఉన్నప్పుడు వాతావరణం చెడిపోతే నేను ఏమి చేయాలి?"
+        ],
+        "ml": [
+          "കടലിലായിരിക്കുമ്പോൾ കാലാവസ്ഥ മോശമായാൽ ഞാൻ എന്താണ് ചെയ്യേണ്ടത്?"
+        ],
+        "bn": [
+          "সমুদ্রে থাকা অবস্থায় আবহাওয়া খারাপ হয়ে গেলে আমার কী করা উচিত?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🆘 Emergency Sea Protocol — Immediate Actions:\n1. 🧭 Heading: Turn immediately towards nearest sheltered coastline or designated harbor.\n2. 📻 Radio: Switch VHF to Channel 16. Broadcast coordinates and vessel count.\n3. 🦺 Life Jackets: Ensure all crew members wear life jackets and secure loose gear.\n4. ⚓ Anchor & Engine: Maintain head-to-sea orientation at quarter throttle; do not take beam waves.\n5. 📞 Distress Line: Coast Guard Emergency Toll-Free: 1554.",
+        "hi": "🆘 आपातकालीन समुद्री प्रोटोकॉल — तत्काल कदम:\n1. 🧭 दिशा: तुरंत निकटतम आश्रय वाले तट या बंदरगाह की ओर मुड़ें।\n2. 📻 रेडियो: VHF को चैनल 16 पर सेट करें। अपने निर्देशांक प्रसारित करें।\n3. 🦺 लाइफ जैकेट: चालक दल के सभी सदस्य लाइफ जैकेट पहनें।\n4. ⚓ इंजन: लहरों के सामने नाव को संतुलित रखें।\n5. 📞 कोस्ट गार्ड हेल्पलाइन: 1554 पर संपर्क करें।",
+        "ta": "🆘 அவசர கடல் வழிகாட்டுதல் — உடனடி நடவடிக்கைகள்:\n1. 🧭 திசை: உடனடியாக அருகிலுள்ள பாதுகாப்பான கரை அல்லது துறைமுகத்திற்கு செல்லுங்கள்.\n2. 📻 வானொலி: VHF சேனல் 16க்கு மாற்றவும். உங்கள் இருப்பிடத்தை தெரிவிக்கவும்.\n3. 🦺 உயிர் கவசம்: அனைவரும் லைஃப் ஜாக்கெட் அணியவும்.\n4. ⚓ படகு இயக்கம்: அலைகளுக்கு நேராக படகை சீராக இயக்கவும்.\n5. 📞 கடலோர காவல்படை அவசர எண்: 1554.",
+        "te": "🆘 అత్యవసర సముద్ర ప్రోటోకాల్ — తక్షణ చర్యలు:\n1. 🧭 దిశ: వెంటనే సమీపంలోని సురక్షిత తీరం లేదా ఓడరేవు వైపు వెళ్లండి.\n2. 📻 రేడియో: VHF ఛానల్ 16కి మార్చండి. మీ వివరాలను తెలియజేయండి.\n3. 🦺 లైఫ్ జాకెట్లు: సిబ్బంది అందరూ లైఫ్ జాకెట్లు ధరించాలి.\n4. ⚓ ఇంజిన్: అలలకు ఎదురుగా పడవను నిలకడగా ఉంచండి.\n5. 📞 కోస్ట్ గార్డ్ హెల్ప్‌లైన్: 1554.",
+        "ml": "🆘 അടിയന്തര സമുദ്ര പ്രോട്ടോക്കോൾ — അടിയന്തര നടപടികൾ:\n1. 🧭 ദിശ: ഉടൻ തന്നെ അടുത്തുള്ള സുരക്ഷിത തീരത്തേക്കോ തുറമുഖത്തേക്കോ നീങ്ങുക.\n2. 📻 റേഡിയോ: VHF ചാനൽ 16 ലേക്ക് മാറ്റുക. ലൊക്കേഷൻ അറിയിക്കുക.\n3. 🦺 ലൈഫ് ജാക്കറ്റ്: എല്ലാ ജീവനക്കാരും ലൈഫ് ജാക്കറ്റ് ധരിക്കുക.\n4. ⚓ നിയന്ത്രണം: തിരമാലകൾക്ക് നേരെ വള്ളം ക്രമീകരിക്കുക.\n5. 📞 കോസ്റ്റ് ഗാർഡ് അടിയന്തര നമ്പർ: 1554.",
+        "bn": "🆘 জরুরি সামুদ্রিক প্রোটোকল — অবিলম্বে করণীয়:\n১. 🧭 দিক: অবিলম্বে নিকটবর্তী নিরাপদ উপকূল বা বন্দরের দিকে এগিয়ে যান।\n২. 📻 রেডিও: VHF চ্যানেল ১৬-এ সেট করুন। আপনার অবস্থান জানান।\n৩. 🦺 লাইফ জ্যাকেট: সকল ক্রু সদস্যকে লাইফ জ্যাকেট পরতে হবে।\n৪. ⚓ নিয়ন্ত্রণ: ঢেউয়ের সাথে সামঞ্জস্য রেখে ইঞ্জিন চালান।\n৫. 📞 কোস্ট গার্ড জরুরি নম্বর: ১৫৫৪।"
+      }
+    },
+    "FLEET_PFZ_FORECAST": {
+      "role": "Commercial Operator",
+      "keywords": {
+        "en": [
+          "multi-day trawler trip this week",
+          "best fishing zones for a multi-day",
+          "suitable for deep-sea operations tomorrow",
+          "deep-sea operations tomorrow",
+          "trawler trip this week"
+        ],
+        "hi": [
+          "बहु-दिवसीय ट्रॉलर यात्रा",
+          "गहरे समुद्र में संचालन के लिए उपयुक्त",
+          "सर्वोत्तम मछली पकड़ने के क्षेत्र कौन से",
+          "ट्रॉलर यात्रा"
+        ],
+        "ta": [
+          "பல நாள் இழுவை படகு பயணத்திற்கு",
+          "ஆழ்கடல் செயல்பாடுகளுக்கு கடல் நிலை",
+          "சிறந்த மீன்பிடி மண்டலங்கள் எவை",
+          "இழுவை படகு"
+        ],
+        "te": [
+          "బహుళ-రోజుల ట్రాలర్ యాత్రకు",
+          "లోతైన సముద్ర కార్యకలాపాలకు సముద్ర",
+          "ఉత్తమ మత్స్య ప్రాంతాలు ఏవి",
+          "ట్రాలర్ యాత్రకు"
+        ],
+        "ml": [
+          "മൾട്ടി-ഡേ ട്രോളർ യാത്രയ്ക്ക്",
+          "ആഴക്കടൽ പ്രവർത്തനങ്ങൾക്ക് കടൽ അവസ്ഥ",
+          "ഏറ്റവും മികച്ച മത്സ്യ മേഖലകൾ ഏവ",
+          "ട്രോളർ യാത്രയ്ക്ക്"
+        ],
+        "bn": [
+          "একাধিক দিনের ট্রলার ভ্রমণের জন্য",
+          "গভীর সমুদ্রে কার্যক্রম পরিচালনার",
+          "সেরা মাছ ধরার এলাকা কোনগুলি",
+          "ট্রলার ভ্রমণের জন্য"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "What are the best fishing zones for a multi-day trawler trip this week?",
+          "Is the sea condition suitable for deep-sea operations tomorrow?"
+        ],
+        "hi": [
+          "इस सप्ताह बहु-दिवसीय ट्रॉलर यात्रा के लिए सर्वोत्तम मछली पकड़ने के क्षेत्र कौन से हैं?",
+          "क्या कल गहरे समुद्र में संचालन के लिए समुद्र की स्थिति उपयुक्त है?"
+        ],
+        "ta": [
+          "இந்த வாரம் பல நாள் இழுவை படகு பயணத்திற்கு சிறந்த மீன்பிடி மண்டலங்கள் எவை?",
+          "நாளை ஆழ்கடல் செயல்பாடுகளுக்கு கடல் நிலை பொருத்தமானதா?"
+        ],
+        "te": [
+          "ఈ వారం బహుళ-రోజుల ట్రాలర్ యాత్రకు ఉత్తమ మత్స్య ప్రాంతాలు ఏవి?",
+          "రేపు లోతైన సముద్ర కార్యకలాపాలకు సముద్ర స్థితి అనుకూలంగా ఉందా?"
+        ],
+        "ml": [
+          "ഈ ആഴ്ച മൾട്ടി-ഡേ ട്രോളർ യാത്രയ്ക്ക് ഏറ്റവും മികച്ച മത്സ്യ മേഖലകൾ ഏവ?",
+          "നാളെ ആഴക്കടൽ പ്രവർത്തനങ്ങൾക്ക് കടൽ അവസ്ഥ അനുയോജ്യമാണോ?"
+        ],
+        "bn": [
+          "এই সপ্তাহে একাধিক দিনের ট্রলার ভ্রমণের জন্য সেরা মাছ ধরার এলাকা কোনগুলি?",
+          "আগামীকাল গভীর সমুদ্রে কার্যক্রম পরিচালনার জন্য সমুদ্রের অবস্থা কি উপযুক্ত?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🚢 Commercial Fleet PFZ & 48-Hour Forecast:\nTop High-Yield Zones (ISRO/INCOIS Ocean Data):\n{top3Pfz}\n\n🌊 48-Hour Deep-Sea Marine Outlook:\n• Sea State: {seaState} ({wave}m waves, wind {wind} km/h)\n• Cyclone / Severe Weather: {cycloneStatus}\n• Fleet Suitability: {verdict}",
+        "hi": "🚢 वाणिज्यिक बेड़ा PFZ और 48-घंटे का पूर्वानुमान:\nशीर्ष उच्च-उपज क्षेत्र (ISRO/INCOIS महासागर डेटा):\n{top3Pfz}\n\n🌊 48-घंटे का गहरा समुद्री दृष्टिकोण:\n• समुद्र स्थिति: {seaState} ({wave}मी लहरें, हवा {wind} किमी/घं)\n• चक्रवात / गंभीर मौसम: {cycloneStatus}\n• बेड़े की उपयुक्तता: {verdict}",
+        "ta": "🚢 வணிகக் கப்பல் PFZ மற்றும் 48 மணி நேர முன்னறிவிப்பு:\nமுக்கிய உயர் மகசூல் மண்டலங்கள் (ISRO/INCOIS தரவு):\n{top3Pfz}\n\n🌊 48 மணி நேர ஆழ்கடல் பார்வை:\n• கடல் நிலை: {seaState} ({wave}மீ அலைகள், காற்று {wind} கிமீ/மணி)\n• புயல் / வானிலை: {cycloneStatus}\n• கப்பல் பயணத் தகுதி: {verdict}",
+        "te": "🚢 వాణిజ్య నౌకాదళం PFZ & 48-గంటల సూచన:\nఅత్యుత్తమ దిగుబడి ప్రాంతాలు (ISRO/INCOIS సమాచారం):\n{top3Pfz}\n\n🌊 48-గంటల లోతైన సముద్ర దృక్పథం:\n• సముద్ర స్థితి: {seaState} ({wave}మీ అలలు, గాలి {wind} కిమీ/గం)\n• తుఫాను / వాతావరణం: {cycloneStatus}\n• నౌకాదళ అనుకూలత: {verdict}",
+        "ml": "🚢 വാണിജ്യ ഫ്ലീറ്റ് PFZ & 48 മണിക്കൂർ പ്രവചനം:\nഉയർന്ന വിളവ് ലഭിക്കുന്ന മുൻനിര മേഖലകൾ (ISRO/INCOIS ഡാറ്റ):\n{top3Pfz}\n\n🌊 48 മണിക്കൂർ ആഴക്കടൽ കാലാവസ്ഥ:\n• കടൽ അവസ്ഥ: {seaState} ({wave}മീ തിരമാല, കാറ്റ് {wind} കിമീ/മ)\n• ചുഴലിക്കാറ്റ് / മോശം കാലാവസ്ഥ: {cycloneStatus}\n• ഫ്ലീറ്റ് അനുയോജ്യത: {verdict}",
+        "bn": "🚢 বাণিজ্যিক ফ্লিট PFZ এবং ৪৮ ঘণ্টার পূর্বাভাস:\nশীর্ষ উচ্চ-ফলনশীল অঞ্চলসমূহ (ISRO/INCOIS ডেটা):\n{top3Pfz}\n\n🌊 ৪৮ ঘণ্টার গভীর সামুদ্রিক দৃষ্টিভঙ্গি:\n• সমুদ্রের অবস্থা: {seaState} ({wave}মি ঢেউ, বাতাস {wind} কিমি/ঘ)\n• ঘূর্ণিঝড় / দুর্যোগপূর্ণ আবহাওয়া: {cycloneStatus}\n• ফ্লিটের উপযুক্ততা: {verdict}"
+      }
+    },
+    "CHLOROPHYLL_FORECAST": {
+      "role": "Commercial Operator",
+      "keywords": {
+        "en": [
+          "forecasted chlorophyll concentration in the offshore",
+          "chlorophyll concentration in the offshore zone",
+          "offshore zone chlorophyll",
+          "chlorophyll concentration in the offshore"
+        ],
+        "hi": [
+          "अपतटीय क्षेत्र में अनुमानित क्लोरोफिल",
+          "अनुमानित क्लोरोफिल सांद्रता क्या है",
+          "क्लोरोफिल सांद्रता"
+        ],
+        "ta": [
+          "கடற்கரைக்கு அப்பால் முன்னறிவிக்கப்பட்ட குளோரோபில்",
+          "குளோரோபில் செறிவு என்ன",
+          "குளோரோபில் செறிவு"
+        ],
+        "te": [
+          "తీరానికి ఆవల అంచనా వేసిన క్లోరోఫిల్",
+          "క్లోరోఫిల్ సాంద్రత ఎంత",
+          "క్లోరోఫిల్ సాంద్రత"
+        ],
+        "ml": [
+          "തീരത്തുനിന്നകന്ന മേഖലയിൽ പ്രവചിക്കപ്പെട്ട",
+          "ക്ലോറോഫിലിന്റെ അളവ് എത്രയാണ്",
+          "ക്ലോറോഫിലിന്റെ അളവ്"
+        ],
+        "bn": [
+          "অফশোর অঞ্চলে পূর্বাভাসিত ক্লোরোফিলের",
+          "ক্লোরোফিলের ঘনত্ব কত",
+          "ক্লোরোফিলের ঘনত্ব"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "What is the forecasted chlorophyll concentration in the offshore zone?"
+        ],
+        "hi": [
+          "अपतटीय क्षेत्र में अनुमानित क्लोरोफिल सांद्रता क्या है?"
+        ],
+        "ta": [
+          "கடற்கரைக்கு அப்பால் முன்னறிவிக்கப்பட்ட குளோரோபில் செறிவு என்ன?"
+        ],
+        "te": [
+          "తీరానికి ఆవల అంచనా వేసిన క్లోరోఫిల్ సాంద్రత ఎంత?"
+        ],
+        "ml": [
+          "തീരത്തുനിന്നകന്ന മേഖലയിൽ പ്രവചിക്കപ്പെട്ട ക്ലോറോഫിലിന്റെ അളവ് എത്രയാണ്?"
+        ],
+        "bn": [
+          "উপকূলবর্তী অফশোর অঞ্চলে পূর্বাভাসিত ক্লোরোফিলের ঘনত্ব কত?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🌿 Satellite Chlorophyll-a Oceanographic Report:\n• Key Offshore Zone: {offshorePfzName} ({offshorePfzDist} km offshore)\n• Chlorophyll-a Concentration: {chlOffshore} mg/m³\n• Sea Surface Temperature: {sst}°C\n• Biological Productivity: High Phytoplankton Bloom\n💡 Trawler Note: Optimal pelagic convergence zone with strong feeding activity.",
+        "hi": "🌿 उपग्रह क्लोरोफिल-ए महासागरीय रिपोर्ट:\n• मुख्य अपतटीय क्षेत्र: {offshorePfzName} ({offshorePfzDist} किमी अपतटीय)\n• क्लोरोफिल-ए सांद्रता: {chlOffshore} mg/m³\n• समुद्र सतह का तापमान: {sst}°C\n• जैविक उत्पादकता: उच्च फाइटोप्लांकटन संचय\n💡 ट्रॉलर नोट: मजबूत भोजन गतिविधि के साथ इष्टतम क्षेत्र।",
+        "ta": "🌿 செயற்கைக்கோள் குளோரோபில்-ஏ அறிக்கை:\n• முக்கிய ஆழ்கடல் பகுதி: {offshorePfzName} ({offshorePfzDist} கிமீ தொலைவில்)\n• குளோரோபில் செறிவு: {chlOffshore} mg/m³\n• கடல் மேற்பரப்பு வெப்பநிலை: {sst}°C\n• உற்பத்தித்திறன்: அதிக பிளாங்க்டன் அடர்த்தி\n💡 இழுவைப்படகு குறிப்பு: சிறந்த மீன்பிடி உணவு மண்டலம்.",
+        "te": "🌿 ఉపగ్రహ క్లోరోఫిల్-ఎ నివేదిక:\n• ముఖ్య తీరప్రాంతం: {offshorePfzName} ({offshorePfzDist} కిమీ తీరానికి దూరం)\n• క్లోరోఫిల్-ఎ సాంద్రత: {chlOffshore} mg/m³\n• సముద్ర ఉపరితల ఉష్ణోగ్రత: {sst}°C\n• జీవ ఉత్పాదకత: అధిక ఆహార సాంద్రత\n💡 ట్రాలర్ గమనిక: పెలాజిక్ చేపలకు అనుకూల ప్రాంతం.",
+        "ml": "🌿 ഉപഗ്രഹ ക്ലോറോഫിൽ-എ സമുദ്ര പഠന റിപ്പോർട്ട്:\n• പ്രധാന മേഖല: {offshorePfzName} ({offshorePfzDist} കിമീ അകലെ)\n• ക്ലോറോഫിൽ സാന്ദ്രത: {chlOffshore} mg/m³\n• സമുദ്രോപരിതല താപനില: {sst}°C\n• ജൈവ ഉൽപാദനക്ഷമത: ഉയർന്ന പ്ലാങ്ക്ടൺ സാന്നിധ്യം\n💡 ട്രോളർ നിർദ്ദേശം: മികച്ച തീറ്റ ലഭിക്കുന്ന ഒത്തുചേരൽ മേഖല.",
+        "bn": "🌿 স্যাটেলাইট ক্লোরোফিল-এ সামুদ্রিক রিপোর্ট:\n• প্রধান অফশোর এলাকা: {offshorePfzName} ({offshorePfzDist} কিমি দূরে)\n• ক্লোরোফিল-এ ঘনত্ব: {chlOffshore} mg/m³\n• সমুদ্র পৃষ্ঠের তাপমাত্রা: {sst}°C\n• জৈব উৎপাদনশীলতা: উচ্চ প্লাঙ্কটন ঘনত্ব\n💡 ট্রলার নোট: চমৎকার খাদ্য প্রাচুর্য সহ অনুকূল মাছ ধরার অঞ্চল।"
+      }
+    },
+    "FLEET_ROUTE_OPTIMIZATION": {
+      "role": "Commercial Operator",
+      "keywords": {
+        "en": [
+          "minimizes fuel consumption",
+          "optimized multi-stop route for my fleet",
+          "safe path back to the shore",
+          "multi-stop route for my fleet",
+          "fuel consumption to the nearest"
+        ],
+        "hi": [
+          "ईंधन की खपत को कम करता है",
+          "मल्टी-स्टॉप मार्ग का सुझाव",
+          "किनारे पर वापस जाने का एक सुरक्षित रास्ता",
+          "ईंधन की खपत"
+        ],
+        "ta": [
+          "எரிபொருள் பயன்பாட்டைக் குறைக்கும்",
+          "பல நிறுத்த பாதையை பரிந்துரைக்க",
+          "கரைக்குத் திரும்புவதற்கான பாதுகாப்பான வழி",
+          "எரிபொருள் பயன்பாடு"
+        ],
+        "te": [
+          "ఇంధన వినియోగాన్ని తగ్గిస్తుంది",
+          "బహుళ-స్టాప్ మార్గాన్ని సూచించగలరా",
+          "తిరిగి తీరానికి చేర్చే సురక్షితమైన మార్గం",
+          "ఇంధన వినియోగం"
+        ],
+        "ml": [
+          "ഇന്ധന ഉപഭോഗം കുറയ്ക്കുന്ന പാത",
+          "മൾട്ടി-സ്റ്റോപ്പ് റൂട്ട് നിർദ്ദേശിക്കാമോ",
+          "തീരത്തേക്ക് മടങ്ങാൻ സുരക്ഷിതമായ ഒരു പാത",
+          "ഇന്ധന ഉപഭോഗം"
+        ],
+        "bn": [
+          "জ্বালানী খরচ কমায়",
+          "মাল্টি-স্টপ রুটের পরামর্শ",
+          "তীরে ফিরে আসার নিরাপদ পথ",
+          "জ্বালানী খরচ"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Which route minimizes fuel consumption to the nearest high-yield PFZ?",
+          "Can you suggest an optimized multi-stop route for my fleet?",
+          "Can you show me a safe path back to the shore?"
+        ],
+        "hi": [
+          "निकटतम उच्च उपज वाले PFZ के लिए कौन सा मार्ग ईंधन की खपत को कम करता है?",
+          "क्या आप मेरे बेड़े के लिए एक अनुकूलित मल्टी-स्टॉप मार्ग का सुझाव दे सकते हैं?",
+          "क्या आप मुझे किनारे पर वापस जाने का एक सुरक्षित रास्ता दिखा सकते हैं?"
+        ],
+        "ta": [
+          "அருகிலுள்ள அதிக மகசூல் தரும் PFZ-க்கு எந்த பாதை எரிபொருள் பயன்பாட்டைக் குறைக்கும்?",
+          "எனது கப்பல் குழுவிற்கு உகந்த பல நிறுத்த பாதையை பரிந்துரைக்க முடியுமா?",
+          "கரைக்குத் திரும்புவதற்கான பாதுகாப்பான வழியைக் காட்ட முடியுமா?"
+        ],
+        "te": [
+          "సమీప అధిక దిగుబడి PFZకి ఏ మార్గం ఇంధన వినియోగాన్ని తగ్గిస్తుంది?",
+          "నా నౌకాదళం కోసం ఆప్టిమైజ్ చేసిన బహుళ-స్టాప్ మార్గాన్ని సూచించగలరా?",
+          "నన్ను తిరిగి తీరానికి చేర్చే సురక్షితమైన మార్గాన్ని చూపించగలరా?"
+        ],
+        "ml": [
+          "ഏറ്റവും അടുത്തുള്ള ഉയർന്ന വിളവ് നൽകുന്ന PFZ-ലേക്ക് ഇന്ധന ഉപഭോഗം കുറയ്ക്കുന്ന പാത ഏതാണ്?",
+          "എന്റെ ഫ്ലീറ്റിനായി ഒപ്റ്റിമൈസ് ചെയ്ത മൾട്ടി-സ്റ്റോപ്പ് റൂട്ട് നിർദ്ദേശിക്കാമോ?",
+          "തീരത്തേക്ക് മടങ്ങാൻ സുരക്ഷിതമായ ഒരു പാത കാണിക്കാമോ?"
+        ],
+        "bn": [
+          "নিকটতম উচ্চ-ফলনশীল PFZ-এর জন্য কোন রুটটি জ্বালানী খরচ কমায়?",
+          "আপনি কি আমার ফ্লিটের জন্য একটি অপ্টিমাইজড মাল্টি-স্টপ রুটের পরামর্শ দিতে পারেন?",
+          "আপনি কি আমাকে তীরে ফিরে আসার নিরাপদ পথ দেখাতে পারেন?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "⛽ Fuel-Optimized Fleet Navigation Route:\n• Target PFZ: {pfzName}\n• Total Distance: {totalDistanceKm} km ({waypoints} precision waypoints)\n• Estimated Fuel Burn: {fuelEstimate}\n• Avoidance Constraints: Full clearance from MPAs and IMBL buffers\n🗺️ Waypoints:\n{waypointList}\n📋 Navigation Advisory: {routeAdvisory}",
+        "hi": "⛽ ईंधन-अनुकूलित बेड़ा नेविगेशन मार्ग:\n• लक्षित PFZ: {pfzName}\n• कुल दूरी: {totalDistanceKm} किमी ({waypoints} सटीक वेपॉइंट)\n• अनुमानित ईंधन खपत: {fuelEstimate}\n• परिहार प्रतिबंध: MPA और IMBL बफर से सुरक्षित दूरी\n🗺️ वेपॉइंट:\n{waypointList}\n📋 नेविगेशन परामर्श: {routeAdvisory}",
+        "ta": "⛽ எரிபொருள்-சேமிப்பு வழித்தடம்:\n• இலக்கு PFZ: {pfzName}\n• மொத்த தூரம்: {totalDistanceKm} கிமீ ({waypoints} வழிப்புள்ளிகள்)\n• மதிப்பிடப்பட்ட எரிபொருள்: {fuelEstimate}\n• பாதுகாப்பு: MPA மற்றும் IMBL எல்லைகள் தவிர்க்கப்பட்டன\n🗺️ வழிப்புள்ளிகள்:\n{waypointList}\n📋 ஆலோசனை: {routeAdvisory}",
+        "te": "⛽ ఇంధన-ఆప్టిమైజ్డ్ నావిగేషన్ మార్గం:\n• లక్ష్య PFZ: {pfzName}\n• మొత్తం దూరం: {totalDistanceKm} కిమీ ({waypoints} వేపాయింట్లు)\n• అంచనా వేసిన ఇంధనం: {fuelEstimate}\n• పరిమితులు: MPA మరియు IMBL సరిహద్దుల నుండి రక్షణ\n🗺️ వేపాయింట్లు:\n{waypointList}\n📋 నావిగేషన్ సలహా: {routeAdvisory}",
+        "ml": "⛽ ഇന്ധന-ക്ഷമതയുള്ള ഫ്ലീറ്റ് നാവിഗേഷൻ പാത:\n• ലക്ഷ്യം PFZ: {pfzName}\n• ആകെ ദൂരം: {totalDistanceKm} കിമീ ({waypoints} വേപോയിന്റുകൾ)\n• പ്രതീക്ഷിക്കുന്ന ഇന്ധനം: {fuelEstimate}\n• ഒഴിവാക്കിയ മേഖലകൾ: MPA, IMBL ബഫറുകൾ ഒഴിവാക്കി\n🗺️ വേപോയിന്റുകൾ:\n{waypointList}\n📋 ഉപദേശം: {routeAdvisory}",
+        "bn": "⛽ জ্বালানি-সাশ্রয়ী ফ্লিট নেভিগেশন রুট:\n• লক্ষ্য PFZ: {pfzName}\n• মোট দূরত্ব: {totalDistanceKm} কিমি ({waypoints} ওয়েপয়েন্ট)\n• আনুমানিক জ্বালানি: {fuelEstimate}\n• নিরাপত্তা ব্যবস্থা: MPA ও IMBL বাফার এড়িয়ে পথ নির্ধারণ\n🗺️ ওয়েপয়েন্ট তালিকা:\n{waypointList}\n📋 নেভিগেশন পরামর্শ: {routeAdvisory}"
+      }
+    },
+    "MULTIDAY_WEATHER_OUTLOOK": {
+      "role": "Commercial Operator",
+      "keywords": {
+        "en": [
+          "5-day weather outlook for the offshore",
+          "wave height forecast for the next 48 hours",
+          "weather outlook for the next 24 hours at the port",
+          "next 48 hours offshore",
+          "5-day weather outlook"
+        ],
+        "hi": [
+          "5-दिवसीय मौसम दृष्टिकोण",
+          "अगले 48 घंटों के लिए लहर की ऊंचाई",
+          "अगले 24 घंटों के लिए मौसम का दृष्टिकोण",
+          "अपतटीय मछली पकड़ने के मैदानों"
+        ],
+        "ta": [
+          "5 நாள் வானிலை கண்ணோட்டம்",
+          "அடுத்த 48 மணி நேரத்திற்கு ஆழ்கடலில் அலை",
+          "அடுத்த 24 மணி நேரத்திற்கான வானிலை",
+          "ஆழ்கடல் மீன்பிடி பகுதிகளுக்கான"
+        ],
+        "te": [
+          "5 రోజుల వాతావరణ దృక్పథం",
+          "రాబోయే 48 గంటల్లో అలల ఎత్తు",
+          "రాబోయే 24 గంటల వాతావరణ దృక్పథం",
+          "మత్స్య మైదానాల కోసం 5 రోజుల"
+        ],
+        "ml": [
+          "5 ദിവസത്തെ കാലാവസ്ഥാ കാഴ്ചപ്പാട്",
+          "അടുത്ത 48 മണിക്കൂറിൽ ഓഫ്‌ഷോർ തിരമാല",
+          "അടുത്ത 24 മണിക്കൂറിലെ കാലാവസ്ഥാ",
+          "ഓഫ്‌ഷോർ മത്സ്യബന്ധന മേഖലകളിലെ"
+        ],
+        "bn": [
+          "৫ দিনের আবহাওয়ার পূর্বাভাস",
+          "পরবর্তী ৪৮ ঘণ্টার জন্য ঢেউয়ের উচ্চতার",
+          "পরবর্তী ২৪ ঘণ্টার আবহাওয়ার পূর্বাভাস",
+          "অফশোর মাছ ধরার এলাকার"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "What is the 5-day weather outlook for the offshore fishing grounds?",
+          "What is the wave height forecast for the next 48 hours offshore?",
+          "What is the weather outlook for the next 24 hours at the port?"
+        ],
+        "hi": [
+          "अपतटीय मछली पकड़ने के मैदानों के लिए 5-दिवसीय मौसम दृष्टिकोण क्या है?",
+          "अपतटीय अगले 48 घंटों के लिए लहर की ऊंचाई का पूर्वानुमान क्या है?",
+          "बंदरगाह पर अगले 24 घंटों के लिए मौसम का दृष्टिकोण क्या है?"
+        ],
+        "ta": [
+          "ஆழ்கடல் மீன்பிடி பகுதிகளுக்கான 5 நாள் வானிலை கண்ணோட்டம் என்ன?",
+          "அடுத்த 48 மணி நேரத்திற்கு ஆழ்கடலில் அலை உயரம் முன்னறிவிப்பு என்ன?",
+          "துறைமுகத்தில் அடுத்த 24 மணி நேரத்திற்கான வானிலை முன்னறிவிப்பு என்ன?"
+        ],
+        "te": [
+          "తీరానికి ఆవల ఉన్న మత్స్య మైదానాల కోసం 5 రోజుల వాతావరణ దృక్పథం ఏమిటి?",
+          "తీరానికి ఆవల రాబోయే 48 గంటల్లో అలల ఎత్తు సూచన ఏమిటి?",
+          "ఓడరేవు వద్ద రాబోయే 24 గంటల వాతావరణ దృక్పథం ఏమిటి?"
+        ],
+        "ml": [
+          "ഓഫ്‌ഷോർ മത്സ്യബന്ധന മേഖലകളിലെ 5 ദിവസത്തെ കാലാവസ്ഥാ കാഴ്ചപ്പാട് എന്താണ്?",
+          "അടുത്ത 48 മണിക്കൂറിൽ ഓഫ്‌ഷോർ തിരമാല ഉയര പ്രവചനം എന്താണ്?",
+          "തുറമുഖത്ത് അടുത്ത 24 മണിക്കൂറിലെ കാലാവസ്ഥാ കാഴ്ചപ്പാട് എന്താണ്?"
+        ],
+        "bn": [
+          "অফশোর মাছ ধরার এলাকার জন্য ৫ দিনের আবহাওয়ার পূর্বাভাস কী?",
+          "অফশোরে পরবর্তী ৪৮ ঘণ্টার জন্য ঢেউয়ের উচ্চতার পূর্বাভাস কী?",
+          "বন্দরে পরবর্তী ২৪ ঘণ্টার আবহাওয়ার পূর্বাভাস কী?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "📅 Multi-Day Extended Marine Weather Outlook:\n{multiDayOutlook}\n\n📈 Synoptic Trend: {trendSummary}\n⚠️ Operational Advisory: Check satellite updates before entering offshore grids.",
+        "hi": "📅 बहु-दिवसीय विस्तारित समुद्री मौसम दृष्टिकोण:\n{multiDayOutlook}\n\n📈 सिनोप्टिक रुझान: {trendSummary}\n⚠️ परिचालन परामर्श: अपतटीय ग्रिड में प्रवेश करने से पहले उपग्रह अपडेट जांचें।",
+        "ta": "📅 பல நாள் கடல் வானிலை முன்னறிவிப்பு:\n{multiDayOutlook}\n\n📈 வானிலை போக்கு: {trendSummary}\n⚠️ செயல்பாட்டு ஆலோசனை: ஆழ்கடல் பகுதிக்குள் செல்லும் முன் செயற்கைக்கோள் தகவலை சரிபார்க்கவும்.",
+        "te": "📅 బహుళ-రోజుల సముద్ర వాతావరణ దృక్పథం:\n{multiDayOutlook}\n\n📈 వాతావరణ ధోరణి: {trendSummary}\n⚠️ కార్యాచరణ సలహా: లోతైన సముద్రంలోకి వెళ్లే ముందు తాజా వివరాలు తనిఖీ చేయండి.",
+        "ml": "📅 വിപുലീകരിച്ച കാലാവസ്ഥാ പ്രവചനം:\n{multiDayOutlook}\n\n📈 കാലാവസ്ഥാ പ്രവണത: {trendSummary}\n⚠️ പ്രവർത്തന നിർദ്ദേശം: കടലിലേക്ക് തിരിക്കും മുൻപ് ഉപഗ്രഹ വിവരങ്ങൾ പരിശോധിക്കുക.",
+        "bn": "📅 বহু-দিনের বর্ধিত সামুদ্রিক আবহাওয়ার দৃষ্টিভঙ্গি:\n{multiDayOutlook}\n\n📈 সামগ্রিক প্রবণতা: {trendSummary}\n⚠️ পরিচালনা সংক্রান্ত পরামর্শ: অফশোর অঞ্চলে প্রবেশের আগে স্যাটেলাইট আপডেট যাচাই করুন।"
+      }
+    },
+    "REGULATORY_GEOFENCE_ALERT": {
+      "role": "Commercial Operator",
+      "keywords": {
+        "en": [
+          "is there any restricted or boundary zone nearby",
+          "restricted or boundary zone nearby",
+          "restricted or boundary zone",
+          "boundary zone nearby",
+          "restricted zones my fleet should avoid",
+          "regulatory or geofencing alerts",
+          "geofencing violations reported near the imbl",
+          "marine protected areas near the port jurisdiction",
+          "marine protected areas near our village",
+          "restricted or boundary zone"
+        ],
+        "hi": [
+          "क्या आस-पास कोई प्रतिबंधित या सीमा क्षेत्र है",
+          "प्रतिबंधित या सीमा क्षेत्र है",
+          "प्रतिबंधित या सीमा क्षेत्र",
+          "बेड़े को किन प्रतिबंधित क्षेत्रों से बचना",
+          "विनियामक या जियोफेंसिंग अलर्ट",
+          "IMBL के पास कोई जियोफेंसिंग उल्लंघन",
+          "बंदरगाह अधिकार क्षेत्र के पास",
+          "गाँव के पास बचने के लिए कोई समुद्री संरक्षित"
+        ],
+        "ta": [
+          "அருகில் ஏதேனும் தடைசெய்யப்பட்ட அல்லது எல்லை மண்டலம் உள்ளதா",
+          "தடைசெய்யப்பட்ட அல்லது எல்லை மண்டலம்",
+          "படகுகள் தவிர்க்க வேண்டிய தடைசெய்யப்பட்ட",
+          "ஒழுங்குமுறை அல்லது புவிவேலி எச்சரிக்கைகள்",
+          "IMBL அருகில் ஏதேனும் புவிவேலி மீறல்கள்",
+          "துறைமுக அதிகார எல்லைக்கு அருகில்",
+          "கிராமத்திற்கு அருகில் தவிர்க்க வேண்டிய கடல்சார்"
+        ],
+        "te": [
+          "సమీపంలో ఏదైనా నిషిద్ధ లేదా సరిహద్దు ప్రాంతం ఉందా",
+          "నిషిద్ధ లేదా సరిహద్దు ప్రాంతం ఉందా",
+          "నిషిద్ధ లేదా సరిహద్దు ప్రాంతం",
+          "నౌకాదళం నివారించాల్సిన నిషిద్ధ",
+          "నియంత్రణ లేదా జియోఫెన్సింగ్ హెచ్చరికలు",
+          "IMBL సమీపంలో ఏవైనా జియోఫెన్సింగ్ ఉల్లంఘనలు",
+          "ఓడరేవు అధికార పరిధి సమీపంలో",
+          "గ్రామానికి సమీపంలో నివారించాల్సిన"
+        ],
+        "ml": [
+          "സമീപത്ത് എന്തെങ്കിലും നിരോധിത അല്ലെങ്കിൽ അതിർത്തി മേഖലകൾ ഉണ്ടോ",
+          "നിരോധിത അല്ലെങ്കിൽ അതിർത്തി മേഖലകൾ",
+          "ഫ്ലീറ്റ് ഒഴിവാക്കേണ്ട ഏതെങ്കിലും നിരോധിത",
+          "നിയന്ത്രണ അല്ലെങ്കിൽ ജിയോഫെൻസിംഗ്",
+          "IMBL ന് സമീപം ജിയോഫെൻസിംഗ് ലംഘനങ്ങൾ",
+          "തുറമുഖ അധികാരപരിധിക്ക് സമീപം",
+          "ഗ്രാമത്തിന് സമീപം ഒഴിവാക്കേണ്ട"
+        ],
+        "bn": [
+          "কাছাকাছি কি কোনো সীমাবদ্ধ বা সীমানা এলাকা আছে",
+          "সীমাবদ্ধ বা সীমানা এলাকা আছে",
+          "সীমাবদ্ধ বা সীমানা এলাকা",
+          "ফ্লিটের এড়িয়ে চলা উচিত এমন",
+          "নিয়ন্ত্রক বা জিওফেনসিং সতর্কতা",
+          "IMBL-এর কাছে কোনো জিওফেনসিং লঙ্ঘন",
+          "বন্দর এখতিয়ারের কাছে",
+          "গ্রামের কাছে এড়িয়ে চলার মতো"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Are there any restricted zones my fleet should avoid this week?",
+          "Are there any regulatory or geofencing alerts for commercial vessels?",
+          "Are there any geofencing violations reported near the IMBL today?",
+          "Is there any restricted or boundary zone nearby?",
+          "Are there any marine protected areas near the port jurisdiction?",
+          "Are there any marine protected areas near our village to avoid?"
+        ],
+        "hi": [
+          "क्या इस सप्ताह मेरे बेड़े को किन प्रतिबंधित क्षेत्रों से बचना चाहिए?",
+          "क्या वाणिज्यिक जहाजों के लिए कोई विनियामक या जियोफेंसिंग अलर्ट हैं?",
+          "क्या आज IMBL के पास कोई जियोफेंसिंग उल्लंघन की सूचना मिली है?",
+          "क्या आस-पास कोई प्रतिबंधित या सीमा क्षेत्र है?",
+          "क्या बंदरगाह अधिकार क्षेत्र के पास कोई समुद्री संरक्षित क्षेत्र हैं?",
+          "क्या हमारे गाँव के पास बचने के लिए कोई समुद्री संरक्षित क्षेत्र हैं?"
+        ],
+        "ta": [
+          "இந்த வாரம் எனது படகுகள் தவிர்க்க வேண்டிய தடைசெய்யப்பட்ட மண்டலங்கள் ஏதேனும் உள்ளதா?",
+          "வணிகக் கப்பல்களுக்கு ஏதேனும் ஒழுங்குமுறை அல்லது புவிவேலி எச்சரிக்கைகள் உள்ளதா?",
+          "இன்று IMBL அருகில் ஏதேனும் புவிவேலி மீறல்கள் பதிவாகியுள்ளதா?",
+          "அருகில் ஏதேனும் தடைசெய்யப்பட்ட அல்லது எல்லை மண்டலம் உள்ளதா?",
+          "துறைமுக அதிகார எல்லைக்கு அருகில் ஏதேனும் கடல்சார் பாதுகாக்கப்பட்ட பகுதிகள் உள்ளதா?",
+          "எங்கள் கிராமத்திற்கு அருகில் தவிர்க்க வேண்டிய கடல்சார் பாதுகாக்கப்பட்ட பகுதிகள் உள்ளதா?"
+        ],
+        "te": [
+          "ఈ వారం నా నౌకాదళం నివారించాల్సిన నిషిద్ధ ప్రాంతాలు ఏవైనా ఉన్నాయా?",
+          "వాణిజ్య నౌకల కోసం ఏవైనా నియంత్రణ లేదా జియోఫెన్సింగ్ హెచ్చరికలు ఉన్నాయా?",
+          "ఈరోజు IMBL సమీపంలో ఏవైనా జియోఫెన్సింగ్ ఉల్లంఘనలు నమోదయ్యాయా?",
+          "సమీపంలో ఏదైనా నిషిద్ధ లేదా సరిహద్దు ప్రాంతం ఉందా?",
+          "ఓడరేవు అధికార పరిధి సమీపంలో ఏవైనా సముద్ర రక్షిత ప్రాంతాలు ఉన్నాయా?",
+          "మా గ్రామానికి సమీపంలో నివారించాల్సిన సముద్ర రక్షిత ప్రాంతాలు ఏవైనా ఉన్నాయా?"
+        ],
+        "ml": [
+          "ഈ ആഴ്ച എന്റെ ഫ്ലീറ്റ് ഒഴിവാക്കേണ്ട ഏതെങ്കിലും നിരോധിത മേഖലകൾ ഉണ്ടോ?",
+          "വാണിജ്യ കപ്പലുകൾക്കായി എന്തെങ്കിലും നിയന്ത്രണ അല്ലെങ്കിൽ ജിയോഫെൻസിംഗ് മുന്നറിയിപ്പുകൾ ഉണ്ടോ?",
+          "ഇന്ന് IMBL ന് സമീപം ജിയോഫെൻസിംഗ് ലംഘനങ്ങൾ റിപ്പോർട്ട് ചെയ്തിട്ടുണ്ടോ?",
+          "സമീപത്ത് എന്തെങ്കിലും നിരോധിത അല്ലെങ്കിൽ അതിർത്തി മേഖലകൾ ഉണ്ടോ?",
+          "തുറമുഖ അധികാരപരിധിക്ക് സമീപം എന്തെങ്കിലും സമുദ്ര സംരക്ഷിത മേഖലകൾ ഉണ്ടോ?",
+          "ഞങ്ങളുടെ ഗ്രാമത്തിന് സമീപം ഒഴിവാക്കേണ്ട സമുദ്ര സംരക്ഷിത മേഖലകൾ ഉണ്ടോ?"
+        ],
+        "bn": [
+          "এই সপ্তাহে আমার ফ্লিটের এড়িয়ে চলা উচিত এমন কোনো সীমাবদ্ধ এলাকা আছে কি?",
+          "বাণিজ্যিক জাহাজের জন্য কি কোনো নিয়ন্ত্রক বা জিওফেনসিং সতর্কতা রয়েছে?",
+          "আজ কি IMBL-এর কাছে কোনো জিওফেনসিং লঙ্ঘনের খবর পাওয়া গেছে?",
+          "কাছাকাছি কি কোনো সীমাবদ্ধ বা সীমানা এলাকা আছে?",
+          "বন্দর এখতিয়ারের কাছে কি কোনো সামুদ্রিক সংরক্ষিত এলাকা আছে?",
+          "আমাদের গ্রামের কাছে এড়িয়ে চলার মতো কোনো সামুদ্রিক সংরক্ষিত এলাকা আছে কি?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🛡️ Maritime Regulatory & Geofencing Alert Status:\n• International Boundary: {imblStatus}\n• Nearest Marine Protected Area: {mpaName}\n• Legal Restriction: {mpaRestriction}\n• Active Boundaries Checked:\n{hazardList}\n📋 Compliance Directive: {hazardAdvisory}",
+        "hi": "🛡️ समुद्री विनियामक और जियोफेंसिंग चेतावनी स्थिति:\n• अंतर्राष्ट्रीय सीमा: {imblStatus}\n• निकटतम समुद्री संरक्षित क्षेत्र: {mpaName}\n• कानूनी प्रतिबंध: {mpaRestriction}\n• सक्रिय सीमाओं की जाँच की गई:\n{hazardList}\n📋 अनुपालन निर्देश: {hazardAdvisory}",
+        "ta": "🛡️ கடல்சார் ஒழுங்குமுறை மற்றும் புவிவேலி எச்சரிக்கை:\n• சர்வதேச எல்லை: {imblStatus}\n• அருகிலுள்ள கடல் பாதுகாக்கப்பட்ட பகுதி: {mpaName}\n• சட்டக் கட்டுப்பாடு: {mpaRestriction}\n• எல்லைகள்:\n{hazardList}\n📋 இணக்க வழிகாட்டுதல்: {hazardAdvisory}",
+        "te": "🛡️ సముద్ర నియంత్రణ & జియోఫెన్సింగ్ హెచ్చరిక స్థితి:\n• అంతర్జాతీయ సరిహద్దు: {imblStatus}\n• సమీప సముద్ర రక్షిత ప్రాంతం: {mpaName}\n• చట్టపరమైన నిషేధం: {mpaRestriction}\n• సరిహద్దు తనిఖీ:\n{hazardList}\n📋 ఆదేశం: {hazardAdvisory}",
+        "ml": "🛡️ സമുദ്ര നിയന്ത്രണ & ജിയോഫെൻസിംഗ് മുന്നറിയിപ്പ്:\n• അന്താരാഷ്ട്ര അതിർത്തി: {imblStatus}\n• അടുത്തുള്ള സമുദ്ര സംരക്ഷിത പ്രദേശം: {mpaName}\n• നിയമപരമായ നിയന്ത്രണം: {mpaRestriction}\n• സജീവ അതിർത്തികൾ:\n{hazardList}\n📋 നിർദ്ദേശം: {hazardAdvisory}",
+        "bn": "🛡️ সামুদ্রিক নিয়ন্ত্রক ও জিওফেনসিং সতর্কতা স্থিতি:\n• আন্তর্জাতিক সীমানা: {imblStatus}\n• নিকটতম সামুদ্রিক সংরক্ষিত এলাকা: {mpaName}\n• আইনি সীমাবদ্ধতা: {mpaRestriction}\n• সক্রিয় সীমানা পরীক্ষা:\n{hazardList}\n📋 নির্দেশিকা: {hazardAdvisory}"
+      }
+    },
+    "COMMUNITY_STATUS_ADVISORY": {
+      "role": "Society / Coastal Fisherman",
+      "keywords": {
+        "en": [
+          "for all boats going out from our village",
+          "current advisories for our coastal region",
+          "government relief or alert notifications",
+          "overall risk level for our coastal area",
+          "lightning or storm risk for our community"
+        ],
+        "hi": [
+          "सभी नावों की सुरक्षा स्थिति",
+          "तटीय क्षेत्र के लिए वर्तमान परामर्श",
+          "सरकारी राहत या चेतावनी",
+          "समग्र जोखिम स्तर क्या है",
+          "बिजली या तूफान का खतरा"
+        ],
+        "ta": [
+          "அனைத்து படகுகளின் பாதுகாப்பு நிலை",
+          "கடலோரப் பகுதிக்கான தற்போதைய ஆலோசனைகள்",
+          "அரசு நிவாரணம் அல்லது எச்சரிக்கை",
+          "ஒட்டுமொத்த ஆபத்து நிலை என்ன",
+          "மின்னல் அல்லது புயல் ஆபத்து"
+        ],
+        "te": [
+          "అన్ని పడవల భద్రతా స్థితి",
+          "తీర ప్రాంతానికి ప్రస్తుత సలహాలు",
+          "ప్రభుత్వ సహాయం లేదా హెచ్చరిక",
+          "మొత్తం ప్రమాద స్థాయి ఎంత",
+          "మెరుపు లేదా తుఫాను ముప్పు"
+        ],
+        "ml": [
+          "എല്ലാ വള്ളങ്ങളുടെയും സുരക്ഷാ നില",
+          "തീരദേശ മേഖലയ്ക്കുള്ള നിലവിലെ നിർദ്ദേശങ്ങൾ",
+          "സർക്കാർ സഹായമോ മുന്നറിയിപ്പ്",
+          "മൊത്തത്തിലുള്ള അപകടസാധ്യത എത്രയാണ്",
+          "മിന്നലോ കൊടുങ്കാറ്റോ ഉണ്ടാകാൻ"
+        ],
+        "bn": [
+          "সমস্ত নৌকার নিরাপত্তার অবস্থা",
+          "উপকূলীয় অঞ্চলের জন্য বর্তমান পরামর্শগুলি",
+          "সরকারি ত্রাণ বা সতর্কবার্তা",
+          "সার্বিক ঝুঁকির মাত্রা কত",
+          "বজ্রপাত বা ঝড়ের ঝুঁকি"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "What is the safety status for all boats going out from our village today?",
+          "What are the current advisories for our coastal region?",
+          "Are there any government relief or alert notifications for our region?",
+          "What is the overall risk level for our coastal area today?",
+          "Is there a lightning or storm risk for our community today?"
+        ],
+        "hi": [
+          "आज हमारे गाँव से बाहर जाने वाली सभी नावों की सुरक्षा स्थिति क्या है?",
+          "हमारे तटीय क्षेत्र के लिए वर्तमान परामर्श क्या हैं?",
+          "क्या हमारे क्षेत्र के लिए कोई सरकारी राहत या चेतावनी सूचनाएं हैं?",
+          "आज हमारे तटीय क्षेत्र के लिए समग्र जोखिम स्तर क्या है?",
+          "क्या आज हमारे समुदाय के लिए बिजली या तूफान का खतरा है?"
+        ],
+        "ta": [
+          "இன்று எங்கள் கிராமத்திலிருந்து செல்லும் அனைத்து படகுகளின் பாதுகாப்பு நிலை என்ன?",
+          "எங்கள் கடலோரப் பகுதிக்கான தற்போதைய ஆலோசனைகள் என்ன?",
+          "எங்கள் பகுதிக்கு ஏதேனும் அரசு நிவாரணம் அல்லது எச்சரிக்கை அறிவிப்புகள் உள்ளதா?",
+          "இன்று எங்கள் கடலோரப் பகுதிக்கான ஒட்டுமொத்த ஆபத்து நிலை என்ன?",
+          "இன்று நமது சமூகத்திற்கு மின்னல் அல்லது புயல் ஆபத்து உள்ளதா?"
+        ],
+        "te": [
+          "ఈరోజు మా గ్రామం నుండి బయటకు వెళ్లే అన్ని పడవల భద్రతా స్థితి ఏమిటి?",
+          "మా తీర ప్రాంతానికి ప్రస్తుత సలహాలు ఏమిటి?",
+          "మా ప్రాంతం కోసం ఏవైనా ప్రభుత్వ సహాయం లేదా హెచ్చరిక నోటిఫికేషన్‌లు ఉన్నాయా?",
+          "ఈరోజు మా తీర ప్రాంతానికి మొత్తం ప్రమాద స్థాయి ఎంత?",
+          "ఈరోజు మా సంఘానికి మెరుపు లేదా తుఫాను ముప్పు ఉందా?"
+        ],
+        "ml": [
+          "ഇന്ന് ഞങ്ങളുടെ ഗ്രാമത്തിൽ നിന്ന് പോകുന്ന എല്ലാ വള്ളങ്ങളുടെയും സുരക്ഷാ നില എന്താണ്?",
+          "ഞങ്ങളുടെ തീരദേശ മേഖലയ്ക്കുള്ള നിലവിലെ നിർദ്ദേശങ്ങൾ എന്തൊക്കെയാണ്?",
+          "ഞങ്ങളുടെ പ്രദേശത്തിനായി എന്തെങ്കിലും സർക്കാർ സഹായമോ മുന്നറിയിപ്പ് അറിയിപ്പുകളോ ഉണ്ടോ?",
+          "ഇന്ന് ഞങ്ങളുടെ തീരദേശ മേഖലയിലെ മൊത്തത്തിലുള്ള അപകടസാധ്യത എത്രയാണ്?",
+          "ഇന്ന് നമ്മുടെ സമൂഹത്തിന് മിന്നലോ കൊടുങ്കാറ്റോ ഉണ്ടാകാൻ സാധ്യതയുണ്ടോ?"
+        ],
+        "bn": [
+          "আজ আমাদের গ্রাম থেকে ছেড়ে যাওয়া সমস্ত নৌকার নিরাপত্তার অবস্থা কী?",
+          "আমাদের উপকূলীয় অঞ্চলের জন্য বর্তমান পরামর্শগুলি কী?",
+          "আমাদের এলাকার জন্য কি কোনো সরকারি ত্রাণ বা সতর্কবার্তা বিজ্ঞপ্তি আছে?",
+          "আজ আমাদের উপকূলীয় এলাকার সার্বিক ঝুঁকির মাত্রা কত?",
+          "আজ কি আমাদের সম্প্রদায়ের জন্য বজ্রপাত বা ঝড়ের ঝুঁকি আছে?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🏘️ Coastal Village Community Safety & Relief Advisory:\n• Overall Status: {communityRiskPhrase}\n• Composite Safety Score: {score}/100\n• Alert Bulletins: {cycloneStatus} | {lightningStatus}\n• Wave & Wind: {wave}m ({waveLabel}) | {wind} km/h ({windDir})\n📢 Village Announcement: {communityAdvisory}",
+        "hi": "🏘️ तटीय ग्राम समुदाय सुरक्षा और राहत परामर्श:\n• समग्र स्थिति: {communityRiskPhrase}\n• समग्र सुरक्षा स्कोर: {score}/100\n• अलर्ट बुलेटिन: {cycloneStatus} | {lightningStatus}\n• लहर और हवा: {wave}मी ({waveLabel}) | {wind} किमी/घं ({windDir})\n📢 ग्राम घोषणा: {communityAdvisory}",
+        "ta": "🏘️ கடலோர கிராம சமூகம் பாதுகாப்பு ஆலோசனை:\n• ஒட்டுமொத்த நிலை: {communityRiskPhrase}\n• கூட்டுப் பாதுகாப்பு மதிப்பெண்: {score}/100\n• எச்சரிக்கைகள்: {cycloneStatus} | {lightningStatus}\n• அலை & காற்று: {wave}மீ ({waveLabel}) | {wind} கிமீ/மணி ({windDir})\n📢 கிராம அறிவிப்பு: {communityAdvisory}",
+        "te": "🏘️ తీర గ్రామ సమాజ భద్రతా సలహా:\n• మొత్తం స్థితి: {communityRiskPhrase}\n• భద్రతా స్కోరు: {score}/100\n• హెచ్చరిక బులెటిన్లు: {cycloneStatus} | {lightningStatus}\n• అల & గాలి: {wave}మీ ({waveLabel}) | {wind} కిమీ/గం ({windDir})\n📢 గ్రామ ప్రకటన: {communityAdvisory}",
+        "ml": "🏘️ തീരദേശ ഗ്രാമ സുരക്ഷാ നിർദ്ദേശം:\n• മൊത്തത്തിലുള്ള അവസ്ഥ: {communityRiskPhrase}\n• സുരക്ഷാ സ്കോർ: {score}/100\n• മുന്നറിയിപ്പ് ബുള്ളറ്റിൻ: {cycloneStatus} | {lightningStatus}\n• തിരമാലയും കാറ്റും: {wave}മീ ({waveLabel}) | {wind} കിമീ/മ ({windDir})\n📢 ഗ്രാമ അറിയിപ്പ്: {communityAdvisory}",
+        "bn": "🏘️ উপকূলীয় গ্রাম সম্প্রদায়ের নিরাপত্তা পরামর্শ:\n• সামগ্রিক অবস্থা: {communityRiskPhrase}\n• যৌথ নিরাপত্তা স্কোর: {score}/১০০\n• সতর্কতা বুলেটিন: {cycloneStatus} | {lightningStatus}\n• ঢেউ ও বাতাস: {wave}মি ({waveLabel}) | {wind} কিমি/ঘ ({windDir})\n📢 গ্রামের ঘোষণা: {communityAdvisory}"
+      }
+    },
+    "CATCH_REPORTING": {
+      "role": "Society / Coastal Fisherman",
+      "keywords": {
+        "en": [
+          "how many boats from our area have reported catches",
+          "reported catches this week",
+          "how can our members report their catch",
+          "report their catch locations",
+          "members report their catch"
+        ],
+        "hi": [
+          "कितनी नावों ने मछली पकड़ने की सूचना दी",
+          "स्थानों की रिपोर्ट कैसे कर सकते हैं",
+          "रिपोर्ट कैसे करें",
+          "सदस्य अपने मछली पकड़ने के स्थानों"
+        ],
+        "ta": [
+          "எத்தனை படகுகள் மீன் பிடித்ததாகப் பதிவு",
+          "மீன்பிடி இடங்களை எவ்வாறு பதிவு செய்யலாம்",
+          "எவ்வாறு பதிவு செய்யலாம்",
+          "உறுப்பினர்கள் தங்கள் மீன்பிடி"
+        ],
+        "te": [
+          "ఎన్ని పడవలు చేపల వేట వివరాలను నమోదు",
+          "స్థానాలను ఎలా నివేదించవచ్చు",
+          "ఎలా నివేదించవచ్చు",
+          "సభ్యులు తమ చేపల వేట"
+        ],
+        "ml": [
+          "എത്ര വള്ളങ്ങൾ മത്സ്യലഭ്യത റിപ്പോർട്ട്",
+          "ലൊക്കേഷൻ എങ്ങനെ റിപ്പോർട്ട് ചെയ്യാം",
+          "എങ്ങനെ റിപ്പോർട്ട് ചെയ്യാം",
+          "അംഗങ്ങൾക്ക് അവരുടെ മത്സ്യബന്ധന"
+        ],
+        "bn": [
+          "কতগুলি নৌকা মাছ ধরার খবর",
+          "মাছ ধরার অবস্থান রিপোর্ট করতে পারে",
+          "কীভাবে রিপোর্ট করতে পারে",
+          "সদস্যরা কীভাবে তাদের মাছ ধরার"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "How many boats from our area have reported catches this week?",
+          "How can our members report their catch locations?"
+        ],
+        "hi": [
+          "इस सप्ताह हमारे क्षेत्र की कितनी नावों ने मछली पकड़ने की सूचना दी है?",
+          "हमारे सदस्य अपने मछली पकड़ने के स्थानों की रिपोर्ट कैसे कर सकते हैं?"
+        ],
+        "ta": [
+          "இந்த வாரம் எங்கள் பகுதியிலிருந்து எத்தனை படகுகள் மீன் பிடித்ததாகப் பதிவு செய்துள்ளன?",
+          "எங்கள் உறுப்பினர்கள் தங்கள் மீன்பிடி இடங்களை எவ்வாறு பதிவு செய்யலாம்?"
+        ],
+        "te": [
+          "ఈ వారం మా ప్రాంతం నుండి ఎన్ని పడవలు చేపల వేట వివరాలను నమోదు చేశాయి?",
+          "మా సభ్యులు తమ చేపల వేట స్థానాలను ఎలా నివేదించవచ్చు?"
+        ],
+        "ml": [
+          "ഈ ആഴ്ച ഞങ്ങളുടെ പ്രദേശത്ത് നിന്ന് എത്ര വള്ളങ്ങൾ മത്സ്യലഭ്യത റിപ്പോർട്ട് ചെയ്തിട്ടുണ്ട്?",
+          "ഞങ്ങളുടെ അംഗങ്ങൾക്ക് അവരുടെ മത്സ്യബന്ധന ലൊക്കേഷൻ എങ്ങനെ റിപ്പോർട്ട് ചെയ്യാം?"
+        ],
+        "bn": [
+          "এই সপ্তাহে আমাদের এলাকা থেকে কতগুলি নৌকা মাছ ধরার খবর জানিয়েছে?",
+          "আমাদের সদস্যরা কীভাবে তাদের মাছ ধরার অবস্থান রিপোর্ট করতে পারে?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "📊 Crowdsourced Catch Reporting Status:\n• Total Community Reports This Week: {catchCount} active boat logs\n• Recent Species Logged: Mackerel, Sardines, Ribbonfish, King Prawns\n• Submissions: {catchReportInstruction}\n🤝 Data Sharing: Reports help map local schools and calibrate INCOIS PFZ forecasts.",
+        "hi": "📊 क्राउडसोर्स्ड कैच रिपोर्टिंग स्थिति:\n• इस सप्ताह कुल सामुदायिक रिपोर्ट: {catchCount} सक्रिय नाव लॉग\n• हाल ही में दर्ज प्रजातियां: मैकेरल, सार्डिन, रिबनफिश, झींगा\n• सबमिशन: {catchReportInstruction}\n🤝 डेटा साझाकरण: रिपोर्ट स्थानीय मछलियों के झुंड को मैप करने में मदद करती हैं।",
+        "ta": "📊 மீன்பிடி பதிவு நிலை:\n• இந்த வார பதிவுகள்: {catchCount} படகுகள் பதிவு செய்துள்ளன\n• பதிவான மீன்கள்: கானாங்கெளுத்தி, மத்தி, இறால்\n• பதிவு செய்ய: {catchReportInstruction}\n🤝 தகவல் பகிர்வு: உள்ளூர் மீன் கூட்டங்களை வரைபடமாக்க உதவுகிறது.",
+        "te": "📊 క్యాచ్ రిపోర్టింగ్ స్థితి:\n• ఈ వారం మొత్తం నివేదికలు: {catchCount} పడవ లాగ్‌లు\n• నమోదైన జాతులు: బంగడా, కవ్వాలు, రొయ్యలు\n• ఎలా నమోదు చేయాలి: {catchReportInstruction}\n🤝 భాగస్వామ్యం: స్థానిక చేపల గుంపులను గుర్తించడానికి సహాయపడుతుంది.",
+        "ml": "📊 മത്സ്യ ലഭ്യത റിപ്പോർട്ടിംഗ് വിവരങ്ങൾ:\n• ഈ ആഴ്ചയിലെ ആകെ റിപ്പോർട്ടുകൾ: {catchCount} വള്ളങ്ങൾ\n• രേഖപ്പെടുത്തിയ ഇനങ്ങൾ: അയല, മത്തി, ചെമ്മീൻ\n• റിപ്പോർട്ട് ചെയ്യാൻ: {catchReportInstruction}\n🤝 പങ്കിടൽ: പ്രാദേശിക മത്സ്യ ലഭ്യത കണ്ടെത്താൻ സഹായിക്കുന്നു.",
+        "bn": "📊 ক্যাচ রিপোর্টিং স্থিতি:\n• এই সপ্তাহের মোট রিপোর্ট: {catchCount} সক্রিয় বোট লগ\n• সাম্প্রতিক রেকর্ডকৃত প্রজাতি: ম্যাকেরেল, সার্ডিন, চিংড়ি\n• জমা দেওয়ার পদ্ধতি: {catchReportInstruction}\n🤝 তথ্য ভাগাভাগি: স্থানীয় মাছের অবস্থান শনাক্ত করতে সহায়তা করে।"
+      }
+    },
+    "PORT_OPERATIONS_STATUS": {
+      "role": "Port Authority",
+      "keywords": {
+        "en": [
+          "affecting the port region today",
+          "sea state at the port approach channel",
+          "vessels currently near restricted maritime",
+          "wind speed forecast for the harbor area",
+          "issue a port closure advisory today",
+          "lightning alerts that could affect port operations",
+          "risk level for vessels currently at sea in this region",
+          "issue a safety alert to fishermen in this region today"
+        ],
+        "hi": [
+          "बंदरगाह क्षेत्र को प्रभावित करने वाली",
+          "बंदरगाह पहुंच चैनल पर वर्तमान समुद्र",
+          "प्रतिबंधित समुद्री सीमाओं के पास",
+          "हार्बर क्षेत्र के लिए हवा की गति",
+          "बंदरगाह बंद करने का परामर्श",
+          "बंदरगाह संचालन को प्रभावित कर सकती",
+          "वर्तमान में समुद्र में मौजूद जहाजों के लिए जोखिम",
+          "मछुआरों को सुरक्षा चेतावनी जारी करनी चाहिए"
+        ],
+        "ta": [
+          "துறைமுகப் பகுதியை பாதிக்கும் புயல்",
+          "துறைமுக அணுகல் பாதையில் தற்போதைய",
+          "தடைசெய்யப்பட்ட கடல் எல்லைகளுக்கு அருகில்",
+          "துறைமுகப் பகுதிக்கான காற்றின் வேக",
+          "துறைமுகத்தை மூட ஆலோசனை வெளியிட",
+          "துறைமுக செயல்பாடுகளை பாதிக்கக்கூடிய",
+          "கடலில் உள்ள கப்பல்களுக்கான ஆபத்து",
+          "மீனவர்களுக்கு பாதுகாப்பு எச்சரிக்கை வெளியிட"
+        ],
+        "te": [
+          "ఓడరేవు ప్రాంతాన్ని ప్రభావితం చేసే",
+          "ఓడరేవు అప్రోచ్ ఛానెల్ వద్ద",
+          "నిషిద్ధ సముద్ర సరిహద్దుల సమీపంలో",
+          "హార్బర్ ప్రాంతం కోసం గాలి వేగం",
+          "ఓడరేవు మూసివేత సలహాను",
+          "ఓడరేవు కార్యకలాపాలను ప్రభావితం చేసే",
+          "సముద్రంలో ఉన్న నౌకలకు ప్రమాద",
+          "మత్స్యకారులకు భద్రతా హెచ్చరికను జారీ"
+        ],
+        "ml": [
+          "തുറമുഖ മേഖലയെ ബാധിക്കുന്ന ചുഴലിക്കാറ്റ്",
+          "തുറമുഖ ചാനലിലെ നിലവിലെ കടൽ",
+          "നിരോധിത സമുദ്ര അതിർത്തികൾക്ക് സമീപം",
+          "ഹാർബർ ഏരിയയിലെ കാറ്റിന്റെ വേഗത",
+          "തുറമുഖം അടയ്ക്കൽ നിർദ്ദേശം",
+          "തുറമുഖ പ്രവർത്തനങ്ങളെ ബാധിക്കുന്ന മിന്നൽ",
+          "കടലിലുള്ള കപ്പലുകളുടെ അപകടസാധ്യത",
+          "മത്സ്യത്തൊഴിലാളികൾക്ക് സുരക്ഷാ മുന്നറിയിപ്പ്"
+        ],
+        "bn": [
+          "বন্দর অঞ্চলকে প্রভাবিত করার মতো",
+          "বন্দর প্রবেশ চ্যানেলে সমুদ্রের বর্তমান",
+          "সীমাবদ্ধ সামুদ্রিক সীমানার কাছে",
+          "বন্দর এলাকার জন্য বাতাসের গতির",
+          "বন্দর বন্ধের পরামর্শ জারি",
+          "বন্দর কার্যক্রমকে প্রভাবিত করতে পারে",
+          "সমুদ্রে থাকা জাহাজগুলির জন্য ঝুঁকির",
+          "জেলেদের জন্য নিরাপত্তা সতর্কতা জারি"
+        ]
+      },
+      "sampleQuestions": {
+        "en": [
+          "Are there any cyclone alerts affecting the port region today?",
+          "What is the current sea state at the port approach channel?",
+          "Are there any vessels currently near restricted maritime boundaries?",
+          "What is the wind speed forecast for the harbor area?",
+          "Should we issue a port closure advisory today?",
+          "Are there any lightning alerts that could affect port operations?",
+          "What is the risk level for vessels currently at sea in this region?",
+          "Should we issue a safety alert to fishermen in this region today?"
+        ],
+        "hi": [
+          "क्या आज बंदरगाह क्षेत्र को प्रभावित करने वाली कोई चक्रवात चेतावनी है?",
+          "बंदरगाह पहुंच चैनल पर वर्तमान समुद्र की स्थिति क्या है?",
+          "क्या वर्तमान में कोई जहाज प्रतिबंधित समुद्री सीमाओं के पास है?",
+          "हार्बर क्षेत्र के लिए हवा की गति का पूर्वानुमान क्या है?",
+          "क्या हमें आज बंदरगाह बंद करने का परामर्श जारी करना चाहिए?",
+          "क्या कोई बिजली चेतावनी है जो बंदरगाह संचालन को प्रभावित कर सकती है?",
+          "इस क्षेत्र में वर्तमान में समुद्र में मौजूद जहाजों के लिए जोखिम स्तर क्या है?",
+          "क्या हमें आज इस क्षेत्र के मछुआरों को सुरक्षा चेतावनी जारी करनी चाहिए?"
+        ],
+        "ta": [
+          "இன்று துறைமுகப் பகுதியை பாதிக்கும் புயல் எச்சரிக்கைகள் ஏதேனும் உள்ளதா?",
+          "துறைமுக அணுகல் பாதையில் தற்போதைய கடல் நிலை என்ன?",
+          "தற்போது தடைசெய்யப்பட்ட கடல் எல்லைகளுக்கு அருகில் ஏதேனும் கப்பல்கள் உள்ளதா?",
+          "துறைமுகப் பகுதிக்கான காற்றின் வேக முன்னறிவிப்பு என்ன?",
+          "இன்று துறைமுகத்தை மூட ஆலோசனை வெளியிட வேண்டுமா?",
+          "துறைமுக செயல்பாடுகளை பாதிக்கக்கூடிய மின்னல் எச்சரிக்கைகள் உள்ளதா?",
+          "இந்த பகுதியில் தற்போது கடலில் உள்ள கப்பல்களுக்கான ஆபத்து நிலை என்ன?",
+          "இன்று இந்த பகுதி மீனவர்களுக்கு பாதுகாப்பு எச்சரிக்கை வெளியிட வேண்டுமா?"
+        ],
+        "te": [
+          "ఈరోజు ఓడరేవు ప్రాంతాన్ని ప్రభావితం చేసే తుఫాను హెచ్చరికలు ఏవైనా ఉన్నాయా?",
+          "ఓడరేవు అప్రోచ్ ఛానెల్ వద్ద ప్రస్తుత సముద్ర స్థితి ఏమిటి?",
+          "ప్రస్తుతం నిషిద్ధ సముద్ర సరిహద్దుల సమీపంలో ఏవైనా నౌకలు ఉన్నాయా?",
+          "హార్బర్ ప్రాంతం కోసం గాలి వేగం సూచన ఏమిటి?",
+          "మేము ఈరోజు ఓడరేవు మూసివేత సలహాను జారీ చేయాలా?",
+          "ఓడరేవు కార్యకలాపాలను ప్రభావితం చేసే మెరుపు హెచ్చరికలు ఏవైనా ఉన్నాయా?",
+          "ఈ ప్రాంతంలో ప్రస్తుతం సముద్రంలో ఉన్న నౌకలకు ప్రమాద స్థాయి ఎంత?",
+          "మేము ఈరోజు ఈ ప్రాంతంలోని మత్స్యకారులకు భద్రతా హెచ్చరికను జారీ చేయాలా?"
+        ],
+        "ml": [
+          "ഇന്ന് തുറമുഖ മേഖലയെ ബാധിക്കുന്ന ചുഴലിക്കാറ്റ് മുന്നറിയിപ്പുകൾ ഉണ്ടോ?",
+          "തുറമുഖ ചാനലിലെ നിലവിലെ കടൽ അവസ്ഥ എന്താണ്?",
+          "നിലവിൽ നിരോധിത സമുദ്ര അതിർത്തികൾക്ക് സമീപം ഏതെങ്കിലും കപ്പലുകൾ ഉണ്ടോ?",
+          "ഹാർബർ ഏരിയയിലെ കാറ്റിന്റെ വേഗത പ്രവചനം എന്താണ്?",
+          "ഞങ്ങൾ ഇന്ന് തുറമുഖം അടയ്ക്കൽ നിർദ്ദേശം നൽകണമോ?",
+          "തുറമുഖ പ്രവർത്തനങ്ങളെ ബാധിക്കുന്ന മിന്നൽ മുന്നറിയിപ്പുകൾ ഉണ്ടോ?",
+          "ഈ പ്രദേശത്ത് ഇപ്പോൾ കടലിലുള്ള കപ്പലുകളുടെ അപകടസാധ്യത എത്രയാണ്?",
+          "ഇന്ന് ഈ മേഖലയിലെ മത്സ്യത്തൊഴിലാളികൾക്ക് സുരക്ഷാ മുന്നറിയിപ്പ് നൽകണമോ?"
+        ],
+        "bn": [
+          "আজ কি বন্দর অঞ্চলকে প্রভাবিত করার মতো কোনো ঘূর্ণিঝড় সতর্কতা আছে?",
+          "বন্দর প্রবেশ চ্যানেলে সমুদ্রের বর্তমান অবস্থা কী?",
+          "বর্তমানে কি কোনো জাহাজ সীমাবদ্ধ সামুদ্রিক সীমানার কাছে রয়েছে?",
+          "বন্দর এলাকার জন্য বাতাসের গতির পূর্বাভাস কী?",
+          "আমাদের কি আজ বন্দর বন্ধের পরামর্শ জারি করা উচিত?",
+          "এমন কোনো বজ্রপাত সতর্কতা আছে যা বন্দর কার্যক্রমকে প্রভাবিত করতে পারে?",
+          "এই অঞ্চলে বর্তমানে সমুদ্রে থাকা জাহাজগুলির জন্য ঝুঁকির মাত্রা কত?",
+          "আমাদের কি আজ এই অঞ্চলের জেলেদের জন্য নিরাপত্তা সতর্কতা জারি করা উচিত?"
+        ]
+      },
+      "answerTemplate": {
+        "en": "🏛️ Port Authority Operations & Vessel Safety Status:\n• Port / Harbor: {portName}\n• Sea State at Channel: {portSeaState} ({portWave}m waves)\n• Harbor Wind: {portWind} km/h ({windDir})\n• Operational Score: {portRiskScore}/100\n• Alert Status: {cycloneStatus} | {lightningStatus}\n📋 Authority Directive: {portClosureAdvisory}",
+        "hi": "🏛️ पोर्ट अथॉरिटी संचालन और पोत सुरक्षा स्थिति:\n• पोर्ट / हार्बर: {portName}\n• चैनल पर समुद्र की स्थिति: {portSeaState} ({portWave}मी लहरें)\n• हार्बर हवा: {portWind} किमी/घं ({windDir})\n• परिचालन स्कोर: {portRiskScore}/100\n• अलर्ट स्थिति: {cycloneStatus} | {lightningStatus}\n📋 प्राधिकरण निर्देश: {portClosureAdvisory}",
+        "ta": "🏛️ துறைமுக அதிகார செயல்பாடுகள் மற்றும் கப்பல் பாதுகாப்பு நிலை:\n• துறைமுகம்: {portName}\n• சேனலில் கடல் நிலை: {portSeaState} ({portWave}மீ அலைகள்)\n• காற்றின் வேகம்: {portWind} கிமீ/மணி ({windDir})\n• செயல்பாட்டு மதிப்பெண்: {portRiskScore}/100\n• எச்சரிக்கை நிலை: {cycloneStatus} | {lightningStatus}\n📋 உத்தரவு: {portClosureAdvisory}",
+        "te": "🏛️ పోర్ట్ అథారిటీ కార్యకలాపాలు & నౌకల భద్రతా స్థితి:\n• పోర్ట్ / హార్బర్: {portName}\n• ఛానెల్ వద్ద సముద్ర స్థితి: {portSeaState} ({portWave}మీ అలలు)\n• హార్బర్ గాలి: {portWind} కిమీ/గం ({windDir})\n• కార్యాచరణ స్కోరు: {portRiskScore}/100\n• హెచ్చరిక స్థితి: {cycloneStatus} | {lightningStatus}\n📋 అధికారిక ఆదేశం: {portClosureAdvisory}",
+        "ml": "🏛️ പോർട്ട് അതോറിറ്റി പ്രവർത്തനങ്ങളും കപ്പൽ സുരക്ഷയും:\n• തുറമുഖം: {portName}\n• ചാനലിലെ കടൽ അവസ്ഥ: {portSeaState} ({portWave}മീ തിരമാല)\n• കാറ്റ്: {portWind} കിമീ/മ ({windDir})\n• പ്രവർത്തന സ്കോർ: {portRiskScore}/100\n• അലേർട്ട് നില: {cycloneStatus} | {lightningStatus}\n📋 അതോറിറ്റി നിർദ്ദേശം: {portClosureAdvisory}",
+        "bn": "🏛️ পোর্ট অথরিটি কার্যক্রম ও জাহাজের নিরাপত্তা স্থিতি:\n• বন্দর / পোতাশ্রয়: {portName}\n• চ্যানেলে সমুদ্রের অবস্থা: {portSeaState} ({portWave}মি ঢেউ)\n• বন্দরের বাতাস: {portWind} কিমি/ঘ ({windDir})\n• অপারেশনাল স্কোর: {portRiskScore}/১০০\n• সতর্কতা অবস্থা: {cycloneStatus} | {lightningStatus}\n📋 কর্তৃপক্ষের নির্দেশ: {portClosureAdvisory}"
+      }
+    }
+  },
+  "fallback": {
+    "en": "I can help with safety checks, fishing zones, weather, alerts, tides, and routes. Try asking about one of these or click any suggested query below.",
+    "hi": "मैं सुरक्षा जांच, मछली पकड़ने के क्षेत्र, मौसम, अलर्ट, ज्वार-भाटा और मार्गों में मदद कर सकता हूँ। इनमें से किसी के बारे में पूछें या नीचे दिए गए सुझाव पर क्लिक करें।",
+    "ta": "நான் பாதுகாப்பு சோதனைகள், மீன்பிடி மண்டலங்கள், வானிலை, எச்சரிக்கைகள், ஓதங்கள் மற்றும் வழிகள் குறித்து உதவ முடியும். இவற்றில் ஏதேனும் ஒன்றைப் பற்றி கேளுங்கள் அல்லது கீழே உள்ள பரிந்துரையை கிளிக் செய்யவும்.",
+    "te": "నేను భద్రతా తనిఖీలు, మత్స్య ప్రాంతాలు, వాతావరణం, హెచ్చరికలు, అలలు మరియు మార్గాలలో సహాయపడగలను. వీటిలో ఒకదాని గురించి అడగండి లేదా క్రింది ప్రశ్నను క్లిక్ చేయండి.",
+    "ml": "സുരക്ഷാ പരിശോധനകൾ, മത്സ്യ മേഖലകൾ, കാലാവസ്ഥ, മുന്നറിയിപ്പുകൾ, വേലിയേറ്റങ്ങൾ, വഴികൾ എന്നിവയിൽ എനിക്ക് സഹായിക്കാനാകും. ഇവയെക്കുറിച്ച് ചോദിക്കുക അല്ലെങ്കിൽ താഴെയുള്ള നിർദ്ദേശം ക്ലിക്ക് ചെയ്യുക.",
+    "bn": "আমি নিরাপত্তা পরীক্ষা, মাছ ধরার এলাকা, আবহাওয়া, সতর্কতা, জোয়ার-ভাটা এবং রুটে সাহায্য করতে পারি। এগুলির মধ্যে একটি সম্পর্কে জিজ্ঞাসা করুন বা নিচের যেকোনোটিতে ক্লিক করুন।"
+  }
+}

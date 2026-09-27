@@ -1,0 +1,827 @@
+{
+  "regions": {
+    "Chennai": [
+      {
+        "id": "vessel-chn-01",
+        "name": "MV Sagar Ratna",
+        "type": "cargo",
+        "distanceKm": 4.2,
+        "heading": "NE (045°)",
+        "speedKnots": 14.5,
+        "lat": 13.112,
+        "lng": 80.305,
+        "description": "MV Sagar Ratna — container cargo vessel, 4.2km NE, en route to Chennai Port channel."
+      },
+      {
+        "id": "vessel-chn-02",
+        "name": "ICGS Varaha",
+        "type": "patrol",
+        "distanceKm": 6.8,
+        "heading": "E (090°)",
+        "speedKnots": 22.0,
+        "lat": 13.085,
+        "lng": 80.334,
+        "description": "ICGS Varaha — Indian Coast Guard offshore patrol vessel, 6.8km E, active maritime surveillance."
+      },
+      {
+        "id": "vessel-chn-03",
+        "name": "Meenavan-9",
+        "type": "fishing_trawler",
+        "distanceKm": 2.9,
+        "heading": "SE (135°)",
+        "speedKnots": 7.2,
+        "lat": 13.063,
+        "lng": 80.292,
+        "description": "Meenavan-9 — mechanized wooden trawler, 2.9km SE, deploying gillnets near shoal edge."
+      },
+      {
+        "id": "vessel-chn-04",
+        "name": "Coromandel Express Ferry",
+        "type": "passenger",
+        "distanceKm": 5.1,
+        "heading": "N (010°)",
+        "speedKnots": 18.0,
+        "lat": 13.128,
+        "lng": 80.282,
+        "description": "Coromandel Express Ferry — coastal passenger catamaran, 5.1km N, Ennore to Chennai transit."
+      },
+      {
+        "id": "vessel-chn-05",
+        "name": "Samudra Sevak",
+        "type": "cargo",
+        "distanceKm": 8.4,
+        "heading": "S (180°)",
+        "speedKnots": 11.2,
+        "lat": 13.007,
+        "lng": 80.271,
+        "description": "Samudra Sevak — bulk carrier carrying coal, 8.4km S, holding at outer anchorage."
+      },
+      {
+        "id": "vessel-chn-06",
+        "name": "Kadal Kani-3",
+        "type": "fishing_trawler",
+        "distanceKm": 3.7,
+        "heading": "ENE (065°)",
+        "speedKnots": 6.5,
+        "lat": 13.098,
+        "lng": 80.304,
+        "description": "Kadal Kani-3 — deep-sea motorized gillnetter, 3.7km ENE, monitoring mackerel shoals."
+      },
+      {
+        "id": "vessel-chn-07",
+        "name": "ICGS Rani Abbakka",
+        "type": "patrol",
+        "distanceKm": 9.6,
+        "heading": "SW (220°)",
+        "speedKnots": 26.5,
+        "lat": 13.018,
+        "lng": 80.210,
+        "description": "ICGS Rani Abbakka — inshore fast interceptor craft, 9.6km SW, safety boundary patrol."
+      },
+      {
+        "id": "vessel-chn-08",
+        "name": "Bay Star Pioneer",
+        "type": "cargo",
+        "distanceKm": 11.2,
+        "heading": "NE (050°)",
+        "speedKnots": 13.8,
+        "lat": 13.155,
+        "lng": 80.355,
+        "description": "Bay Star Pioneer — chemical tanker, 11.2km NE, outbound towards Vizag corridor."
+      },
+      {
+        "id": "vessel-chn-09",
+        "name": "St. Mary Trawler",
+        "type": "fishing_trawler",
+        "distanceKm": 1.8,
+        "heading": "E (095°)",
+        "speedKnots": 5.4,
+        "lat": 13.081,
+        "lng": 80.287,
+        "description": "St. Mary Trawler — artisanal longline boat, 1.8km E, returning to Kasimedu harbour."
+      },
+      {
+        "id": "vessel-chn-10",
+        "name": "Marina Breeze Tourer",
+        "type": "passenger",
+        "distanceKm": 3.4,
+        "heading": "NW (315°)",
+        "speedKnots": 12.0,
+        "lat": 13.107,
+        "lng": 80.245,
+        "description": "Marina Breeze Tourer — harbor inspection launch, 3.4km NW, Port Authority inspection."
+      }
+    ],
+    "Kochi": [
+      {
+        "id": "vessel-koc-01",
+        "name": "MV Cochin Queen",
+        "type": "passenger",
+        "distanceKm": 2.4,
+        "heading": "W (270°)",
+        "speedKnots": 16.0,
+        "lat": 9.932,
+        "lng": 76.245,
+        "description": "MV Cochin Queen — Ro-Pax inter-island ferry, 2.4km W, Vypin to Fort Kochi channel."
+      },
+      {
+        "id": "vessel-koc-02",
+        "name": "ICGS Samar",
+        "type": "patrol",
+        "distanceKm": 7.5,
+        "heading": "NW (320°)",
+        "speedKnots": 21.0,
+        "lat": 9.980,
+        "lng": 76.210,
+        "description": "ICGS Samar — advanced offshore patrol vessel, 7.5km NW, Arabian Sea escort duty."
+      },
+      {
+        "id": "vessel-koc-03",
+        "name": "Matsya Kuber",
+        "type": "fishing_trawler",
+        "distanceKm": 3.8,
+        "heading": "SW (230°)",
+        "speedKnots": 6.8,
+        "lat": 9.905,
+        "lng": 76.238,
+        "description": "Matsya Kuber — commercial deep-sea purse seiner, 3.8km SW, sardine haul operations."
+      },
+      {
+        "id": "vessel-koc-04",
+        "name": "Kerala Port Barge 4",
+        "type": "cargo",
+        "distanceKm": 5.0,
+        "heading": "N (005°)",
+        "speedKnots": 9.5,
+        "lat": 9.976,
+        "lng": 76.265,
+        "description": "Kerala Port Barge 4 — container feeder barge, 5.0km N, Vallarpadam ICTT terminal approach."
+      },
+      {
+        "id": "vessel-koc-05",
+        "name": "Holy Ghost Trawler",
+        "type": "fishing_trawler",
+        "distanceKm": 1.9,
+        "heading": "S (185°)",
+        "speedKnots": 5.0,
+        "lat": 9.914,
+        "lng": 76.268,
+        "description": "Holy Ghost Trawler — artisanal fiber boat, 1.9km S, Munambam jetty route."
+      },
+      {
+        "id": "vessel-koc-06",
+        "name": "Arabian Explorer",
+        "type": "cargo",
+        "distanceKm": 12.1,
+        "heading": "WNW (290°)",
+        "speedKnots": 15.2,
+        "lat": 9.965,
+        "lng": 76.155,
+        "description": "Arabian Explorer — crude oil tanker, 12.1km WNW, SPM offshore mooring terminal."
+      },
+      {
+        "id": "vessel-koc-07",
+        "name": "ICGS C-404",
+        "type": "patrol",
+        "distanceKm": 4.1,
+        "heading": "ENE (070°)",
+        "speedKnots": 28.0,
+        "lat": 9.945,
+        "lng": 76.304,
+        "description": "ICGS C-404 — high-speed interceptor boat, 4.1km ENE, coastal security cordon."
+      },
+      {
+        "id": "vessel-koc-08",
+        "name": "Malabar Pearl",
+        "type": "passenger",
+        "distanceKm": 3.1,
+        "heading": "SW (215°)",
+        "speedKnots": 11.5,
+        "lat": 9.910,
+        "lng": 76.250,
+        "description": "Malabar Pearl — coastal tourist cruise launch, 3.1km SW, Kochi outer roadstead."
+      },
+      {
+        "id": "vessel-koc-09",
+        "name": "Sea Hawk-7",
+        "type": "fishing_trawler",
+        "distanceKm": 6.3,
+        "heading": "W (265°)",
+        "speedKnots": 7.0,
+        "lat": 9.930,
+        "lng": 76.208,
+        "description": "Sea Hawk-7 — mechanized tuna longliner, 6.3km W, deploying buoy lines."
+      },
+      {
+        "id": "vessel-koc-10",
+        "name": "Vembanad Dredger III",
+        "type": "cargo",
+        "distanceKm": 2.0,
+        "heading": "NW (325°)",
+        "speedKnots": 4.2,
+        "lat": 9.948,
+        "lng": 76.252,
+        "description": "Vembanad Dredger III — navigation channel maintenance dredger, 2.0km NW."
+      }
+    ],
+    "Visakhapatnam": [
+      {
+        "id": "vessel-viz-01",
+        "name": "MV Vizag Pride",
+        "type": "cargo",
+        "distanceKm": 3.9,
+        "heading": "E (090°)",
+        "speedKnots": 12.4,
+        "lat": 17.688,
+        "lng": 83.255,
+        "description": "MV Vizag Pride — iron ore capesize carrier, 3.9km E, entering inner breakwater."
+      },
+      {
+        "id": "vessel-viz-02",
+        "name": "ICGS Vajra",
+        "type": "patrol",
+        "distanceKm": 8.1,
+        "heading": "SE (130°)",
+        "speedKnots": 23.5,
+        "lat": 17.635,
+        "lng": 83.275,
+        "description": "ICGS Vajra — offshore patrol craft, 8.1km SE, Bay of Bengal security grid."
+      },
+      {
+        "id": "vessel-viz-03",
+        "name": "Andhra Matsya-12",
+        "type": "fishing_trawler",
+        "distanceKm": 4.5,
+        "heading": "NE (040°)",
+        "speedKnots": 6.2,
+        "lat": 17.720,
+        "lng": 83.245,
+        "description": "Andhra Matsya-12 — mechanized prawn trawler, 4.5km NE, offshore shelf boundary."
+      },
+      {
+        "id": "vessel-viz-04",
+        "name": "Eastern Sea Ferry",
+        "type": "passenger",
+        "distanceKm": 2.2,
+        "heading": "S (175°)",
+        "speedKnots": 14.0,
+        "lat": 17.668,
+        "lng": 83.218,
+        "description": "Eastern Sea Ferry — coastal transit ferry, 2.2km S, Dolphin's Nose transit."
+      },
+      {
+        "id": "vessel-viz-05",
+        "name": "Ganga Sagar Ore-1",
+        "type": "cargo",
+        "distanceKm": 10.4,
+        "heading": "SSE (160°)",
+        "speedKnots": 10.8,
+        "lat": 17.595,
+        "lng": 83.255,
+        "description": "Ganga Sagar Ore-1 — bulk mineral carrier, 10.4km SSE, Vizag outer anchorage."
+      },
+      {
+        "id": "vessel-viz-06",
+        "name": "Simhachalam Express",
+        "type": "fishing_trawler",
+        "distanceKm": 3.1,
+        "heading": "E (100°)",
+        "speedKnots": 7.1,
+        "lat": 17.682,
+        "lng": 83.248,
+        "description": "Simhachalam Express — mechanized wooden trawler, 3.1km E, heading to fishing jetty."
+      },
+      {
+        "id": "vessel-viz-07",
+        "name": "ICGS C-438",
+        "type": "patrol",
+        "distanceKm": 5.6,
+        "heading": "N (015°)",
+        "speedKnots": 27.0,
+        "lat": 17.735,
+        "lng": 83.230,
+        "description": "ICGS C-438 — interceptor boat, 5.6km N, coastal surveillance."
+      },
+      {
+        "id": "vessel-viz-08",
+        "name": "Coromandel Oil-4",
+        "type": "cargo",
+        "distanceKm": 13.5,
+        "heading": "ENE (065°)",
+        "speedKnots": 14.0,
+        "lat": 17.740,
+        "lng": 83.330,
+        "description": "Coromandel Oil-4 — coastal product tanker, 13.5km ENE, HPCL terminal bound."
+      },
+      {
+        "id": "vessel-viz-09",
+        "name": "Bhavani Sagar Boat",
+        "type": "fishing_trawler",
+        "distanceKm": 2.7,
+        "heading": "SW (210°)",
+        "speedKnots": 5.8,
+        "lat": 17.665,
+        "lng": 83.200,
+        "description": "Bhavani Sagar Boat — small motorized craft, 2.7km SW, nearshore pomfret zone."
+      },
+      {
+        "id": "vessel-viz-10",
+        "name": "Vizag Port Pilot Tug",
+        "type": "patrol",
+        "distanceKm": 1.5,
+        "heading": "SE (140°)",
+        "speedKnots": 10.0,
+        "lat": 17.675,
+        "lng": 83.230,
+        "description": "Vizag Port Pilot Tug — harbour escort vessel, 1.5km SE, guiding inbound carrier."
+      }
+    ],
+    "Mumbai": [
+      {
+        "id": "vessel-mum-01",
+        "name": "MV Konkan Star",
+        "type": "cargo",
+        "distanceKm": 5.4,
+        "heading": "SW (220°)",
+        "speedKnots": 13.2,
+        "lat": 18.885,
+        "lng": 72.802,
+        "description": "MV Konkan Star — feeder container vessel, 5.4km SW, JNPT shipping lane."
+      },
+      {
+        "id": "vessel-mum-02",
+        "name": "ICGS Sankalp",
+        "type": "patrol",
+        "distanceKm": 7.8,
+        "heading": "W (270°)",
+        "speedKnots": 24.0,
+        "lat": 18.920,
+        "lng": 72.760,
+        "description": "ICGS Sankalp — offshore patrol vessel, 7.8km W, Mumbai High energy corridor guard."
+      },
+      {
+        "id": "vessel-mum-03",
+        "name": "Koli Ratna-5",
+        "type": "fishing_trawler",
+        "distanceKm": 2.1,
+        "heading": "S (170°)",
+        "speedKnots": 6.4,
+        "lat": 18.903,
+        "lng": 72.838,
+        "description": "Koli Ratna-5 — mechanized gillnetter, 2.1km S, Sassoon Dock landing route."
+      },
+      {
+        "id": "vessel-mum-04",
+        "name": "Elephanta Explorer",
+        "type": "passenger",
+        "distanceKm": 3.6,
+        "heading": "E (085°)",
+        "speedKnots": 12.0,
+        "lat": 18.925,
+        "lng": 72.868,
+        "description": "Elephanta Explorer — tourist ferry catamaran, 3.6km E, Gateway to Elephanta transit."
+      },
+      {
+        "id": "vessel-mum-05",
+        "name": "ONGC Samudra Jyoti",
+        "type": "cargo",
+        "distanceKm": 11.5,
+        "heading": "WNW (295°)",
+        "speedKnots": 11.0,
+        "lat": 18.970,
+        "lng": 72.730,
+        "description": "ONGC Samudra Jyoti — offshore platform supply vessel, 11.5km WNW, oilfield bound."
+      },
+      {
+        "id": "vessel-mum-06",
+        "name": "Jai Malhar Trawler",
+        "type": "fishing_trawler",
+        "distanceKm": 4.0,
+        "heading": "SSW (200°)",
+        "speedKnots": 5.9,
+        "lat": 18.887,
+        "lng": 72.820,
+        "description": "Jai Malhar Trawler — Bombay duck & pomfret bagnetter, 4.0km SSW, Prongs reef."
+      },
+      {
+        "id": "vessel-mum-07",
+        "name": "Mumbai Port Pilot Launch",
+        "type": "patrol",
+        "distanceKm": 1.2,
+        "heading": "ESE (115°)",
+        "speedKnots": 9.5,
+        "lat": 18.916,
+        "lng": 72.845,
+        "description": "Mumbai Port Pilot Launch — harbour master inspection craft, 1.2km ESE."
+      },
+      {
+        "id": "vessel-mum-08",
+        "name": "Arabian Carrier",
+        "type": "cargo",
+        "distanceKm": 9.2,
+        "heading": "S (180°)",
+        "speedKnots": 14.8,
+        "lat": 18.840,
+        "lng": 72.834,
+        "description": "Arabian Carrier — LPG carrier, 9.2km S, Butcher Island oil berth inbound."
+      },
+      {
+        "id": "vessel-mum-09",
+        "name": "Mandwa Speed Ferry",
+        "type": "passenger",
+        "distanceKm": 6.2,
+        "heading": "SE (140°)",
+        "speedKnots": 21.0,
+        "lat": 18.880,
+        "lng": 72.875,
+        "description": "Mandwa Speed Ferry — Ro-Pax hydrofoil, 6.2km SE, Mandwa to Bhaucha Dhakka."
+      },
+      {
+        "id": "vessel-mum-10",
+        "name": "Matsya Sagar-2",
+        "type": "fishing_trawler",
+        "distanceKm": 3.3,
+        "heading": "WSW (240°)",
+        "speedKnots": 6.8,
+        "lat": 18.910,
+        "lng": 72.805,
+        "description": "Matsya Sagar-2 — mechanized trawler, 3.3km WSW, coastal prawn grounds."
+      }
+    ],
+    "Kolkata": [
+      {
+        "id": "vessel-kol-01",
+        "name": "MV Hooghly Express",
+        "type": "cargo",
+        "distanceKm": 4.8,
+        "heading": "S (175°)",
+        "speedKnots": 10.2,
+        "lat": 22.530,
+        "lng": 88.365,
+        "description": "MV Hooghly Express — inland container barge, 4.8km S, Syama Prasad Mookerjee Port."
+      },
+      {
+        "id": "vessel-kol-02",
+        "name": "ICGS Rajdoot",
+        "type": "patrol",
+        "distanceKm": 9.2,
+        "heading": "SSE (155°)",
+        "speedKnots": 25.0,
+        "lat": 22.492,
+        "lng": 88.398,
+        "description": "ICGS Rajdoot — inshore patrol craft, 9.2km SSE, Sundarbans delta security watch."
+      },
+      {
+        "id": "vessel-kol-03",
+        "name": "Maa Ganga Trawler",
+        "type": "fishing_trawler",
+        "distanceKm": 3.2,
+        "heading": "SW (225°)",
+        "speedKnots": 5.5,
+        "lat": 22.550,
+        "lng": 88.340,
+        "description": "Maa Ganga Trawler — motorized Hilsa gillnetter, 3.2km SW, estuarine channel."
+      },
+      {
+        "id": "vessel-kol-04",
+        "name": "Sundarban Explorer",
+        "type": "passenger",
+        "distanceKm": 6.1,
+        "heading": "SE (135°)",
+        "speedKnots": 13.0,
+        "lat": 22.532,
+        "lng": 88.405,
+        "description": "Sundarban Explorer — delta passenger ferry, 6.1km SE, Sagar Island link."
+      },
+      {
+        "id": "vessel-kol-05",
+        "name": "Haldia Feeder-7",
+        "type": "cargo",
+        "distanceKm": 12.8,
+        "heading": "SSW (205°)",
+        "speedKnots": 11.5,
+        "lat": 22.460,
+        "lng": 88.320,
+        "description": "Haldia Feeder-7 — riverine cargo coaster, 12.8km SSW, Haldia Dock approach."
+      },
+      {
+        "id": "vessel-kol-06",
+        "name": "Padma Kanya-3",
+        "type": "fishing_trawler",
+        "distanceKm": 2.5,
+        "heading": "W (265°)",
+        "speedKnots": 4.8,
+        "lat": 22.570,
+        "lng": 88.335,
+        "description": "Padma Kanya-3 — traditional country craft, 2.5km W, shallow water netting."
+      },
+      {
+        "id": "vessel-kol-07",
+        "name": "Kolkata River Police-2",
+        "type": "patrol",
+        "distanceKm": 1.7,
+        "heading": "N (005°)",
+        "speedKnots": 15.0,
+        "lat": 22.588,
+        "lng": 88.366,
+        "description": "Kolkata River Police-2 — fast river patrol launch, 1.7km N, Howrah bridge sector."
+      },
+      {
+        "id": "vessel-kol-08",
+        "name": "Bengal Pride Bulker",
+        "type": "cargo",
+        "distanceKm": 14.5,
+        "heading": "S (180°)",
+        "speedKnots": 9.8,
+        "lat": 22.442,
+        "lng": 88.360,
+        "description": "Bengal Pride Bulker — general cargo carrier, 14.5km S, Diamond Harbour transit."
+      },
+      {
+        "id": "vessel-kol-09",
+        "name": "Rupnarayan Cruiser",
+        "type": "passenger",
+        "distanceKm": 4.0,
+        "heading": "NW (315°)",
+        "speedKnots": 11.0,
+        "lat": 22.598,
+        "lng": 88.336,
+        "description": "Rupnarayan Cruiser — daily river commuter ferry, 4.0km NW, Bagbazar to Howrah."
+      },
+      {
+        "id": "vessel-kol-10",
+        "name": "Kakdwip Fisher-8",
+        "type": "fishing_trawler",
+        "distanceKm": 7.5,
+        "heading": "SSE (160°)",
+        "speedKnots": 6.0,
+        "lat": 22.508,
+        "lng": 88.388,
+        "description": "Kakdwip Fisher-8 — coastal gillnetter, 7.5km SSE, heading towards Bay of Bengal."
+      }
+    ],
+    "Colombo": [
+      {
+        "id": "vessel-col-01",
+        "name": "SLNS Sayurala",
+        "type": "patrol",
+        "distanceKm": 5.2,
+        "heading": "NW (310°)",
+        "speedKnots": 22.0,
+        "lat": 6.955,
+        "lng": 79.825,
+        "description": "SLNS Sayurala — Sri Lanka Navy advanced offshore patrol vessel, 5.2km NW."
+      },
+      {
+        "id": "vessel-col-02",
+        "name": "MV Lanka Mahapola",
+        "type": "cargo",
+        "distanceKm": 3.8,
+        "heading": "SW (230°)",
+        "speedKnots": 15.0,
+        "lat": 6.905,
+        "lng": 79.835,
+        "description": "MV Lanka Mahapola — transshipment container vessel, 3.8km SW, Colombo South Port."
+      },
+      {
+        "id": "vessel-col-03",
+        "name": "Denuwara Fisher",
+        "type": "fishing_trawler",
+        "distanceKm": 4.6,
+        "heading": "N (350°)",
+        "speedKnots": 7.0,
+        "lat": 6.968,
+        "lng": 79.855,
+        "description": "Denuwara Fisher — multi-day tuna longliner, 4.6km N, Negombo boundary."
+      },
+      {
+        "id": "vessel-col-04",
+        "name": "Ceylon Star Ferry",
+        "type": "passenger",
+        "distanceKm": 2.5,
+        "heading": "S (170°)",
+        "speedKnots": 14.5,
+        "lat": 6.905,
+        "lng": 79.865,
+        "description": "Ceylon Star Ferry — coastal passenger launch, 2.5km S, Galle Face roadstead."
+      },
+      {
+        "id": "vessel-col-05",
+        "name": "Indian Ocean Trader",
+        "type": "cargo",
+        "distanceKm": 9.8,
+        "heading": "W (270°)",
+        "speedKnots": 16.8,
+        "lat": 6.928,
+        "lng": 79.772,
+        "description": "Indian Ocean Trader — international container ship, 9.8km W, major East-West shipping lane."
+      }
+    ],
+    "Chittagong": [
+      {
+        "id": "vessel-ctg-01",
+        "name": "BNS Somudra Joy",
+        "type": "patrol",
+        "distanceKm": 6.5,
+        "heading": "SSW (205°)",
+        "speedKnots": 21.0,
+        "lat": 22.305,
+        "lng": 91.758,
+        "description": "BNS Somudra Joy — Bangladesh Navy frigate, 6.5km SSW, Karnaphuli river mouth."
+      },
+      {
+        "id": "vessel-ctg-02",
+        "name": "MV Bengal Tiger",
+        "type": "cargo",
+        "distanceKm": 4.1,
+        "heading": "SW (225°)",
+        "speedKnots": 12.0,
+        "lat": 22.330,
+        "lng": 91.750,
+        "description": "MV Bengal Tiger — general cargo bulker, 4.1km SW, Chittagong Port outer anchorage."
+      },
+      {
+        "id": "vessel-ctg-03",
+        "name": "Karnafuli Fisher-5",
+        "type": "fishing_trawler",
+        "distanceKm": 3.4,
+        "heading": "S (180°)",
+        "speedKnots": 6.2,
+        "lat": 22.325,
+        "lng": 91.782,
+        "description": "Karnafuli Fisher-5 — motorized wooden trawler, 3.4km S, Bay of Bengal hilsa zone."
+      },
+      {
+        "id": "vessel-ctg-04",
+        "name": "Sandwip Link Ferry",
+        "type": "passenger",
+        "distanceKm": 5.8,
+        "heading": "NW (315°)",
+        "speedKnots": 13.5,
+        "lat": 22.392,
+        "lng": 91.745,
+        "description": "Sandwip Link Ferry — passenger coaster, 5.8km NW, Chittagong to Sandwip island."
+      },
+      {
+        "id": "vessel-ctg-05",
+        "name": "Bay Star Dredger",
+        "type": "cargo",
+        "distanceKm": 2.2,
+        "heading": "SE (135°)",
+        "speedKnots": 4.5,
+        "lat": 22.342,
+        "lng": 91.798,
+        "description": "Bay Star Dredger — Karnaphuli channel trailing suction hopper dredger, 2.2km SE."
+      }
+    ],
+    "Karachi": [
+      {
+        "id": "vessel-khi-01",
+        "name": "PNS Yarmook",
+        "type": "patrol",
+        "distanceKm": 7.2,
+        "heading": "SW (215°)",
+        "speedKnots": 23.0,
+        "lat": 24.810,
+        "lng": 24.960,
+        "description": "PNS Yarmook — Pakistan Navy corvette, 7.2km SW, Manora channel guard."
+      },
+      {
+        "id": "vessel-khi-02",
+        "name": "MV Indus Star",
+        "type": "cargo",
+        "distanceKm": 4.5,
+        "heading": "S (185°)",
+        "speedKnots": 13.4,
+        "lat": 24.820,
+        "lng": 67.005,
+        "description": "MV Indus Star — container cargo ship, 4.5km S, Karachi Port Trust berth inbound."
+      },
+      {
+        "id": "vessel-khi-03",
+        "name": "Al-Madina Trawler",
+        "type": "fishing_trawler",
+        "distanceKm": 3.0,
+        "heading": "SE (140°)",
+        "speedKnots": 5.8,
+        "lat": 24.838,
+        "lng": 67.020,
+        "description": "Al-Madina Trawler — wooden deep-sea gillnetter, 3.0km SE, Ibrahim Hyderi route."
+      },
+      {
+        "id": "vessel-khi-04",
+        "name": "Manora Island Ferry",
+        "type": "passenger",
+        "distanceKm": 2.1,
+        "heading": "W (265°)",
+        "speedKnots": 11.0,
+        "lat": 24.858,
+        "lng": 66.980,
+        "description": "Manora Island Ferry — harbor shuttle launch, 2.1km W, Keamari to Manora."
+      },
+      {
+        "id": "vessel-khi-05",
+        "name": "Arabian Petroleum-2",
+        "type": "cargo",
+        "distanceKm": 11.0,
+        "heading": "SSW (200°)",
+        "speedKnots": 14.2,
+        "lat": 24.762,
+        "lng": 66.970,
+        "description": "Arabian Petroleum-2 — crude product carrier, 11.0km SSW, Port Qasim channel."
+      }
+    ],
+    "Male": [
+      {
+        "id": "vessel-mle-01",
+        "name": "MNDF Coast Guard Huravee",
+        "type": "patrol",
+        "distanceKm": 3.5,
+        "heading": "NE (045°)",
+        "speedKnots": 24.0,
+        "lat": 4.195,
+        "lng": 73.530,
+        "description": "MNDF Coast Guard Huravee — patrol vessel, 3.5km NE, North Malé Atoll channel."
+      },
+      {
+        "id": "vessel-mle-02",
+        "name": "Dhivehi Dhoani-1",
+        "type": "fishing_trawler",
+        "distanceKm": 2.0,
+        "heading": "NW (315°)",
+        "speedKnots": 7.5,
+        "lat": 4.188,
+        "lng": 73.495,
+        "description": "Dhivehi Dhoani-1 — traditional pole & line skipjack tuna boat, 2.0km NW."
+      },
+      {
+        "id": "vessel-mle-03",
+        "name": "Hulhumale Express",
+        "type": "passenger",
+        "distanceKm": 1.4,
+        "heading": "E (090°)",
+        "speedKnots": 18.0,
+        "lat": 4.176,
+        "lng": 73.522,
+        "description": "Hulhumale Express — high-speed inter-island catamaran, 1.4km E, Malé to Airport."
+      },
+      {
+        "id": "vessel-mle-04",
+        "name": "MV Coral Trader",
+        "type": "cargo",
+        "distanceKm": 4.8,
+        "heading": "S (180°)",
+        "speedKnots": 10.5,
+        "lat": 4.132,
+        "lng": 73.510,
+        "description": "MV Coral Trader — inter-atoll supply coaster, 4.8km S, Malé Commercial Port."
+      }
+    ],
+    "Yangon": [
+      {
+        "id": "vessel-ygn-01",
+        "name": "Myanmar Navy 561",
+        "type": "patrol",
+        "distanceKm": 5.8,
+        "heading": "S (175°)",
+        "speedKnots": 20.0,
+        "lat": 16.815,
+        "lng": 96.198,
+        "description": "Myanmar Navy 561 — riverine fast patrol craft, 5.8km S, Yangon River mouth."
+      },
+      {
+        "id": "vessel-ygn-02",
+        "name": "MV Irrawaddy Star",
+        "type": "cargo",
+        "distanceKm": 3.2,
+        "heading": "SE (135°)",
+        "speedKnots": 11.0,
+        "lat": 16.845,
+        "lng": 96.215,
+        "description": "MV Irrawaddy Star — general cargo vessel, 3.2km SE, Thilawa Port transit."
+      },
+      {
+        "id": "vessel-ygn-03",
+        "name": "Ayeyarwady Fisher",
+        "type": "fishing_trawler",
+        "distanceKm": 2.8,
+        "heading": "SW (220°)",
+        "speedKnots": 5.2,
+        "lat": 16.848,
+        "lng": 96.175,
+        "description": "Ayeyarwady Fisher — motorized river gillnetter, 2.8km SW, delta estuary."
+      },
+      {
+        "id": "vessel-ygn-04",
+        "name": "Dallah Commuter Ferry",
+        "type": "passenger",
+        "distanceKm": 1.1,
+        "heading": "S (180°)",
+        "speedKnots": 9.0,
+        "lat": 16.856,
+        "lng": 96.195,
+        "description": "Dallah Commuter Ferry — cross-river passenger vessel, 1.1km S, Pansodan jetty."
+      }
+    ]
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "fallback": {
+    "en": "I don't have specific guidance for that — if this is a medical emergency, prioritize getting to shore and radio for help on VHF Channel 16.",
+    "hi": "मेरे पास इसके लिए विशिष्ट मार्गदर्शन नहीं है — यदि यह एक चिकित्सीय आपात स्थिति है, तो तुरंत किनारे की ओर बढ़ें और VHF चैनल 16 पर सहायता के लिए रेडियो संदेश भेजें।",
+    "ta": "இதற்கான குறிப்பிட்ட மருத்துவ வழிகாட்டுதல் என்னிடம் இல்லை — இது அவசர மருத்துவ நிலையாக இருந்தால், உடனடியாக கரைக்குத் திரும்பி VHF சேனல் 16-ல் உதவி கோருங்கள்.",
+    "te": "దీనికి నిర్దిష్ట వైద్య మార్గదర్శకత్వం లేదు — ఇది అత్యవసర వైద్య పరిస్థితి అయితే, వెంటనే తీరానికి చేరుకోవడానికి ప్రాధాన్యత ఇవ్వండి మరియు VHF ఛానల్ 16 లో సహాయం కోరండి.",
+    "ml": "ഇതിനായി പ്രത്യേക മാർഗ്ഗനിർദ്ദേശങ്ങൾ ലഭ്യമല്ല — ഇതൊരു മെഡിക്കൽ അടിയന്തരാവസ്ഥയാണെങ്കിൽ, എത്രയും വേഗം തീരത്തേക്ക് മടങ്ങുകയും VHF ചാനൽ 16-ൽ സഹായം അഭ്യർത്ഥിക്കുകയും ചെയ്യുക.",
+    "bn": "এর জন্য নির্দিষ্ট কোনো নির্দেশিকা নেই — এটি যদি কোনো মেডিকেল জরুরী অবস্থা হয়, অবিলম্বে তীরে ফেরার অগ্রাধিকার দিন এবং VHF চ্যানেল ১৬-এ সাহায্যের জন্য বার্তা পাঠান।"
+  },
+  "scenarios": [
+    {
+      "id": "seizure",
+      "severity": "HIGH",
+      "requiresAge": true,
+      "agePrompt": {
+        "en": "What is the approximate age of the person having the seizure? (e.g., child under 12, young adult, elderly person)",
+        "hi": "दौरे से पीड़ित व्यक्ति की अनुमानित आयु क्या है? (जैसे, 12 वर्ष से कम का बच्चा, युवा, या बुजुर्ग व्यक्ति)",
+        "ta": "வலிப்பு ஏற்பட்ட நபரின் தோராயமான வயது என்ன? (எ.கா., 12 வயதுக்குட்பட்ட குழந்தை, இளைஞர், முதியவர்)",
+        "te": "మూర్ఛ వచ్చిన వ్యక్తి సుమారు వయస్సు ఎంత? (ఉదా. 12 ఏళ్ల లోపు పిల్లలు, యువకులు, వృద్ధులు)",
+        "ml": "ഫിറ്റ്സ്/അപസ്മാരം ഉണ്ടായ ആളുടെ ഏകദേശ പ്രായം എത്രയാണ്? (ഉദാ: 12 വയസ്സിൽ താഴെയുള്ള കുട്ടി, മുതിർന്നയാൾ, വയോധികൻ)",
+        "bn": "খিঁচুনি হওয়া ব্যক্তির আনুমানিক বয়স কত? (যেমন, ১২ বছরের নিচে শিশু, তরুণ, বৃদ্ধ ব্যক্তি)"
+      },
+      "keywords": {
+        "en": ["seizure", "convulsing", "convulsion", "epilepsy", "fits", "shaking violently", "spasm"],
+        "hi": ["दौरा", "मिर्गी", "कंपकंपी", "दौरे", "ऐंठन", "फिट्स"],
+        "ta": ["வலிப்பு", "ஜன்னி", "உடல் நடுக்கம்", "வலிப்பு வந்தது", "இசிவு"],
+        "te": ["మూర్ఛ", "ఫిట్స్", "వణుకు", "మూర్చ వచ్చింది"],
+        "ml": ["ഫിറ്റ്സ്", "അപസ്മാരം", "വിറയൽ", "കോച്ചിവലിക്കൽ"],
+        "bn": ["খিঁচুনি", "মৃগীরোগ", "ফিট", "কাঁপছে", "খিঁচুনি উঠেছে"]
+      },
+      "guidance": {
+        "en": "🚨 SEIZURE / CONVULSION EMERGENCY PROTOCOL:\n\n1. CLEAR THE AREA: Keep people at a safe distance and clear the deck of hard, sharp, or hot objects immediately.\n2. DO NOT RESTRAIN: Do not hold the person down and NEVER force anything into their mouth.\n3. PROTECT HEAD: Cushion their head using folded clothes, life jacket, or life ring.\n4. TIME THE SEIZURE: Note start time. If seizure lasts > 5 minutes or repeats, treat as CRITICAL — radio MRCC on VHF 16.\n5. RECOVERY POSITION: Once convulsions cease, gently roll them onto their side into the recovery position and check clear breathing.\n6. AGE-SPECIFIC CARE ({age}): Keep warm and calm. Do not give fluids until 100% conscious and alert.\n7. IMMEDIATE HARBOR RUN: Initiate navigation toward nearest harbor for emergency medical handover.",
+        "hi": "🚨 दौरा / मिर्गी आपातकालीन प्रोटोकॉल:\n\n1. क्षेत्र खाली करें: आसपास के लोगों को सुरक्षित दूरी पर रखें और डेक से कठोर/नुकीली वस्तुएं हटाएं।\n2. रोके नहीं: व्यक्ति को जबरदस्ती न पकड़ें और मुँह में कुछ भी न डालें।\n3. सिर की सुरक्षा: सिर के नीचे मुड़े हुए कपड़े या लाइफ जैकेट का तकिया लगाएं।\n4. समय नोट करें: यदि दौरा 5 मिनट से अधिक रहे या दोबारा आए, तो इसे अत्यधिक गंभीर मानें और VHF 16 पर आपातकालीन मदद मांगें।\n5. रिकवरी पोजीशन: दौरा रुकने पर उन्हें करवट के बल लिटाएं और सांस की जांच करें।\n6. आयु अनुसार देखभाल ({age}): शरीर को गर्म व शांत रखें। पूर्ण होश आने तक पानी न दें।\n7. निकटतम बंदरगाह की ओर बढ़ें।",
+        "ta": "🚨 வலிப்பு அவசர சிகிச்சை நெறிமுறை:\n\n1. இடத்தை ஒழுங்குபடுத்துங்கள்: கடினமான அல்லது கூர்மையான பொருட்களை அப்புறப்படுத்துங்கள்.\n2. தடுத்துப் பிடிக்காதீர்கள்: உடலை அழுத்திப் பிடிக்காதீர்கள்; வாயில் எதையும் திணிக்காதீர்கள்.\n3. தலைப் பாதுகாப்பு: தலையின் கீழ் மடித்த ஆடை அல்லது லைஃப் ஜாக்கெட்டை வைக்கவும்.\n4. நேரத்தைக் கவனியுங்கள்: வலிப்பு 5 நிமிடங்களுக்கு மேல் நீடித்தால் அல்லது மீண்டும் வந்தால், உடனடியாக VHF 16-ல் உதவி கோருங்கள்.\n5. ஒருபுறமாக படுக்க வையுங்கள் (Recovery Position): வலிப்பு நின்றதும் ஒருபுறமாக சாய்த்து படுக்க வைத்து சுவாசத்தை சரிபார்க்கவும்.\n6. வயதுக்கு ஏற்ப கவனிப்பு ({age}): அமைதியாக இருக்கச் செய்யுங்கள். சுயநினைவு திரும்பும் வரை தண்ணீர் கொடுக்காதீர்கள்.\n7. உடனடியாக கரைக்கு திரும்பவும்.",
+        "te": "🚨 మూర్ఛ అత్యవసర ప్రోటోకాల్:\n\n1. ప్రాంతాన్ని క్లియర్ చేయండి: చుట్టూ ఉన్న పదునైన, గట్టి వస్తువులను తొలగించండి.\n2. బలవంతంగా ఆపవద్దు: వ్యక్తిని గట్టిగా పట్టుకోవద్దు; నోట్లో ఏమీ పెట్టవద్దు.\n3. తల రక్షణ: తల కింద మడతపెట్టిన దుస్తులు లేదా లైఫ్ జాకెట్ ఉంచండి.\n4. సమయం గమనించండి: 5 నిమిషాలకు మించి కొనసాగితే తక్షణమే VHF 16 లో కాల్ చేయండి.\n5. రికవరీ స్థానం: మూర్ఛ ఆగిన తర్వాత పక్కకు తిప్పి పడుకోబెట్టి శ్వాస సరిగ్గా ఆడుతుందో లేదో చూడండి.\n6. వయస్సు ఆధారిత సంరక్షణ ({age}): శరీరాన్ని వెచ్చగా ఉంచండి. పూర్తిగా స్పృహ వచ్చే వరకు ఏమీ తాగించవద్దు.\n7. సమీప ఓడరేవు వైపు ప్రయాణించండి.",
+        "ml": "🚨 അപസ്മാരം / ഫിറ്റ്സ് അടിയന്തര പ്രോട്ടോക്കോൾ:\n\n1. സ്ഥലം സുരക്ഷിതമാക്കുക: ഡെക്കിലെ മൂർച്ചയുള്ളതും കടുപ്പമുള്ളതുമായ സാധനങ്ങൾ മാറ്റുക.\n2. തടഞ്ഞുപിടിക്കരുത്: രോഗിയെ ബലമായി പിടിക്കരുത്, വായിൽ ഒന്നും തിരുകരുത്.\n3. തല സംരക്ഷിക്കുക: തലയിണയായി ലൈഫ് ജാക്കറ്റോ തുണിയോ വയ്ക്കുക.\n4. സമയം ശ്രദ്ധിക്കുക: ഫിറ്റ്സ് 5 മിനിറ്റിലധികം നീണ്ടാൽ അടിയന്തര സഹായത്തിനായി VHF 16-ൽ ബന്ധപ്പെടുക.\n5. റിക്കവറി പൊസിഷൻ: ഫിറ്റ്സ് മാറിയാൽ ഒരുവശത്തേക്ക് ചരിച്ച് കിടത്തി ശ്വാസോച്ഛ്വാസം പരിശോധിക്കുക.\n6. പ്രായപരിഗണന ({age}): ചൂട് നിലനിർത്തുക, ബോധം പൂർണ്ണമാകും വരെ വെള്ളം നൽകരുത്.\n7. ഉടനടി തുറമുഖത്തേക്ക് നീങ്ങുക.",
+        "bn": "🚨 খিঁচুনি / মৃগীরোগ জরুরী প্রোটোকল:\n\n1. চারপাশ পরিষ্কার করুন: শক্ত বা ধারালো বস্তু সরিয়ে ফেলুন।\n2. জোর করবেন না: চেপে ধরবেন না এবং মুখে কিছু দেবেন না।\n3. মাথার যত্ন: মাথার নিচে কাপড় বা লাইফ জ্যাকেট দিন।\n4. সময় দেখুন: ৫ মিনিটের বেশি স্থায়ী হলে VHF ১৬-এ সাহায্য চান।\n5. পাশ ফিরিয়ে শোয়ান: খিঁচুনি থামলে একপাশে কাত করে শোয়ান এবং শ্বাসপ্রশ্বাস পরীক্ষা করুন।\n6. বয়স ভিত্তিক যত্ন ({age}): শরীর উষ্ণ রাখুন, পূর্ণ জ্ঞান না ফেরা পর্যন্ত জল দেবেন না।\n7. অবিলম্বে নিকটতম বন্দরের দিকে যাত্রা করুন।"
+      }
+    },
+    {
+      "id": "drowning",
+      "severity": "HIGH",
+      "keywords": {
+        "en": ["drowning", "near drowning", "fell overboard", "water in lungs", "swallowed seawater", "choking on water"],
+        "hi": ["डूब रहा", "पानी में गिर गया", "फेफड़ों में पानी", "समुद्र में डूबना", "सांस नहीं आ रही"],
+        "ta": ["நீரில் மூழ்குதல்", "கடலில் விழுந்தார்", "தண்ணீர் குடித்துவிட்டார்", "சுவாசம் இல்லை"],
+        "te": ["నీటిలో మునిగిపోవడం", "సముద్రంలో పడిపోయారు", "ఊపిరి ఆడటం లేదు"],
+        "ml": ["മുങ്ങിപ്പോയി", "വെള്ളത്തിൽ വീണു", "ശ്വാസമെടുക്കാൻ പറ്റുന്നില്ല"],
+        "bn": ["জলে ডুবে যাওয়া", "পানিতে ডুবেছে", "শ্বাসকষ্ট হচ্ছে", "নৌকা থেকে পড়ে গেছে"]
+      },
+      "guidance": {
+        "en": "🚨 DROWNING / NEAR-DROWNING EMERGENCY DIRECTIVE:\n\n1. RESCUE FROM WATER: Get the person onboard immediately without putting other rescuers at risk.\n2. CHECK BREATHING: Check responsiveness and airway. If unresponsive and not breathing, initiate CPR (30 chest compressions followed by 2 rescue breaths) immediately.\n3. CLEAR AIRWAY: Turn onto side if vomiting occurs, then resume rescue breaths.\n4. KEEP WARM: Remove wet clothing, wrap in dry blankets/tarps to prevent severe hypothermia.\n5. MONITOR SECONDARY DROWNING: Even if fully recovered, monitor closely for rapid breathing or coughing as delayed pulmonary fluid buildup (secondary drowning) can occur up to 24h.\n6. EVACUATION: Radio VHF 16 immediately for Coast Guard emergency medical evacuation.",
+        "hi": "🚨 डूबने / पानी निगलने पर आपातकालीन निर्देश:\n\n1. तुरंत बाहर निकालें: व्यक्ति को सुरक्षित रूप से नाव पर खींचें।\n2. सांस की जांच करें: यदि सांस नहीं चल रही है तो तुरंत CPR शुरू करें (30 बार छाती दबाएं + 2 सांसें दें)।\n3. उल्टी होने पर करवट दिलाएं ताकि गला साफ रहे।\n4. गर्म रखें: गीले कपड़े हटाकर सूखे कंबल में लपेटें।\n5. द्वितीयक डूबने पर नजर रखें: ठीक लगने पर भी लगातार निगरानी करें।\n6. VHF 16 पर तुरंत सहायता मांगें।",
+        "ta": "🚨 நீரில் மூழ்குதல் அவசர சிகிச்சை:\n\n1. உடனடியாக மீட்டெடுக்கவும்: பாதுகாப்பாக படகிற்குள் கொண்டு வாருங்கள்.\n2. சுவாசத்தை சோதிக்கவும்: சுவாசம் இல்லையெனில் உடனே CPR தொடங்கவும் (30 நெஞ்சு அழுத்தங்கள் + 2 சுவாசங்கள்).\n3. வாந்தி எடுத்தால் ஒருபுறமாக சாய்க்கவும்.\n4. உடலை சூடாக வைக்கவும்: ஈரமான ஆடைகளை மாற்றி உலர் போர்வையால் மூடவும்.\n5. தொடர்ந்து கண்காணிக்கவும்: நுரையீரல் பாதிப்பு அபாயம் உள்ளதால் VHF 16-ல் உடனடியாக உதவி கோருங்கள்.",
+        "te": "🚨 నీటిలో మునిగిపోయినప్పుడు అత్యవసర చర్యలు:\n\n1. నీటి నుండి బయటకు తీయండి.\n2. శ్వాస ఆడకపోతే వెంటనే CPR ప్రారంభించండి (30 ఛాతీ ప్రెస్‌లు + 2 కృత్రిమ శ్వాసలు).\n3. తడి బట్టలు మార్చి వెచ్చగా ఉంచండి.\n4. VHF 16 లో తక్షణ సహాయం కోసం కాల్ చేయండి.",
+        "ml": "🚨 വെള്ളത്തിൽ മുങ്ങിയാലുള്ള അടിയന്തര ചികിത്സ:\n\n1. വേഗത്തിൽ ബോട്ടിൽ കയറ്റുക.\n2. ശ്വാസമില്ലെങ്കിൽ ഉടൻ CPR നൽകുക (30 നെഞ്ചിൽ അമർത്തൽ + 2 കൃത്രിമ ശ്വാസം).\n3. നനഞ്ഞ വസ്ത്രങ്ങൾ മാറ്റി ചൂട് നൽകുക.\n4. VHF 16-ൽ ബന്ധപ്പെടുക.",
+        "bn": "🚨 জলে ডোবার ক্ষেত্রে জরুরী চিকিৎসা:\n\n1. জল থেকে দ্রুত তুলুন।\n2. শ্বাস না থাকলে সঙ্গে সঙ্গে CPR শুরু করুন (৩০ বার বুকে চাপ + ২ বার কৃত্রিম শ্বাস)।\n3. ভেজা কাপড় বদলে শুকনো কাপড়ে ঢেকে দিন।\n4. VHF ১৬-এ সাহায্য চান।"
+      }
+    },
+    {
+      "id": "severe_bleeding",
+      "severity": "HIGH",
+      "keywords": {
+        "en": ["severe bleeding", "deep cut", "blood spurting", "heavy bleeding", "gash", "artery cut", "wound bleeding"],
+        "hi": ["खून बह रहा", "गहरा घाव", "भारी रक्तस्राव", "कट गया", "खून नहीं रुक रहा"],
+        "ta": ["அதிக ரத்தப்போக்கு", "ஆழமான வெட்டுக் காயம்", "ரத்தம் நிற்கவில்லை", "ரத்த காயம்"],
+        "te": ["తీవ్ర రక్తస్రావం", "లోతైన గాయం", "రక్తం కారుతోంది"],
+        "ml": ["രക്തസ്രാവം", "ആഴത്തിലുള്ള മുറിവ്", "രക്തം നിൽക്കുന്നില്ല"],
+        "bn": ["রক্তপাত", "গভীর ক্ষত", "প্রচুর রক্ত পড়ছে", "কেটে গেছে"]
+      },
+      "guidance": {
+        "en": "🚨 SEVERE BLEEDING / DEEP CUT PROTOCOL:\n\n1. DIRECT PRESSURE: Apply firm, continuous pressure directly over the wound using the cleanest cloth, towel, or gauze available.\n2. ELEVATE: Elevate the injured limb above heart level if no fracture is suspected.\n3. DO NOT REMOVE EMBEDDED OBJECTS: If an object (metal, glass, hook) is stuck in the wound, stabilize around it — do NOT pull it out.\n4. MAINTAIN PRESSURE: Do not lift the cloth to check. If blood soaks through, add more layers on top and press harder.\n5. WATCH FOR SHOCK: Look for pale/clammy skin, rapid breathing, or dizziness. Keep patient lying flat with legs elevated.\n6. RADIO CALL: Contact harbor medical team on VHF 16 immediately.",
+        "hi": "🚨 भारी रक्तस्राव / गहरा घाव प्रोटोकॉल:\n\n1. सीधा दबाव: घाव पर साफ कपड़े से लगातार मजबूती से दबाव बनाए रखें।\n2. अंग को ऊपर उठाएं: यदि कोई हड्डी नहीं टूटी है तो अंग को दिल के स्तर से ऊपर रखें।\n3. फंसी हुई वस्तु न निकालें: यदि घाव में कोई धातु या कांटा फंसा है, तो उसे बाहर न खींचें, उसके चारों ओर पट्टी बांधें।\n4. दबाव जारी रखें: रक्त बहने पर कपड़े के ऊपर और परतें लगाएं।\n5. शॉक से बचाएं: पैर थोड़े ऊंचे रखकर मरीज को लिटाएं और VHF 16 पर संपर्क करें।",
+        "ta": "🚨 கடுமையான ரத்தப்போக்கு சிகிச்சை:\n\n1. நேரடி அழுத்தம்: சுத்தமான துணியால் காயத்தின் மீது தொடர்ச்சியாக அழுத்தம் கொடுக்கவும்.\n2. உறுப்பை மேலே உயர்த்தவும்.\n3. உட்புகுந்த பொருளை அகற்றாதீர்கள்.\n4. அதிர்ச்சி அறிகுறிகளைக் கண்காணியுங்கள் மற்றும் VHF 16-ல் உதவி கோருங்கள்.",
+        "te": "🚨 అధిక రక్తస్రావం చికిత్స:\n\n1. శుభ్రమైన గుడ్డతో గాయంపై గట్టిగా నొక్కండి.\n2. గుండె కంటే ఎత్తులో ఉంచండి.\n3. గుచ్చుకున్న వస్తువులను లాగవద్దు.\n4. VHF 16 లో సహాయం కోరండి.",
+        "ml": "🚨 കഠിനമായ രക്തസ്രാവം:\n\n1. വൃത്തിയുള്ള തുണി ഉപയോഗിച്ച് മുറിവിൽ ശക്തമായി അമർത്തിപ്പിടിക്കുക.\n2. മുറിവേറ്റ ഭാഗം ഉയർത്തി വയ്ക്കുക.\n3. തറച്ച സാധനങ്ങൾ ഊരിയെടുക്കരുത്.\n4. VHF 16-ൽ ബന്ധപ്പെടുക.",
+        "bn": "🚨 তীব্র রক্তপাত:\n\n1. পরিষ্কার কাপড় দিয়ে ক্ষতের ওপর জোরে চেপে ধরুন।\n2. হৃৎপিণ্ডের চেয়ে উঁচুতে রাখুন।\n3. বিঁধে থাকা বস্তু টেনে বের করবেন না।\n4. VHF ১৬-এ সাহায্য চান।"
+      }
+    },
+    {
+      "id": "fracture",
+      "severity": "MEDIUM",
+      "keywords": {
+        "en": ["broken bone", "fracture", "snapped bone", "cannot move arm", "cannot move leg", "bone sticking out"],
+        "hi": ["हड्डी टूट गई", "फ्रैक्चर", "हाथ टूट गया", "पैर टूट गया", "हड्डी खिसक गई"],
+        "ta": ["எலும்பு முறிவு", "எலும்பு உடைந்தது", "கை முறிந்தது", "கால் முறிந்தது"],
+        "te": ["ఎముక విరిగింది", "ఫ్రాక్చర్", "కాలు విరిగింది"],
+        "ml": ["എല്ല് ഒടിഞ്ഞു", "ഫ്രാക്ചർ", "കൈ ഒടിഞ്ഞു"],
+        "bn": ["হাড় ভেঙেছে", "ফ্র্যাকচার", "পা ভেঙে গেছে"]
+      },
+      "guidance": {
+        "en": "🦴 SUSPECTED FRACTURE / BROKEN BONE PROTOCOL:\n\n1. DO NOT STRAIGHTEN: Do not attempt to force, pull, or straighten the injured limb.\n2. IMMOBILIZE IN PLACE: Splint the injury in the exact position found using rigid boat materials (oar, wood slat, rolled cloth, rope, life jacket).\n3. SECURE ABOVE & BELOW: Fasten ties above and below the fracture joint, but avoid restricting blood circulation.\n4. ICE / COLD WATER: Apply a cold damp cloth to reduce swelling if available.\n5. MINIMIZE MOVEMENT: Keep patient lying flat and comfortable during the boat's return voyage.",
+        "hi": "🦴 हड्डी टूटने / फ्रैक्चर पर प्रोटोकॉल:\n\n1. सीधा करने की कोशिश न करें: टूटे हुए अंग को जबरन खींचने की कोशिश बिल्कुल न करें।\n2. स्थिर करें: नाव पर उपलब्ध चप्पू, लकड़ी की पट्टी या मुड़े कपड़े से सहारा (स्प्लिंट) देकर बांधें।\n3. जोड़ के ऊपर और नीचे बांधें, लेकिन रक्त प्रवाह बाधित न हो।\n4. सूजन कम करने के लिए ठंडा गीला कपड़ा लगाएं और आराम से बंदरगाह की ओर चलें।",
+        "ta": "🦴 எலும்பு முறிவு பராமரிப்பு:\n\n1. நேராக்க முயற்சிக்காதீர்கள்.\n2. துடுப்பு அல்லது மரக்கட்டை கொண்டு அசையாமல் கட்டி வைக்கவும் (Splint).\n3. அதிக அசைவைத் தவிர்த்து நிதானமாக கரைக்குச் செல்லவும்.",
+        "te": "🦴 ఎముక విరిగినప్పుడు:\n\n1. ఎముకను సరిచేయడానికి ప్రయత్నించవద్దు.\n2. తెడ్డు లేదా కర్రతో కదలకుండా కట్టు కట్టండి.\n3. నిదానంగా ఓడరేవుకు ప్రయాణించండి.",
+        "ml": "🦴 അസ്ഥി ഒടിഞ്ഞാൽ:\n\n1. നേരെയാക്കാൻ ശ്രമിക്കരുത്.\n2. തുഴയോ മരക്കഷണമോ ഉപയോഗിച്ച് അനങ്ങാതെ കെട്ടി വയ്ക്കുക.\n3. ശ്രദ്ധയോടെ തീരത്തേക്ക് മടങ്ങുക.",
+        "bn": "🦴 হাড় ভাঙার চিকিৎসা:\n\n1. সোজা করার চেষ্টা করবেন না।\n2. বৈঠা বা শক্ত লাঠি দিয়ে নড়াচড়া বন্ধ করে বেঁধে দিন।\n3. ধীরে ধীরে তীরের দিকে এগিয়ে যান।"
+      }
+    },
+    {
+      "id": "heatstroke",
+      "severity": "MEDIUM",
+      "keywords": {
+        "en": ["heatstroke", "heat stroke", "sunstroke", "heat exhaustion", "overheated", "dizzy from sun", "hot and confused"],
+        "hi": ["लू लग गई", "गर्मी से बेहोश", "धूप लग गई", "हीट स्ट्रोक", "चक्कर आना"],
+        "ta": ["சூரிய வெப்பத் தாக்குதல்", "வெயிலில் மயக்கம்", "அதிக வெப்பம்"],
+        "te": ["వడదెబ్బ", "ఎండదెబ్బ", "ఎండలో స్పృహతప్పడం"],
+        "ml": ["സൂര്യാഘാതം", "കടുത്ത ചൂട്", "വെയിലിൽ തലകറക്കം"],
+        "bn": ["হিটস্ট্রোক", "সানস্ট্রোক", "রোদে মাথা ঘোরা", "গরম লেগেছে"]
+      },
+      "guidance": {
+        "en": "☀️ HEATSTROKE / HEAT EXHAUSTION EMERGENCY PROTOCOL:\n\n1. MOVE TO SHADE: Immediately move person away from direct sunlight under a canopy, tarp, or cabin.\n2. REMOVE EXCESS CLOTHING: Loosen tight garments, belts, and hats.\n3. RAPID COOLING: Douse skin with seawater or wrap in wet cool cloth; fan continuously.\n4. HYDRATE CAREFULLY: Give small, frequent sips of fresh drinking water ONLY if fully conscious and able to swallow. Do NOT give fluids if vomiting or confused.\n5. WATCH ESCALATION: If skin is hot & dry with confusion or loss of consciousness, treat as high severity heatstroke and head for shore.",
+        "hi": "☀️ हीट स्ट्रोक / लू लगने का प्रोटोकॉल:\n\n1. छाया में ले जाएं: तुरंत धूप से हटाकर तिरपाल या केबिन की छाया में रखें।\n2. कपड़े ढीले करें: अतिरिक्त कपड़े हटाएं।\n3. शरीर ठंडा करें: त्वचा पर गीला कपड़ा लगाएं और लगातार हवा करें।\n4. पानी पिलाएं: पूर्ण होश में होने पर ही थोड़े-थोड़े घूंट ताजा पानी दें।\n5. गंभीर स्थिति में तुरंत किनारे लौटें।",
+        "ta": "☀️ வெப்பத் தாக்குதல் முதலுதவி:\n\n1. நிழலான பகுதிக்கு மாற்றவும்.\n2. இறுக்கமான ஆடைகளைத் தளர்த்தவும்.\n3. நனைத்த துணியால் உடலைத் துடைத்து குளுமைப்படுத்தவும்.\n4. சுயநினைவு இருந்தால் சிறிது சிறிதாக தண்ணீர் கொடுக்கவும்.",
+        "te": "☀️ వడదెబ్బ అత్యవసర చర్యలు:\n\n1. నీడలోకి తరలించండి.\n2. తడి గుడ్డతో శరీరాన్ని చల్లబరచండి.\n3. స్పృహలో ఉంటే నెమ్మదిగా నీరు తాగించండి.",
+        "ml": "☀️ സൂര്യാഘാതം:\n\n1. തണലിലേക്ക് മാറ്റുക.\n2. നനഞ്ഞ തുണികൊണ്ട് ശരീരം തുടയ്ക്കുക.\n3. ബോധമുണ്ടെങ്കിൽ അല്പാല്പമായി വെള്ളം നൽകുക.",
+        "bn": "☀️ হিটস্ট্রোক:\n\n1. ছায়াযুক্ত স্থানে নিন।\n2. ভেজা কাপড় দিয়ে গা মুছিয়ে ঠাণ্ডা করুন।\n3. জ্ঞান থাকলে অল্প অল্প করে জল খাওয়ান।"
+      }
+    },
+    {
+      "id": "hypothermia",
+      "severity": "MEDIUM",
+      "keywords": {
+        "en": ["hypothermia", "freezing", "shivering uncontrollably", "cold exposure", "soaked and freezing", "too cold"],
+        "hi": ["ठंड लग गई", "कांप रहा है", "हाइपोथर्मिया", "बहुत ज्यादा ठंड"],
+        "ta": ["குளிர் நடுக்கம்", "அதிக குளிர்", "உடல் குளிர்ந்துவிட்டது"],
+        "te": ["చలి వణుకు", "విపరీతమైన చలి", "హైపోథెర్మియా"],
+        "ml": ["കഠിനമായ തണുപ്പ്", "വിറയ്ക്കുന്നു", "ഹൈപ്പോതെർമിയ"],
+        "bn": ["অতিরিক্ত ঠান্ডা", "হাঁপিয়ে কাঁপছে", "হাইপোথার্মিয়া"]
+      },
+      "guidance": {
+        "en": "❄️ HYPOTHERMIA / COLD EXPOSURE PROTOCOL:\n\n1. SHELTER FROM WIND: Move into sheltered area away from wind spray and moisture.\n2. DRY LAYERS: Remove wet clothing immediately and replace with dry clothes, tarps, or thermal blankets.\n3. GENTLE REWARMING: Share body heat if needed; cover the head and chest. DO NOT rub limbs vigorously (can trigger cardiac arrhythmia).\n4. WARM SIPS: Provide warm sweetened drinks (NOT hot, NO alcohol) only if alert.\n5. MONITOR: Keep lying flat and monitor breathing continuously.",
+        "hi": "❄️ हाइपोथर्मिया / अत्यधिक ठंड प्रोटोकॉल:\n\n1. हवा से बचाएं: सूखे और सुरक्षित स्थान पर ले जाएं।\n2. सूखे कपड़े: गीले कपड़े हटाकर सूखे कंबल या कपड़े पहनाएं।\n3. शरीर गर्म करें: छाती और सिर को ढकें। हाथ-पैर को जोर से न रगड़ें।\n4. गर्म तरल दें: होश में होने पर हल्का गर्म मीठा पेय दें।",
+        "ta": "❄️ தீவிர குளிர் முதலுதவி:\n\n1. காற்று படாதவாறு மறைக்கவும்.\n2. ஈரமான ஆடைகளை மாற்றி உலர் போர்வையை போர்த்தவும்.\n3. உடலை சூடாக வைக்கவும்; கைகால்களை வேகமாக தேய்க்க வேண்டாம்.\n4. மிதமான சூடான பானம் கொடுக்கவும்.",
+        "te": "❄️ చలి నివారణ:\n\n1. తడి దుస్తులు మార్చి పొడి దుప్పట్లు కప్పండి.\n2. శరీరాన్ని నెమ్మదిగా వెచ్చబరచండి.\n3. గోరువెచ్చని ద్రవాలు తాగించండి.",
+        "ml": "❄️ കഠിന തണുപ്പ് ബാധിച്ചാൽ:\n\n1. നനഞ്ഞ വസ്ത്രം മാറ്റുക.\n2. പുതപ്പ് ഉപയോഗിച്ച് ചൂട് നിലനിർത്തുക.\n3. ചെറുചൂടുള്ള പാനീയങ്ങൾ നൽകുക.",
+        "bn": "❄️ অতিরিক্ত ঠান্ডার যত্ন:\n\n1. ভেজা পোশাক বদলে শুকনো কম্বল দিন।\n2. শরীর গরম রাখুন।\n3. কুসুম গরম পানীয় খেতে দিন।"
+      }
+    },
+    {
+      "id": "fish_hook",
+      "severity": "MEDIUM",
+      "keywords": {
+        "en": ["fish hook", "hook stuck", "puncture wound", "hook in hand", "hook in finger", "pierced by hook"],
+        "hi": ["कांटा चुभ गया", "मछली का कांटा", "हुक फंस गया", "उंगली में कांटा"],
+        "ta": ["தூண்டில் முள் குத்தியது", "மீன் முள் குத்திவிட்டது", "முள் சிக்கியது"],
+        "te": ["గాలం గుచ్చుకుంది", "చేప ముల్లు గుచ్చుకుంది"],
+        "ml": ["ചൂണ്ടക്കൊളുത്ത് തറച്ചു", "മുള്ള് തറച്ചു"],
+        "bn": ["বড়শি বিঁধেছে", "মাছের কাঁটা বিঁধেছে"]
+      },
+      "guidance": {
+        "en": "🪝 FISH HOOK / PUNCTURE INJURY PROTOCOL:\n\n1. DO NOT PULL BACKWARDS: Do NOT try to yank the barb backwards through the skin, as the barb will tear deep tissue.\n2. ADVANCE & CUT: If trained and wire-cutters are available, push the hook through until the barb emerges, cut the barb off, and slide the shank back out.\n3. STABILIZE & TAPE: If unsure, tape and bandage the hook in place to prevent movement until reaching harbor medical staff.\n4. CLEAN: Wash gently with fresh drinking water (NOT seawater) and apply antiseptic/gauze.\n5. INFECTION CHECK: Watch for marine bacterial infection (redness, throbbing).",
+        "hi": "🪝 मछली का कांटा / हुक चुभने पर निर्देश:\n\n1. पीछे न खींचें: कांटे को जबरदस्ती पीछे खींचने की कोशिश न करें, इससे मांस फट सकता है।\n2. आगे निकालें या स्थिर करें: यदि संभव हो तो कांटे को आगे धकेलकर उसका सिरा काटें, या फिर पट्टी से सुरक्षित करके बंदरगाह डॉक्टर को दिखाएं।\n3. ताजे पीने के पानी से साफ करें।",
+        "ta": "🪝 தூண்டில் முள் முதலுதவி:\n\n1. பின்னோக்கி இழுக்காதீர்கள்.\n2. முள்ளை அசைக்காமல் பாதுகாப்பாகக் கட்டி கரைக்குச் சென்று மருத்துவரை அணுகவும்.\n3. சுத்தமான குடிநீரால் கழுவவும்.",
+        "te": "🪝 గాలం గుచ్చుకున్నప్పుడు:\n\n1. వెనక్కి లాగవద్దు.\n2. కదలకుండా పట్టీ వేసి ఆసుపత్రికి వెళ్లండి.\n3. మంచి నీటితో కడగండి.",
+        "ml": "🪝 ചൂണ്ടക്കൊളുത്ത് കുടുങ്ങിയാൽ:\n\n1. പിന്നിലേക്ക് വലിച്ചൂരാൻ ശ്രമിക്കരുത്.\n2. കൊളുത്ത് അനങ്ങാതെ കെട്ടി വച്ച് തീരത്തെത്തി ഡോക്ടറെ കാണിക്കുക.\n3. ശുദ്ധജലത്തിൽ കഴുകുക.",
+        "bn": "🪝 বড়শি বিঁধলে:\n\n1. পেছনের দিকে টেনে বের করবেন না।\n2. শক্ত করে নড়াচড়া বন্ধ করে ড্রেসিং করে ডাক্তারের কাছে যান।\n3. পরিষ্কার পানীয় জলে ধুয়ে নিন।"
+      }
+    },
+    {
+      "id": "jellyfish_sting",
+      "severity": "MEDIUM",
+      "keywords": {
+        "en": ["jellyfish", "sting", "jellyfish sting", "marine sting", "stingray", "sea wasp", "burning skin ocean"],
+        "hi": ["जेलीफ़िश", "डंक", "जेलीफ़िश ने काट लिया", "समुद्री डंक", "जलन"],
+        "ta": ["ஜெல்லி மீன் கொட்டியது", "கடல் விஷம்", "எரிச்சல்"],
+        "te": ["జెల్లీఫిష్ కుట్టింది", "సముద్ర విషం", "తీవ్ర మంట"],
+        "ml": ["കടൽച്ചൊറി കുത്തി", "ജെല്ലിഫിഷ് കുത്തി", "വിഷബാധ"],
+        "bn": ["জেলিফিশ হুল ফুটিয়েছে", "সমুদ্রের বিষাক্ত কামড়"]
+      },
+      "guidance": {
+        "en": "🪼 JELLYFISH / MARINE STING PROTOCOL:\n\n1. RINSE WITH SEAWATER: Rinse sting site thoroughly with clean SEAWATER only. Strictly DO NOT use fresh water or rub (fresh water triggers nematocyst venom discharge).\n2. REMOVE TENTACLES: Carefully scrape off visible tentacles using a knife edge, stick, or credit card — NEVER use bare fingers.\n3. HOT WATER SOAK: Immerse in tolerably hot water (approx 45°C) for 20 minutes to neutralize marine protein toxins.\n4. CRITICAL ANAPHYLAXIS CHECK: Watch for swelling of lips/throat, hives, or breathing difficulty. If observed, radio VHF 16 immediately for urgent medical intercept.",
+        "hi": "🪼 जेलीफ़िश / समुद्री डंक प्रोटोकॉल:\n\n1. समुद्री पानी से धोएं: डंक वाले स्थान को केवल समुद्री पानी से धोएं। ताजा/मीठा पानी न डालें और रगड़ें नहीं।\n2. टेंटेकल्स हटाएं: किसी कार्ड या चाकू की धार से सावधानीपूर्वक अवशेष हटाएं।\n3. गर्म पानी में रखें: लगभग 45°C गर्म पानी में 20 मिनट रखें।\n4. सांस लेने में तकलीफ होने पर VHF 16 पर तुरंत मदद मांगें।",
+        "ta": "🪼 ஜெல்லி மீன் கடி முதலுதவி:\n\n1. கடல் நீரால் மட்டுமே கழுவவும் (குடிநீர் பயன்படுத்தக் கூடாது).\n2. வெறும் கையால் தொடாமல் அட்டையைக் கொண்டு முட்களை அகற்றவும்.\n3. வெதுவெதுப்பான நீரில் 20 நிமிடங்கள் வைக்கவும்.\n4. மூச்சுத் திணறல் ஏற்பட்டால் VHF 16-ல் உதவி கோருங்கள்.",
+        "te": "🪼 జెల్లీఫిష్ కాటు:\n\n1. సముద్రపు నీటితో మాత్రమే కడగాలి.\n2. చేతులతో తాకకుండా కార్డుతో తొలగించండి.\n3. గోరువెచ్చని నీటిలో ఉంచండి.\n4. శ్వాస తీసుకోవడంలో ఇబ్బంది ఉంటే వెంటనే సహాయం కోరండి.",
+        "ml": "🪼 ജെല്ലിഫിഷ് കുത്തിയാൽ:\n\n1. കടൽവെള്ളത്തിൽ മാത്രം കഴുകുക.\n2. നഗ്നമായ കൈകൾ കൊണ്ട് തൊടരുത്.\n3. ചെറുചൂടുവെള്ളത്തിൽ മുക്കി വയ്ക്കുക.\n4. ശ്വാസതടസ്സമുണ്ടെങ്കിൽ ഉടൻ സഹായം തേടുക.",
+        "bn": "🪼 জেলিফিশের কামড়:\n\n1. শুধুমাত্র সমুদ্রের নোনা জলে ধুয়ে নিন (মিষ্টি জল দেবেন না)।\n2. খালি হাতে স্পর্শ না করে কার্ড দিয়ে অবশিষ্টাংশ সরান।\n3. হালকা গরম জলে ২০ মিনিট ডুবিয়ে রাখুন।\n4. শ্বাসকষ্ট হলে VHF ১৬-এ যোগাযোগ করুন।"
+      }
+    },
+    {
+      "id": "unconscious",
+      "severity": "HIGH",
+      "keywords": {
+        "en": ["unconscious", "unresponsive", "passed out", "blacked out", "cannot wake up", "comatose"],
+        "hi": ["बेहोश हो गया", "अचेत", "होश नहीं है", "जाग नहीं रहा"],
+        "ta": ["மயக்கமடைந்துவிட்டார்", "சுயநினைவு இல்லை", "எழுப்ப முடியவில்லை"],
+        "te": ["స్పృహ తప్పిపోయారు", "మేల్కొనడం లేదు"],
+        "ml": ["ബോധം പോയി", "പ്രതികരണമില്ല"],
+        "bn": ["অজ্ঞান হয়ে গেছে", "অচৈতন্য", "সাড়া দিচ্ছে না"]
+      },
+      "guidance": {
+        "en": "🚨 UNCONSCIOUS BUT BREATHING PROTOCOL:\n\n1. RECOVERY POSITION: Immediately roll the person onto their side with upper knee bent to keep airway open and prevent choking on vomit or tongue.\n2. CHECK AIRWAY & BREATHING: Tilt chin slightly upward; verify regular chest movement every 60 seconds.\n3. NO FOOD OR DRINK: Strictly do NOT give any liquids or food.\n4. KEEP WARM & SHADED: Wrap with blankets, protect from hot sun or cold winds.\n5. RADIO CALL: Issue immediate Pan-Pan / Mayday priority medical call on VHF 16.",
+        "hi": "🚨 अचेत / बेहोश व्यक्ति प्रोटोकॉल:\n\n1. रिकवरी पोजीशन: व्यक्ति को तुरंत करवट के बल लिटाएं ताकि सांस की नली खुली रहे।\n2. सांस जांचते रहें: हर मिनट छाती की गति देखें।\n3. कुछ भी न खिलाएं-पिलाएं।\n4. गर्म व छाया में रखें।\n5. VHF 16 पर तुरंत मदद मांगें।",
+        "ta": "🚨 சுயநினைவற்ற நபர் பராமரிப்பு:\n\n1. ஒருபுறமாக சாய்த்து படுக்க வைக்கவும் (Recovery position).\n2. சுவாசத்தை தொடர்ந்து கண்காணிக்கவும்.\n3. உணவு அல்லது தண்ணீர் கொடுக்க வேண்டாம்.\n4. VHF 16-ல் அவசர உதவி கோருங்கள்.",
+        "te": "🚨 స్పృహలేని వ్యక్తి సంరక్షణ:\n\n1. ఒకవైపునకు తిప్పి పడుకోబెట్టండి.\n2. నిరంతరం శ్వాసను గమనించండి.\n3. ఆహారం లేదా నీరు ఇవ్వవద్దు.\n4. VHF 16 లో సహాయం కోరండి.",
+        "ml": "🚨 ബോധരഹിതനായ വ്യക്തി:\n\n1. ഒരുവശത്തേക്ക് ചരിച്ച് കിടത്തുക.\n2. ശ്വാസമെടുക്കുന്നത് ശ്രദ്ധിക്കുക.\n3. വെള്ളമോ ഭക്ഷണമോ നൽകരുത്.\n4. VHF 16-ൽ അറിയിക്കുക.",
+        "bn": "🚨 অচেতন ব্যক্তির যত্ন:\n\n1. একপাশে কাত করে শোয়ান।\n2. শ্বাসপ্রশ্বাস নিয়মিত দেখুন।\n3. কোনো খাবার বা জল দেবেন না।\n4. VHF ১৬-এ সাহায্য চান।"
+      }
+    },
+    {
+      "id": "dehydration",
+      "severity": "MEDIUM",
+      "keywords": {
+        "en": ["dehydration", "fainting", "extremely thirsty", "dry tongue", "dizziness sea", "lightheaded"],
+        "hi": ["निर्जलीकरण", "पानी की कमी", "चक्कर आना", "गला सूखना", "बेहोशी जैसी हालत"],
+        "ta": ["நீர்ச்சத்து குறைவு", "தாகம்", "தலைச்சுற்றல்", "நாக்கு வறட்சி"],
+        "te": ["డీహైడ్రేషన్", "నీటి కొరత", "కళ్ళు తిరగడం"],
+        "ml": ["നിർജ്ജലീകരണം", "കഠിനമായ ദാഹം", "തലകറക്കം"],
+        "bn": ["ডিহাইড্রেশন", "জলের অভাব", "মাথা ঘোরা"]
+      },
+      "guidance": {
+        "en": "💧 DEHYDRATION / FAINTING AT SEA DIRECTIVE:\n\n1. LAY FLAT WITH LEGS ELEVATED: Position the person lying flat on their back and elevate legs ~30 cm to restore cerebral blood circulation.\n2. MOVE TO SHADE: Protect completely from wind and direct sunlight.\n3. FREQUENT MICRO-SIPS: If conscious and swallowing, provide 100-150 ml of fresh drinking water every 15 minutes. Add a pinch of salt/sugar if oral rehydration salts are available.\n4. REST & MONITOR: Avoid standing up quickly; continue resting until ashore.",
+        "hi": "💧 निर्जलीकरण / चक्कर आने पर निर्देश:\n\n1. पैर ऊपर उठाकर लिटाएं: पीठ के बल लिटाएं और पैरों को 30 सेमी ऊंचा रखें।\n2. छाया में रखें।\n3. घूंट-घूंट पानी दें: हर 15 मिनट में थोड़ा ताजा पानी दें।\n4. आराम करने दें।",
+        "ta": "💧 நீர்ச்சத்து குறைபாடு முதலுதவி:\n\n1. கால்களை சற்று உயர்த்தி படுக்க வைக்கவும்.\n2. நிழலில் வைக்கவும்.\n3. சிறிது சிறிதாக குடிநீர் கொடுக்கவும்.\n4. ஓய்வெடுக்கச் செய்யவும்.",
+        "te": "💧 డీహైడ్రేషన్ నివారణ:\n\n1. కాళ్ళు కొద్దిగా పైకెత్తి పడుకోబెట్టండి.\n2. నీడలో ఉంచండి.\n3. కొద్దికొద్దిగా నీరు తాగించండి.",
+        "ml": "💧 നിർജ്ജലീകരണം:\n\n1. കാലുകൾ അല്പം ഉയർത്തി കിടത്തുക.\n2. തണലിൽ വിശ്രമിക്കുക.\n3. അല്പാല്പമായി ശുദ്ധജലം നൽകുക.",
+        "bn": "💧 ডিহাইড্রেশন:\n\n1. পা একটু উঁচুতে রেখে শুইয়ে দিন।\n2. ছায়ায় রাখুন।\n3. অল্প অল্প করে পানীয় জল দিন।"
+      }
+    }
+  ]
+}

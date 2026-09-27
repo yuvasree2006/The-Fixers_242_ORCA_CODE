@@ -1,0 +1,119 @@
+{
+  "imblLines": [
+    {
+      "name": "India - Sri Lanka IMBL",
+      "coordinates": [
+        [10.08, 79.80],
+        [9.75, 79.50],
+        [9.40, 79.25],
+        [9.10, 79.15],
+        [8.85, 79.05]
+      ]
+    },
+    {
+      "name": "India - Pakistan Maritime Boundary Line",
+      "coordinates": [
+        [23.50, 68.10],
+        [23.70, 67.80],
+        [23.90, 67.50]
+      ]
+    }
+  ],
+  "marineProtectedAreas": [
+    {
+      "id": "mpa-gulf-of-mannar",
+      "name": "Gulf of Mannar Biosphere Reserve & Coral Reef Sanctuary",
+      "type": "CORAL_REEF_SANCTUARY",
+      "restrictions": "No mechanized trawl fishing allowed within 5km zone",
+      "coordinates": [
+        [9.15, 78.90],
+        [9.35, 79.15],
+        [9.20, 79.35],
+        [8.95, 79.10],
+        [9.15, 78.90]
+      ]
+    },
+    {
+      "id": "mpa-sunderbans-tiger-reserve",
+      "name": "Sunderbans Estuarine Core Conservation Polygon",
+      "type": "ESTUARINE_CONSERVATION",
+      "restrictions": "Restricted entry, no motorized commercial fishing without forest clearance",
+      "coordinates": [
+        [21.70, 88.70],
+        [21.90, 88.95],
+        [21.65, 89.10],
+        [21.45, 88.85],
+        [21.70, 88.70]
+      ]
+    },
+    {
+      "id": "mpa-gahirmatha-turtle",
+      "name": "Gahirmatha Olive Ridley Turtle Sanctuary",
+      "type": "TURTLE_NESTING_ZONE",
+      "restrictions": "No fishing trawlers permitted during nesting season (Nov-May)",
+      "coordinates": [
+        [20.60, 86.85],
+        [20.80, 87.10],
+        [20.55, 87.25],
+        [20.35, 87.00],
+        [20.60, 86.85]
+      ]
+    }
+  ],
+  "harbors": [
+    {
+      "id": "harbor-chennai",
+      "name": "Chennai Fishing Harbour",
+      "lat": 13.0878,
+      "lng": 80.2985,
+      "region": "Tamil Nadu",
+      "dockingCapacity": "Large — Deep draft vessels OK",
+      "coastGuardStation": true
+    },
+    {
+      "id": "harbor-kochi",
+      "name": "Kochi Fisheries Harbour",
+      "lat": 9.9636,
+      "lng": 76.2477,
+      "region": "Kerala",
+      "dockingCapacity": "Large — Full facility",
+      "coastGuardStation": true
+    },
+    {
+      "id": "harbor-visakhapatnam",
+      "name": "Visakhapatnam Port",
+      "lat": 17.6868,
+      "lng": 83.2908,
+      "region": "Andhra Pradesh",
+      "dockingCapacity": "Large — Commercial & fishing",
+      "coastGuardStation": true
+    },
+    {
+      "id": "harbor-paradip",
+      "name": "Paradip Fishing Harbour",
+      "lat": 20.3166,
+      "lng": 86.6086,
+      "region": "Odisha",
+      "dockingCapacity": "Medium — Trawlers & mid-size",
+      "coastGuardStation": false
+    },
+    {
+      "id": "harbor-mumbai",
+      "name": "Mumbai Sassoon Dock",
+      "lat": 18.9067,
+      "lng": 72.8369,
+      "region": "Maharashtra",
+      "dockingCapacity": "Large — Full facility",
+      "coastGuardStation": true
+    },
+    {
+      "id": "harbor-rameswaram",
+      "name": "Rameswaram Boat Jetty",
+      "lat": 9.2882,
+      "lng": 79.3129,
+      "region": "Tamil Nadu",
+      "dockingCapacity": "Small — Fishing boats only",
+      "coastGuardStation": false
+    }
+  ]
+}
